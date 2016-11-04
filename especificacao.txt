@@ -1,0 +1,22 @@
+
+
+
+<tempo de inicialização>, <prioridade>, <tempo de processador>, <blocos em memória>, <número-código da impressora requisitada>, <requisição do 
+scanner>, <requisição do modem>, <número-código do disco> 
+
+
+linha no txt:
+2, 0, 3, 64, 0, 0, 0, 0
+
+
+Saida:
+dispatcher =>  
+    PID: 1 
+    offset: 0 
+    blocks: 64 
+    priority: 0 
+    time: 3 
+    printers: 0 
+    scanners: 0 
+    modems: 0 
+    drives: 0 

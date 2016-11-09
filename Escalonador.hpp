@@ -1,8 +1,12 @@
-struct RegistroProcessEscalonador
+#include<list>
+#include<vector>
+
+struct RegistroProcessoEscalonador
 {
 	int idProcesso;
 	int aging;
 	int prioridadePos;
+	int operator<(RegistroProcessoEscalonador &a);
 };
 
 
@@ -13,6 +17,6 @@ class Escolanador
 		int Escalonar(void);//retorna o id do primeiro processo da fila que vai ser rodado
 		void ProcessoTerminou(int idProcesso);
 	private:
-		vector<int /*idProcesso*/> processosTempoReal;
-		vector<RegistroProcessoEscalonador> registroProcessos;
-}
+		std::list<int /*idProcesso*/> processosTempoReal;
+		std::vector<RegistroProcessoEscalonador> registroProcessos;
+};

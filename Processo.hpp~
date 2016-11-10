@@ -1,6 +1,7 @@
 typedef bool bol;
+typedef bool boool;
 typedef bool bou;
-typedef bool biiiiiirl;
+
 class Processo
 {
 	public:
@@ -12,7 +13,7 @@ class Processo
 		int offsetMemoria;
 		int tempoProcessador;
 		int numBlocosDeMemoria;
-		biiiiiirl impressora;
+		boool impressora;
 		bool scanner;
 		bol modem;
 		bou codigoDisco;

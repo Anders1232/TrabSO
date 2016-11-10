@@ -1,0 +1,5 @@
+https://wiki.debian.org/Kernel
+http://kernel-handbook.alioth.debian.org/
+
+Escalonamento(linux):
+http://www.informit.com/articles/article.aspx?p=101760&seqNum=2

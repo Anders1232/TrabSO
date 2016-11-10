@@ -3,6 +3,9 @@ http://kernel-handbook.alioth.debian.org/
 
 Escalonamento(linux):
 http://www.informit.com/articles/article.aspx?p=101760&seqNum=2
+https://en.wikipedia.org/wiki/CFQ
 
 Unix(Linux e FreeBSD):
 https://www.youtube.com/watch?v=xHu7qI1gDPA
+
+

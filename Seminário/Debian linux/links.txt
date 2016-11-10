@@ -1,0 +1,2 @@
+https://wiki.debian.org/Kernel
+http://kernel-handbook.alioth.debian.org/

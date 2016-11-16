@@ -1,8 +1,19 @@
 \begin{thebibliography}{1}
 
-\bibitem{Vmware}
-Vmware.
-\newblock \url{http://www.vmware.com/br/products/vsphere/features/drs-dpm}.
-\newblock Acessado em 04/07/2016.
+\bibitem{DebianHistory}
+A brief history of debian.
+\newblock
+  \url{https://www.debian.org/doc/manuals/project-history/index.en.html#contents}.
+\newblock Acessado em 16/11/2016.
+
+\bibitem{DebianUsers}
+Who's using debian?
+\newblock \url{https://www.debian.org/users/}.
+\newblock Acessado em 16/11/2016.
+
+\bibitem{FreeSoftware}
+Freesoftware.
+\newblock \url{https://www.gnu.org/philosophy/free-sw}.
+\newblock Acessado em 16/11/2016.
 
 \end{thebibliography}

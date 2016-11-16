@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  10 NOV 2016 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  16 NOV 2016 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1149,16 +1149,24 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into
 your preamble.
  on input line 24.
 
-(./RelatorioSO.bbl
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) (./RelatorioSO.bbl
+Underfull \hbox (badness 3386) in paragraph at lines 4--8
+[]\T1/ptm/m/n/8 A brief his-tory of de-bian.  $https : / / www . debian . org /
+ doc / manuals /
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1175,22 +1183,21 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./RelatorioSO.aux) ) 
 Here is how much of TeX's memory you used:
- 25090 strings out of 494925
- 617154 string characters out of 6180251
- 814010 words of memory out of 5000000
- 27934 multiletter control sequences out of 15000+600000
- 107484 words of font info for 117 fonts, out of 8000000 for 9000
+ 25094 strings out of 494925
+ 617231 string characters out of 6180251
+ 815010 words of memory out of 5000000
+ 27941 multiletter control sequences out of 15000+600000
+ 106335 words of font info for 120 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  62i,7n,96p,707b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.e
-nc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/times/utmri8a.pfb>
-Output written on RelatorioSO.pdf (1 page, 45800 bytes).
+nc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on RelatorioSO.pdf (1 page, 40523 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 24 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

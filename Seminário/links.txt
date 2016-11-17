@@ -10,3 +10,5 @@ https://www.youtube.com/watch?v=xHu7qI1gDPA
 
 Kernel Linux não-paginável:
 https://www.quora.com/What-is-meant-by-kernel-memory-is-not-page-able
+
+https://en.wikipedia.org/wiki/Scheduling_%28computing%29

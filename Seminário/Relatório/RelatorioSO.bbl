@@ -16,6 +16,17 @@ Freesoftware.
 \newblock \url{https://www.gnu.org/philosophy/free-sw}.
 \newblock Acessado em 16/11/2016.
 
+\bibitem{HurdPaper}
+Towards a new strategy of os design, an achitectural overview by thmos
+  bunshnell, bsg.
+\newblock \url{https://www.gnu.org/software/hurd/hurd-paper.html}.
+\newblock Acessado em 17/11/2016.
+
+\bibitem{HurdIO}
+Hurd reference manual: 4. input and output.
+\newblock \url{https://www.gnu.org/software/hurd/doc/hurd_5.html}.
+\newblock Acessado em 17/11/2016.
+
 \bibitem{Hurd}
 Hurd.
 \newblock \url{www.gnu.org/software/hurd/doc/hurd.ps}.

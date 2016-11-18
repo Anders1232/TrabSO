@@ -45,6 +45,8 @@ Debian é um sistema operacional com o objetivo de ser um sistema operacional co
 \end{itemize}
 Para que essas liberdades sejam possíveis é necessário que o código fonte do software seja disponibilizado.
 
+O Advanced Packaging Tool(APT) foi criado no projeto Debian e atualmente é usando em várias distribuições. Muitas delas baseadas no próprio Debian, como o Ubuntu e o Mint(que também possui uma versão baseada no Ubuntu).
+
 \section{Requisitos de Aplicações}\label{sec:req}
 
 \section{Linux}\label{sec:linux}
@@ -78,11 +80,13 @@ Para que essas liberdades sejam possíveis é necessário que o código fonte do
 \section{Hurd}\label{sec:Hurd}
 
 \subsection{Arquitetura}\label{sec:HurdArq}
-O kernel GNU/Hurd possui a arquitetura cliente/servidor e possui o microkernel GNU/Mach que contém instruções de modo kernel.
+O kernel GNU/Hurd possui a arquitetura cliente/servidor e possui o microkernel GNU/Mach que contém instruções de modo kernel. No Hurd, pode-se atrelar à arquivos, máquinas de tradução. Que podem prover diversas funcionalidades, como por exemplo implementar o protocolo ftp de forma transparente, prover gerenciamento de histórico de arquivos entre outras coisas muito interessantes.\cite{HurdPaper}
 
 \subsection{Gerência de Memória}\label{sec:HurdMem}
 
+
 \subsection{gerência de E/S}\label{sec:HurdES}
+No GNU/Hurd as operações de entrada e saída são feitas com o uso de portas de comunicação que implementam pelo menos o protocolo de arquivo ou o protocolo de socket. As operações são realizadas a partir de chamadas de procedimeto remoto(RPC's) nessas portas de comunicação\cite{HurdIO}.
 
 \subsection{Funcionamento de interrupções}\label{sec:HurdInt}
 
@@ -90,7 +94,7 @@ O kernel GNU/Hurd possui a arquitetura cliente/servidor e possui o microkernel G
 O GNU/Hurd faz uso agressivo de Threads como o objetivo de extrair o máximo do hardware.\cite{Hurd} Todas as bibliotecas do GNU/Hurd são thread-safe, ou seja, chamadas cocorrentes aos serviços da biblioteca não fazem ela se comportar de forma inesperada.
 
 \subsection{Segurança}\label{sec:HurdSec}
-Um dos objetivos do Hurd é minimizar a quantidade de código que é executada no modo kernel. O que aumenta a confiabilidade do sistema como um todo.
+Um dos objetivos do Hurd é minimizar a quantidade de código que é executada no modo kernel através do uso de microkernel GNU Mach. O que aumenta a confiabilidade do sistema como um todo.
 
 \bibliographystyle{unsrt}
 \bibliography{arquivo.bib}

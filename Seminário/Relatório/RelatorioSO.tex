@@ -26,16 +26,26 @@
 \maketitle
 \selectlanguage{brazil}  
 
-\begin{abstract}
-Aqui vai o resumo do artigo! 
+%\begin{abstract}
+%Aqui vai o resumo do artigo! 
 
-\end{abstract}
+%\end{abstract}
 
 
 \section{Introdução}\label{sec:intro}
-Aqui inicia o artigo artigo aushśaidvbklzxnxkversnr. Exemplo de referência no texto~\cite{Vmware}, 
+Debian é um projeto e um sistema operacional iniciado em 16 Agosto de 1993 por Ian Murdock\cite{DebianHistory}. Cada versão possui o nome de um personagem de Toy Story. É uma distribuição utilizada por várias organizações pelo mundo\cite{DebianUsers} graças à sua establidade, que o torna ideal para servidores.
 
 \section{Propósito do Debian}\label{sec:prop}
+Debian é um sistema operacional com o objetivo de ser um sistema operacional completamente livre. No qual qualquer um pode baixar, modificar e compartilhar. De acordo com o projeto GNU~\cite{FreeSoftware}, um software para ser considerado livre, deve permitir que seus usuários possuam todas as seguintes liberdades fundamentais:
+\begin{itemize}
+	\item Liberdade para rodar o software da forma que o usuário quiser, e para qualquer propósito.
+	\item Liberdade para estudar como o programa funciona, e poder editá-lo para que o programa compute da forma que o usuário quiser.
+	\item Liberdade para redistribuir cópias.
+	\item Liberdade para distribuir suas modificações para outras pessoas.
+\end{itemize}
+Para que essas liberdades sejam possíveis é necessário que o código fonte do software seja disponibilizado.
+
+O Advanced Packaging Tool(APT) foi criado no projeto Debian e atualmente é usando em várias distribuições. Muitas delas baseadas no próprio Debian, como o Ubuntu e o Mint(que também possui uma versão baseada no Ubuntu).
 
 \section{Requisitos de Aplicações}\label{sec:req}
 
@@ -70,17 +80,21 @@ Aqui inicia o artigo artigo aushśaidvbklzxnxkversnr. Exemplo de referência no 
 \section{Hurd}\label{sec:Hurd}
 
 \subsection{Arquitetura}\label{sec:HurdArq}
+O kernel GNU/Hurd possui a arquitetura cliente/servidor e possui o microkernel GNU/Mach que contém instruções de modo kernel. No Hurd, pode-se atrelar à arquivos, máquinas de tradução. Que podem prover diversas funcionalidades, como por exemplo implementar o protocolo ftp de forma transparente, prover gerenciamento de histórico de arquivos entre outras coisas muito interessantes.\cite{HurdPaper}
 
 \subsection{Gerência de Memória}\label{sec:HurdMem}
 
+
 \subsection{gerência de E/S}\label{sec:HurdES}
+No GNU/Hurd as operações de entrada e saída são feitas com o uso de portas de comunicação que implementam pelo menos o protocolo de arquivo ou o protocolo de socket. As operações são realizadas a partir de chamadas de procedimeto remoto(RPC's) nessas portas de comunicação\cite{HurdIO}.
 
 \subsection{Funcionamento de interrupções}\label{sec:HurdInt}
 
 \subsection{Suporte a Threads}\label{sec:HurdThreads}
+O GNU/Hurd faz uso agressivo de Threads como o objetivo de extrair o máximo do hardware.\cite{Hurd} Todas as bibliotecas do GNU/Hurd são thread-safe, ou seja, chamadas cocorrentes aos serviços da biblioteca não fazem ela se comportar de forma inesperada.
 
 \subsection{Segurança}\label{sec:HurdSec}
-
+Um dos objetivos do Hurd é minimizar a quantidade de código que é executada no modo kernel através do uso de microkernel GNU Mach. O que aumenta a confiabilidade do sistema como um todo.
 
 \bibliographystyle{unsrt}
 \bibliography{arquivo.bib}

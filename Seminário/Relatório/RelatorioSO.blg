@@ -1,46 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: TemplateArtigoRA.aux
+The top-level auxiliary file: RelatorioSO.aux
 The style file: unsrt.bst
 Database file #1: arquivo.bib.bib
-You've used 1 entry,
+You've used 6 entries,
             1791 wiz_defined-function locations,
-            449 strings with 3639 characters,
-and the built_in function-call counts, 129 in all, are:
-= -- 10
-> -- 1
+            469 strings with 4167 characters,
+and the built_in function-call counts, 674 in all, are:
+= -- 60
+> -- 6
 < -- 0
-+ -- 1
++ -- 6
 - -- 0
 * -- 2
-:= -- 20
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 1
+:= -- 75
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 5
-empty$ -- 19
+cite$ -- 6
+duplicate$ -- 30
+empty$ -- 109
 format.name$ -- 0
-if$ -- 30
+if$ -- 175
 int.to.chr$ -- 0
-int.to.str$ -- 1
+int.to.str$ -- 6
 missing$ -- 0
-newline$ -- 8
+newline$ -- 33
 num.names$ -- 0
-pop$ -- 8
+pop$ -- 48
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3
+skip$ -- 18
 stack$ -- 0
 substring$ -- 0
-swap$ -- 1
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 0
-width$ -- 2
-write$ -- 11
+width$ -- 7
+write$ -- 56

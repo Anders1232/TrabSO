@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  17 NOV 2016 22:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  18 NOV 2016 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1157,20 +1157,23 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-] (./RelatorioSO.bbl
+) (./RelatorioSO.bbl
 Underfull \hbox (badness 3386) in paragraph at lines 4--8
 []\T1/ptm/m/n/8 A brief his-tory of de-bian.  $https : / / www . debian . org /
  doc / manuals /
  []
 
 
-Underfull \hbox (badness 6110) in paragraph at lines 31--34
+Underfull \hbox (badness 2744) in paragraph at lines 20--24
+[]\T1/ptm/m/n/8 Freebsd ar-chi-tec-ture hand-book.  $ftp : / / ftp . freebsd . 
+org / pub / FreeBSD /
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 6110) in paragraph at lines 37--40
 []\T1/ptm/m/n/8 Hurd.  $www . gnu . org / software / hurd / doc / hurd . ps$.  
 Aces-sado em
  []
@@ -1191,10 +1194,10 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./RelatorioSO.aux) ) 
 Here is how much of TeX's memory you used:
- 25097 strings out of 494925
- 617256 string characters out of 6180251
- 815010 words of memory out of 5000000
- 27944 multiletter control sequences out of 15000+600000
+ 25098 strings out of 494925
+ 617268 string characters out of 6180251
+ 817010 words of memory out of 5000000
+ 27945 multiletter control sequences out of 15000+600000
  106335 words of font info for 120 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  62i,7n,96p,707b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1202,7 +1205,7 @@ Here is how much of TeX's memory you used:
 nc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on RelatorioSO.pdf (2 pages, 42776 bytes).
+Output written on RelatorioSO.pdf (2 pages, 43157 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream

@@ -16,6 +16,12 @@ Freesoftware.
 \newblock \url{https://www.gnu.org/philosophy/free-sw}.
 \newblock Acessado em 16/11/2016.
 
+\bibitem{FreeBsdArc}
+Freebsd architecture handbook.
+\newblock
+  \url{ftp://ftp.freebsd.org/pub/FreeBSD/doc/en_US.ISO8859-1/books/arch-handbook/book.pdf}.
+\newblock Acessado em 18/11/2016.
+
 \bibitem{HurdPaper}
 Towards a new strategy of os design, an achitectural overview by thmos
   bunshnell, bsg.

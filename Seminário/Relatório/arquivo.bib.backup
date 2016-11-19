@@ -49,17 +49,17 @@
 	Note = {Acessado em 18/11/2016},
 	Title = {FreeBSD Architecture Handbook}}
 	
-@misc{LinuxSchedulerIBM,
+@misc{LinuxScheduler,
 	Howpublished = {\url{https://www.ibm.com/developerworks/library/l-completely-fair-scheduler/}},
 	Note = {Acessado em 19/11/2016},
 	Title = {Inside the Linux 2.6 Completely Fair Scheduler}}
 	
-@misc{LinuxSchedulerWiki,
+@misc{FreeBsdArc,
 	Howpublished = {\url{https://en.wikipedia.org/wiki/Completely_Fair_Scheduler}},
 	Note = {Acessado em 19/11/2016},
 	Title = {Completely Fair Scheduler}}
 	
-@misc{LinuxSchedulerMIT,
+@misc{FreeBsdArc,
 	Howpublished = {\url{http://www.informit.com/articles/article.aspx?p=101760&seqNum=2}},
 	Note = {Acessado em 19/11/2016},
 	Title = {The Linux Process Scheduler}}

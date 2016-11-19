@@ -57,6 +57,45 @@ O Advanced Packaging Tool(APT) foi criado no projeto Debian e atualmente é usan
 
 \subsection{gerência de E/S}\label{sec:LinuxES}
 
+\subsection{gerência de Processos}\label{sec:LinuxPROC}
+
+Os primeiros escalonadores do linux eram bastante simples,sem foco em arquiteturas massivas ou com muitos processadores e
+multithread.O escalonador do linux 1.2 usava uma fila circular com Round-Robin.No linux 2.2 foi inserido outro escalonador
+com políticas de escalonamento para tarefas de tempo real,tarefas não preemptivas e tarefas de tempo não real,ou seja,
+classes de escalonamento.Além disso também foi incluído suporte para SMP(symmetric multiprocessing)\cite{LinuxSchedulerIBM}.No kernel 2.4 foi 
+inserido outro escalonador relativamente simples com complexidade O(n).Ele era relativamente ineficiente,limitava 
+escalabilidade e era lento para processos de tempo real.Também se mostrou ruim para arquiteruras de multiprocessador.No
+kernel 2.6,introduziu-se o chamado de escalonador O(1), por ter complexidade O(1).Esse possuia suporte a SMP e cada fila
+de execução possuia dois arrays de prioridade.O array de tarefas ativas e o de expiradas.No caso,cada array contém uma 
+fila de processos por nível de prioridade.Essas filas contém listas de processos prontos em cada nível de prioridade.Os 
+arrays de prioridade também contém mapas de bits para para descobrir eficientemente a maior prioridade entre as tarefas 
+prontas no sistema sem precisar percorrer as filas.Achar a proxima tarefa a ser executada é simplesmente selecionar o 
+proximo elemento nas listas.Dada uma prioridade,as tarefas são escalonadas com Roud Robin.Mantem-se dois arrays de 
+prioridade para cada processador,um para tarefas ativas e outro para expiradas.O de expiradas contém todas as tarefas da 
+lista de execução associada que já exauriram o temporizador.Quando uma tarefa esgota o seu temporizador um novo tempo é 
+atribuído antes dessa tarefa ser movida para o array de expirados.Recalcular todas as temporizações é tão simples quanto 
+trocar o array de expirados pelo de não expirados porque os arrays são acessados apenas por ponteiro.Trocar os arrays é 
+tão rápido quanto trocar dois ponteiros\cite{LinuxSchedulerMIT}.O escalonador O(1) era muito mais escalável e incorporou interatividade com 
+várias métricas heuristicas para determinar se as tarefas eram IO-bound ou process-Bound.Apesar das vantagens o escalonador
+O(1) tornou-se pesado no kernel.A grnade massa de código necessária para calcular heuristicas tornou-se dificil de manejar.
+A nova mudança veio por meio do algoritmo RSDL(Rotating Staircase Deadline Scheduler),proposto por Con Kolivas e foi 
+incorporado a versão 2.6.21 do kernel linux.Depois, Ingo Molnar,o criador do escalonador O(1) desenvolveu um algoritmo CFS
+baseado nas mesmas ideias do trabalho de Kolivas.A principal idéia por trás do CSF é manter a justiça no provimento do 
+processador aos processos.Para manter esse balanceamento,a quantidade de tempo designada a uma tarefa no CFS é chamada de 
+virtual-runtime.Quanto menor for o "virtual-runtime" de uma tarefa maior a necessidade que essa tarefa tem de ser executada.
+O CFS também possiu uma politica de justiça processos bloqueados(sleeper fainess) para processos que estão parados 
+esperando por I/O tenham algum tempo para execução quando precisarem,por exemplo.Entretanto,ao invés de manter as tarefas 
+em uma fila de espera,o CFS mantem uma árvore "red-black" ordenada por tempo.Uma árvore "red-black" é uma árvore 
+auto-balanceável,as operações na árvore ocorrem com complexidade O(log n),onde n é o número de nós da árvore.Nessa 
+estrutura,tarefas com maior necessidade do processador(menor virtual-runtime) são armazenadas no lado esquerdo da arvore,e 
+tarefas com menor necessidade de serem executadas do lado direito \cite{LinuxSchedulerIBM}.O escalonamento ocorre como a seguir:
+
+1)O nó mais a esquerda da árvore é escolhido e enviádo à execução.
+2)Se o processo conclui sua execução ele é removido do sistema e da árvore
+3) Se o processo alcança seu tempo máximo de execução(quantum) ou é bloqueado(oluntáriamente ou por interrupção),ele é reiserido na árvore baseado em seu novo "virtual-runtime".
+4) O novo nó mais a esquerda será escolhido repetindo a iteração
+\cite{LinuxSchedulerWiki}
+
 \subsection{Funcionamento de interrupções}\label{sec:LinuxInt}
 
 \subsection{Suporte a Threads}\label{sec:TinuxThreads}
@@ -72,6 +111,8 @@ O FreeBSD usa uma política de troca de páginas ao estilo Last Recent Used(LRU)
 
 \subsection{gerência de E/S}\label{sec:BSDES}
 
+\subsection{gerência de Processos}\label{sec:BSDPROC}
+
 \subsection{Funcionamento de interrupções}\label{sec:BSDInt}
 
 \subsection{Suporte a Threads}\label{sec:BSDThreads}
@@ -85,6 +126,7 @@ O kernel GNU/Hurd possui a arquitetura cliente/servidor e possui o microkernel G
 
 \subsection{Gerência de Memória}\label{sec:HurdMem}
 
+\subsection{gerência de Processos}\label{sec:HURDPROC}
 
 \subsection{gerência de E/S}\label{sec:HurdES}
 No GNU/Hurd as operações de entrada e saída são feitas com o uso de portas de comunicação que implementam pelo menos o protocolo de arquivo ou o protocolo de socket. As operações são realizadas a partir de chamadas de procedimeto remoto(RPC's) nessas portas de comunicação\cite{HurdIO}.

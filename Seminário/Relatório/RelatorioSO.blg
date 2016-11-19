@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: RelatorioSO.aux
 The style file: unsrt.bst
 Database file #1: arquivo.bib.bib
-You've used 7 entries,
+You've used 10 entries,
             1791 wiz_defined-function locations,
-            474 strings with 4326 characters,
-and the built_in function-call counts, 783 in all, are:
-= -- 70
-> -- 7
+            487 strings with 4757 characters,
+and the built_in function-call counts, 1112 in all, are:
+= -- 100
+> -- 10
 < -- 0
-+ -- 7
++ -- 10
 - -- 0
 * -- 2
-:= -- 86
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 7
+:= -- 121
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 10
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 35
-empty$ -- 127
+cite$ -- 10
+duplicate$ -- 50
+empty$ -- 181
 format.name$ -- 0
-if$ -- 204
+if$ -- 291
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 10
 missing$ -- 0
-newline$ -- 38
+newline$ -- 53
 num.names$ -- 0
-pop$ -- 56
+pop$ -- 80
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 21
+skip$ -- 29
 stack$ -- 0
 substring$ -- 0
-swap$ -- 7
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 0
-width$ -- 8
-write$ -- 65
+width$ -- 12
+write$ -- 92

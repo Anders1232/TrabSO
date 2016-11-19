@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  19 NOV 2016 20:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  19 NOV 2016 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1158,12 +1158,79 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 3250) in paragraph at lines 62--65
+[]\T1/ptm/m/n/10 Os pri-mei-ros es-ca-lo-na-do-res do li-nux eram bas-tante
+ []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
 
 
-] (./RelatorioSO.bbl
+Underfull \hbox (badness 7030) in paragraph at lines 62--65
+\T1/ptm/m/n/10 sim-ples com com-ple-xi-dade O(n).Ele era re-la-ti-va-mente
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+[]\T1/ptm/m/n/10 O ar-ray de ta-re-fas ati-vas e o de ex-pi-ra-das.No
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 68--69
+[]\T1/ptm/m/n/10 Dada uma pri-o-ri-dade,as ta-re-fas são es-ca-lo-na-das com
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+[]\T1/ptm/m/n/10 A nova mu-dança veio por meio do al-go-ritmo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+\T1/ptm/m/n/10 RSDL(Rotating Stair-case De-a-dline Sche-du-ler),proposto
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 1852) in paragraph at lines 74--75
+\T1/ptm/m/n/10 es-pe-rando por I/O te-nham al-gum tempo para exe-cu-ção
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+(./RelatorioSO.bbl
 Underfull \hbox (badness 2134) in paragraph at lines 4--8
 []\T1/ptm/m/n/8 A brief his-tory of de-bian.  $https : / / www . debian . org /
  doc / manuals /
@@ -1191,7 +1258,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  25115 strings out of 494925
  617528 string characters out of 6180251
- 820010 words of memory out of 5000000
+ 818010 words of memory out of 5000000
  27962 multiletter control sequences out of 15000+600000
  106335 words of font info for 120 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
@@ -1200,7 +1267,7 @@ Here is how much of TeX's memory you used:
 .enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on RelatorioSO.pdf (2 pages, 47602 bytes).
+Output written on RelatorioSO.pdf (2 pages, 47645 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream

@@ -94,10 +94,6 @@ tarefas com menor necessidade de serem executadas do lado direito \cite{LinuxSch
 2)Se o processo conclui sua execução ele é removido do sistema e da árvore
 3) Se o processo alcança seu tempo máximo de execução(quantum) ou é bloqueado(oluntáriamente ou por interrupção),ele é reiserido na árvore baseado em seu novo "virtual-runtime".
 4) O novo nó mais a esquerda será escolhido repetindo a iteração
-
-Outra alternativa moderna ao escalonador O(1) é o BFS(Brain fuck scheduler).Também desenvolvido por Con Kolivas,esse 
-escalonador evita o uso de configurações e heuristicas.EM alguns benckmarks apresenta desempenho levemente ou 
-moderadamente maior que o CFS mas não chegou a tomar o seu lugar.Está presente em distribuições como Sabayon Linux\cite{LinuxSchedulerBFS}.
 \cite{LinuxSchedulerWiki}
 
 \subsection{Funcionamento de interrupções}\label{sec:LinuxInt}

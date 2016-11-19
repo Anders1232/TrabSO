@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{DebianHistory}
 A brief history of debian.
@@ -15,6 +15,23 @@ Who's using debian?
 Freesoftware.
 \newblock \url{https://www.gnu.org/philosophy/free-sw}.
 \newblock Acessado em 16/11/2016.
+
+\bibitem{LinuxSchedulerIBM}
+Inside the linux 2.6 completely fair scheduler.
+\newblock
+  \url{https://www.ibm.com/developerworks/library/l-completely-fair-scheduler/}.
+\newblock Acessado em 19/11/2016.
+
+\bibitem{LinuxSchedulerMIT}
+The linux process scheduler.
+\newblock
+  \url{http://www.informit.com/articles/article.aspx?p=101760&seqNum=2}.
+\newblock Acessado em 19/11/2016.
+
+\bibitem{LinuxSchedulerWiki}
+Completely fair scheduler.
+\newblock \url{https://en.wikipedia.org/wiki/Completely_Fair_Scheduler}.
+\newblock Acessado em 19/11/2016.
 
 \bibitem{FreeBsdArc}
 Freebsd architecture handbook.

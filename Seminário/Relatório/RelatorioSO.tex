@@ -59,7 +59,7 @@ O Advanced Packaging Tool(APT) foi criado no projeto Debian e atualmente é usan
 
 \subsection{gerência de Processos}\label{sec:LinuxPROC}
 
-Os primeiros escalonadores do linux eram bastante simples,sem foco em arquiteturas massivas ou com muitos processadores emultithread.O escalonador do linux 1.2 usava uma fila circular com Round-Robin.No linux 2.2 foi inserido outro escalonador com políticas de escalonamento para tarefas de tempo real,tarefas não preemptivas e tarefas de tempo não real,ou seja, classes de escalonamento.Além disso também foi incluído suporte para SMP(symmetric multiprocessing)\cite{LinuxSchedulerIBM}.\\
+Os primeiros escalonadores do linux eram bastante simples,sem foco em arquiteturas massivas ou com muitos processadores eultithread. O escalonador do linux 1.2 usava uma fila circular com Round-Robin.No linux 2.2 foi inserido outro escalonador com políticas de escalonamento para tarefas de tempo real,tarefas não preemptivas e tarefas de tempo não real,ou seja, classes de escalonamento.Além disso também foi incluído suporte para SMP(symmetric multiprocessing)\cite{LinuxSchedulerIBM}.\\
 
  No kernel 2.4 foi  inserido outro escalonador relativamente simples com complexidade O(n).Ele era relativamente ineficiente,limitava escalabilidade e era lento para processos de tempo real.Também se mostrou ruim para arquiteruras de multiprocessador.No kernel 2.6,introduziu-se o chamado de escalonador O(1), por ter complexidade O(1).Esse possuia suporte a SMP e cada fila de execução possuia dois arrays de prioridade.\\
 
@@ -81,13 +81,9 @@ Uma árvore "red-black" é uma árvore auto-balanceável,as operações na árvo
 	\item O novo nó mais a esquerda será escolhido repetindo a iteração\cite{LinuxSchedulerWiki}
 \end{enumerate}
 
-\\
 
-Outra alternativa moderna ao escalonador O(1) é o BFS(Brain fuck scheduler).Também desenvolvido por Con Kolivas,esse 
 
-escalonador evita o uso de configurações e heuristicas.EM alguns benckmarks apresenta desempenho levemente ou 
-
-moderadamente maior que o CFS mas não chegou a tomar o seu lugar.Está presente em distribuições como Sabayon Linux\cite{LinuxSchedulerBFS}.
+Outra alternativa moderna ao escalonador O(1) é o BFS(Brain fuck scheduler).Também desenvolvido por Con Kolivas,esse escalonador evita o uso de configurações e heurísticas.EM alguns benchmarks apresenta desempenho levemente ou moderadamente maior que o CFS mas não chegou a tomar o seu lugar.Está presente em distribuições como Sabayon Linux\cite{LinuxSchedulerBFS}.
 \cite{LinuxSchedulerWiki}
 
 \subsection{Funcionamento de interrupções}\label{sec:LinuxInt}

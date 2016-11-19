@@ -81,11 +81,20 @@ Uma árvore "red-black" é uma árvore auto-balanceável,as operações na árvo
 	\item O novo nó mais a esquerda será escolhido repetindo a iteração\cite{LinuxSchedulerWiki}
 \end{enumerate}
 
+\\
+
+Outra alternativa moderna ao escalonador O(1) é o BFS(Brain fuck scheduler).Também desenvolvido por Con Kolivas,esse 
+
+escalonador evita o uso de configurações e heuristicas.EM alguns benckmarks apresenta desempenho levemente ou 
+
+moderadamente maior que o CFS mas não chegou a tomar o seu lugar.Está presente em distribuições como Sabayon Linux\cite{LinuxSchedulerBFS}.
+\cite{LinuxSchedulerWiki}
 
 \subsection{Funcionamento de interrupções}\label{sec:LinuxInt}
 
-\subsection{Suporte a Threads}\label{sec:TinuxThreads}
-
+\subsection{Suporte a Threads}\label{sec:LinuxThreads}
+O linux dá suporte a threads tratando-as como processos e escalonando-os juntamente.Um processo pode ser visto como uma thread mas
+processos podem contem múltiplas threads que compartilham seus recursos\cite{LinuxSchedulerIBM}.
 \subsection{Segurança}\label{sec:LinuxSec}
 
 \section{FreeBSD}\label{sec:BSD}

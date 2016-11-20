@@ -18,52 +18,57 @@ I was expecting a `,' or a `}'---line 87 of file arquivo.bib.bib
  : @misc{LinuxHistory,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Illegal end of database file---line 94 of file arquivo.bib.bib
+I was expecting a `,' or a `}'---line 92 of file arquivo.bib.bib
+ : 
+ : @misc{FreeBSD-Hybrid,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Illegal end of database file---line 98 of file arquivo.bib.bib
  : 
  : 
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "GerenciaIOLinuxSS"
-Warning--all relevant fields are empty in LinuxHistory
-You've used 15 entries,
+Warning--all relevant fields are empty in FreeBSD-Hybrid
+You've used 16 entries,
             1791 wiz_defined-function locations,
-            504 strings with 5364 characters,
-and the built_in function-call counts, 1571 in all, are:
-= -- 129
-> -- 15
+            507 strings with 5505 characters,
+and the built_in function-call counts, 1661 in all, are:
+= -- 135
+> -- 16
 < -- 0
-+ -- 15
++ -- 16
 - -- 0
 * -- 3
-:= -- 153
-add.period$ -- 37
-call.type$ -- 15
+:= -- 159
+add.period$ -- 38
+call.type$ -- 16
 change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 75
-empty$ -- 271
+cite$ -- 17
+duplicate$ -- 80
+empty$ -- 289
 format.name$ -- 0
-if$ -- 415
+if$ -- 440
 int.to.chr$ -- 0
-int.to.str$ -- 15
+int.to.str$ -- 16
 missing$ -- 0
-newline$ -- 70
+newline$ -- 73
 num.names$ -- 0
-pop$ -- 111
+pop$ -- 117
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 66
+skip$ -- 74
 stack$ -- 0
 substring$ -- 0
-swap$ -- 15
+swap$ -- 16
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
 while$ -- 0
-width$ -- 17
-write$ -- 120
-(There were 4 error messages)
+width$ -- 18
+write$ -- 125
+(There were 5 error messages)

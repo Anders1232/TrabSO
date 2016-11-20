@@ -52,7 +52,7 @@ O Advanced Packaging Tool(APT) foi criado no projeto Debian e atualmente é usan
 \section{Linux}\label{sec:linux}
 
 \subsection{Arquitetura}\label{sec:LinuxArq}
-O Linux é um kernel monolítico criado por Linus Towards em 1991.\cite{LinuxHistory} Enquanto o GNU Project ficava fazendo tentativas de criar um kernel não monolítico(o que resultou no Hurd) o Linus conseguiu criar um kernel monolítico que era compatível com o sistema GNU. Desde então quase todos os esforços de desenvolvimento do kernel do sistema operacional GNU se voltaram para o Linux.\\
+O Linux é um kernel monolítico criado por Linus Benedict Towards em 1991.\cite{LinuxHistory} Enquanto o GNU Project ficava fazendo tentativas de criar um kernel não monolítico(o que resultou no Hurd) o Linus conseguiu criar um kernel monolítico que era compatível com o sistema GNU. Desde então quase todos os esforços de desenvolvimento do kernel do sistema operacional GNU se voltaram para o Linux.\\
 
 \subsection{Gerência de Memória}\label{sec:LinuxMem}
 
@@ -118,6 +118,7 @@ processos podem contem múltiplas threads que compartilham seus recursos\cite{Li
 O FreeBSD usa uma política de troca de páginas ao estilo Last Recent Used(LRU)\cite{FreeBsdArc}
 
 \subsection{gerência de E/S}\label{sec:BSDES}
+Para gerenciar o acesso a dispositivos de entrada e saída, o FreeBSD emprega o C-LOOK scheduler\cite{FreeBSD-Hybrid}. Que também é chamado de escalonamento "elevador", que trata os cilindros do disco como se fossem andares de um prédio. Porém a a variação que esse elevador funciona de forma circular para equalizar a frequência com a qual cada cilindro/andar é visitado.\\
 
 \subsection{gerência de Processos}\label{sec:BSDPROC}
 

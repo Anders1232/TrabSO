@@ -16,6 +16,14 @@ Freesoftware.
 \newblock \url{https://www.gnu.org/philosophy/free-sw}.
 \newblock Acessado em 16/11/2016.
 
+\bibitem{GerenciaMemLinux}
+\url{http://www.tldp.org/LDP/tlk/mm/memory.html}, Note = {Acessado em
+  20/11/2016}, Title = {Chapter 3 Memory Management}.
+
+\bibitem{GerenciaIOLinux}
+\url{https://en.wikipedia.org/wiki/CFQ}, Note = {Acessado em 20/11/2016}, Title
+  = {CFQ}.
+
 \bibitem{LinuxSchedulerIBM}
 Inside the linux 2.6 completely fair scheduler.
 \newblock
@@ -37,6 +45,9 @@ Completely fair scheduler.
 Brain fuck scheduler.
 \newblock \url{https://en.wikipedia.org/wiki/Brain_Fuck_Scheduler}.
 \newblock Acessado em 19/11/2016.
+
+\bibitem{InterruptsLinux}
+
 
 \bibitem{FreeBsdArc}
 Freebsd architecture handbook.

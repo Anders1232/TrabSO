@@ -17,16 +17,19 @@ Freesoftware.
 \newblock Acessado em 16/11/2016.
 
 \bibitem{LinuxHistory}
-\url{https://en.wikipedia.org/wiki/History_of_Linux}, Note = {Acessado em
-  20/11/2016}, Title = {History Of Linux}.
+History of linux.
+\newblock \url{https://en.wikipedia.org/wiki/History_of_Linux}.
+\newblock Acessado em 20/11/2016.
 
 \bibitem{GerenciaMemLinux}
-\url{http://www.tldp.org/LDP/tlk/mm/memory.html}, Note = {Acessado em
-  20/11/2016}, Title = {Chapter 3 Memory Management}.
+Chapter 3 memory management.
+\newblock \url{http://www.tldp.org/LDP/tlk/mm/memory.html}.
+\newblock Acessado em 20/11/2016.
 
 \bibitem{GerenciaIOLinux}
-\url{https://en.wikipedia.org/wiki/CFQ}, Note = {Acessado em 20/11/2016}, Title
-  = {CFQ}.
+Cfq.
+\newblock \url{https://en.wikipedia.org/wiki/CFQ}.
+\newblock Acessado em 20/11/2016.
 
 \bibitem{LinuxSchedulerIBM}
 Inside the linux 2.6 completely fair scheduler.
@@ -51,8 +54,9 @@ Brain fuck scheduler.
 \newblock Acessado em 19/11/2016.
 
 \bibitem{InterruptsLinux}
-\url{http://www.tldp.org/LDP/tlk/dd/interrupts.html}, Note = {Acessado em
-  20/11/2016}, Title = {Chapter 7 Interrupts and Interrupt Handling}.
+Chapter 7 interrupts and interrupt handling.
+\newblock \url{http://www.tldp.org/LDP/tlk/dd/interrupts.html}.
+\newblock Acessado em 20/11/2016.
 
 \bibitem{FreeBsdArc}
 Freebsd architecture handbook.
@@ -61,7 +65,9 @@ Freebsd architecture handbook.
 \newblock Acessado em 18/11/2016.
 
 \bibitem{FreeBSD-Hybrid}
-
+Hibrid - freebsd wiki.
+\newblock \url{https://wiki.freebsd.org/Hybrid}.
+\newblock Acessado em 20/11/2016.
 
 \bibitem{HurdPaper}
 Towards a new strategy of os design, an achitectural overview by thmos

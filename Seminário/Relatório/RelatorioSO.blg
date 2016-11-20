@@ -3,63 +3,37 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: RelatorioSO.aux
 The style file: unsrt.bst
 Database file #1: arquivo.bib.bib
-I was expecting a `,' or a `}'---line 77 of file arquivo.bib.bib
- : 
- : @misc{GerenciaIOLinux,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 82 of file arquivo.bib.bib
- : 
- : @misc{InterruptsLinux,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 87 of file arquivo.bib.bib
- : 
- : @misc{LinuxHistory,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 92 of file arquivo.bib.bib
- : 
- : @misc{FreeBSD-Hybrid,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Illegal end of database file---line 98 of file arquivo.bib.bib
- : 
- : 
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "GerenciaIOLinuxSS"
-Warning--all relevant fields are empty in FreeBSD-Hybrid
 You've used 16 entries,
             1791 wiz_defined-function locations,
-            507 strings with 5505 characters,
-and the built_in function-call counts, 1661 in all, are:
-= -- 135
+            514 strings with 5405 characters,
+and the built_in function-call counts, 1766 in all, are:
+= -- 160
 > -- 16
 < -- 0
 + -- 16
 - -- 0
-* -- 3
-:= -- 159
-add.period$ -- 38
+* -- 2
+:= -- 187
+add.period$ -- 48
 call.type$ -- 16
-change.case$ -- 11
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 17
+cite$ -- 16
 duplicate$ -- 80
 empty$ -- 289
 format.name$ -- 0
-if$ -- 440
+if$ -- 465
 int.to.chr$ -- 0
 int.to.str$ -- 16
 missing$ -- 0
-newline$ -- 73
+newline$ -- 83
 num.names$ -- 0
-pop$ -- 117
+pop$ -- 128
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 74
+skip$ -- 47
 stack$ -- 0
 substring$ -- 0
 swap$ -- 16
@@ -67,8 +41,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
+warning$ -- 0
 while$ -- 0
 width$ -- 18
-write$ -- 125
-(There were 5 error messages)
+write$ -- 146
+(There was 1 warning)

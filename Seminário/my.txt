@@ -1,0 +1,70 @@
+
+Debian
+
+Os sistemas Debian utilizam kernel linux[1] ou FREEBSD[2] e na medida em que
+o SO está sendo trabalhado, o Debian está sendo providenciado para atender outros kernels
+como o Hurd[3] para .
+
+
+
+
+
+FreeBSD(segurança) controle de acessos e privilégios
+	gerenciamento de usuario
+		há três tipos de modo de usuário:
+			-sistema
+			-usuário
+			-superUsuário
+
+	-Sistema
+	São internas e são atribuídas para rodar serviços como DNS, emails ,etc.
+	Esse modo serve principalmente para assegurar a segurança do sistema, visto que,
+	atribuir a todos esses serviços como root, as aplicações não teriam restrição
+	de acesso e ação dentro do sistema
+
+	-Usuário
+	Estas são atribuídas aos usuarios do sistema,a acesso comum para atender necessidades cotidianas. 
+	Existem restrições de privilégio de acesso
+
+	-SuperUsuário:root
+	Acesso como o gerenciador do sistema, Este modo não existem restrições de acesso
+	Para lidar com privilégios, acesso root pode ser adquirido pelo comando sudo, que permite virar SuperUsuário
+
+
+
+	A permissão de privilégios e acesso a recurso podem ser controlados pelo 
+	gerenciamento de grupos. Um grupo tem seus privilégios determinados e é composto
+	por uma lista de usuários. Cada grupo é composto por:
+	- Nome do grupo
+	- Senha criptografada
+	- ID
+	- Lista de membros (separados por vírgulas). Pode estar vazia.
+
+-------------------
+	Debian
+	Um gerenciador de arquivo é um programa que oferece
+	uma interface ao usuario para manusear os arquivos e pastas.
+	Oferecendo as operações de: Cria, abrir,mover,renomear,leitura, escrita, busca, deletar, propriedades e permissões.
+
+
+	Para o gerenciamento de arquivos o debian utiliza o GNOME desktop, baseado em GTK+[4]
+	que é gratuíto e um dos ambientes desktop mais utilizados nos sistemas operacionais GNU e linux.
+	As diversas versões do Debian ja vem com o GNOME eles incluso, podendo apenas variar a versão do GNOME.
+
+		O GNOME desktop pode ser instalado usando o comando
+		$ apt-get install task-gnome-desktop
+
+	O GNOME faz uso do Nautilus, o gerenciador de arquivos oficial do ambiente GNOME desktop.
+	O Nautilus também oferece pra visualização web	
+
+
+
+1-Software de Linus Torvalds.Linux is a piece of software started by Linus Torvalds and supported by thousands of programmers worldwide. FreeBSD is an operating system including a kernel and other software.
+3-The Hurd is a collection of servers that run on top of a microkernel (such as Mach) to implement different features. The Hurd is free software produced by the GNU project. 
+4-GTK+(formerly GIMP Toolkit) é uma plataforma widget pra criar interface grafica ao usuario
+
+http://www.planetaunix.com.br/2014/08/gerenciamento-basico-de-usuarios-no.html
+http://www.planetaunix.com.br/2014/08/gerenciamento-de-grupos-no-freebsd.html
+https://wiki.debian.org/Gnome?action=show&redirect=GNOME
+https://wiki.gnome.org/action/show/Apps/Nautilus?action=show&redirect=Nautilus
+https://en.wikipedia.org/wiki/GTK%2B

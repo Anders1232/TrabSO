@@ -33,6 +33,11 @@ Completely fair scheduler.
 \newblock \url{https://en.wikipedia.org/wiki/Completely_Fair_Scheduler}.
 \newblock Acessado em 19/11/2016.
 
+\bibitem{LinuxSchedulerBFS}
+Brain fuck scheduler.
+\newblock \url{https://en.wikipedia.org/wiki/Brain_Fuck_Scheduler}.
+\newblock Acessado em 19/11/2016.
+
 \bibitem{FreeBsdArc}
 Freebsd architecture handbook.
 \newblock

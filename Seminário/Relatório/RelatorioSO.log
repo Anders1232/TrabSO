@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  20 NOV 2016 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  20 NOV 2016 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1158,51 +1158,51 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 2065) in paragraph at lines 55--56
+[]\T1/ptm/m/n/10 O Li-nux é um ker-nel mo-no-lí-tico cri-ado por Li-nus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
 
 LaTeX Warning: Citation `GerenciaIOLinuxSS' on page 1 undefined on input line 7
-3.
+4.
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 76--79
+Underfull \hbox (badness 3250) in paragraph at lines 77--80
 []\T1/ptm/m/n/10 Os pri-mei-ros es-ca-lo-na-do-res do li-nux eram bas-tante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 76--79
+Underfull \hbox (badness 2837) in paragraph at lines 77--80
 \T1/ptm/m/n/10 sim-ples com com-ple-xi-dade O(n). Ele era re-la-ti-va-mente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
@@ -1210,54 +1210,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 []\T1/ptm/m/n/10 A nova mu-dança veio por meio do al-go-ritmo
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 86--87
+Underfull \hbox (badness 5403) in paragraph at lines 87--88
 \T1/ptm/m/n/10 RSDL(Rotating Stair-case De-a-dline Sche-du-ler), pro-posto
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 100--102
+Underfull \hbox (badness 2126) in paragraph at lines 101--103
 []\T1/ptm/m/n/10 Outra al-ter-na-tiva mo-derna ao es-ca-lo-na-dor O(1) é o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[2] (./RelatorioSO.bbl
+
+Underfull \vbox (badness 1072) has occurred while \output is active []
+
+ [2]
+(./RelatorioSO.bbl
 Underfull \hbox (badness 2134) in paragraph at lines 4--8
 []\T1/ptm/m/n/8 A brief his-tory of de-bian.  $https : / / www . debian . org /
  doc / manuals /
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 45--48
+Underfull \hbox (badness 4328) in paragraph at lines 48--51
 []\T1/ptm/m/n/8 Brain fuck sche-du-ler.  $https : / / en . wikipedia . org / wi
 ki / Brain _ Fuck _
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 70--73
+Underfull \hbox (badness 4254) in paragraph at lines 74--77
 []\T1/ptm/m/n/8 Hurd.  $www . gnu . org / software / hurd / doc / hurd . ps$.  
 Aces-sado em
  []
@@ -1280,19 +1294,19 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25121 strings out of 494925
- 617624 string characters out of 6180251
- 819010 words of memory out of 5000000
- 27967 multiletter control sequences out of 15000+600000
+ 25122 strings out of 494925
+ 617638 string characters out of 6180251
+ 818010 words of memory out of 5000000
+ 27968 multiletter control sequences out of 15000+600000
  107442 words of font info for 121 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 62i,7n,96p,1104b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,7n,96p,1100b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on RelatorioSO.pdf (3 pages, 58451 bytes).
+Output written on RelatorioSO.pdf (3 pages, 58668 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream

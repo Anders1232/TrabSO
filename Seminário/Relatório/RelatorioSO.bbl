@@ -16,6 +16,9 @@ Freesoftware.
 \newblock \url{https://www.gnu.org/philosophy/free-sw}.
 \newblock Acessado em 16/11/2016.
 
+\bibitem{LinuxHistory}
+
+
 \bibitem{GerenciaMemLinux}
 \url{http://www.tldp.org/LDP/tlk/mm/memory.html}, Note = {Acessado em
   20/11/2016}, Title = {Chapter 3 Memory Management}.
@@ -47,7 +50,8 @@ Brain fuck scheduler.
 \newblock Acessado em 19/11/2016.
 
 \bibitem{InterruptsLinux}
-
+\url{http://www.tldp.org/LDP/tlk/dd/interrupts.html}, Note = {Acessado em
+  20/11/2016}, Title = {Chapter 7 Interrupts and Interrupt Handling}.
 
 \bibitem{FreeBsdArc}
 Freebsd architecture handbook.

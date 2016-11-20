@@ -69,6 +69,12 @@ Hibrid - freebsd wiki.
 \newblock \url{https://wiki.freebsd.org/Hybrid}.
 \newblock Acessado em 20/11/2016.
 
+\bibitem{DesignImplementationFreeBSD}
+The design and implementation of the freebsd operation system.
+\newblock
+  \url{http://ptgmedia.pearsoncmg.com/images/9780321968975/samplepages/9780321968975.pdf}.
+\newblock Acessado em 20/11/2016.
+
 \bibitem{HurdPaper}
 Towards a new strategy of os design, an achitectural overview by thmos
   bunshnell, bsg.

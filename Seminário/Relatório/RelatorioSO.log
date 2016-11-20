@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  20 NOV 2016 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  20 NOV 2016 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1257,6 +1257,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
+
+Underfull \hbox (badness 5622) in paragraph at lines 124--125
+[]\T1/ptm/m/n/10 A ge-rên-cia de pro-ces-sos do Fre-eBSD tem como
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 124--125
+\T1/ptm/m/n/10 Pro-ces-sos que fa-zem tempo que não são ro-da-dos têm
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
 (./RelatorioSO.bbl
 Underfull \hbox (badness 2134) in paragraph at lines 4--8
 []\T1/ptm/m/n/8 A brief his-tory of de-bian.  $https : / / www . debian . org /
@@ -1270,7 +1285,13 @@ ki / Brain _ Fuck _
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 84--87
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
+\T1/ptm/m/n/8 http : / / ptgmedia . pearsoncmg . com / images / 9780321968975 /
+ samplepages /
+ []
+
+
+Underfull \hbox (badness 4254) in paragraph at lines 90--93
 []\T1/ptm/m/n/8 Hurd.  $www . gnu . org / software / hurd / doc / hurd . ps$.  
 Aces-sado em
  []
@@ -1293,10 +1314,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25125 strings out of 494925
- 617686 string characters out of 6180251
- 818010 words of memory out of 5000000
- 27971 multiletter control sequences out of 15000+600000
+ 25126 strings out of 494925
+ 617715 string characters out of 6180251
+ 820010 words of memory out of 5000000
+ 27972 multiletter control sequences out of 15000+600000
  107442 words of font info for 121 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  62i,7n,96p,1100b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1305,7 +1326,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on RelatorioSO.pdf (3 pages, 59005 bytes).
+Output written on RelatorioSO.pdf (3 pages, 59589 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream

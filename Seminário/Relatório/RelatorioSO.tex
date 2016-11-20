@@ -121,6 +121,7 @@ O FreeBSD usa uma política de troca de páginas ao estilo Last Recent Used(LRU)
 Para gerenciar o acesso a dispositivos de entrada e saída, o FreeBSD emprega o C-LOOK scheduler\cite{FreeBSD-Hybrid}. Que também é chamado de escalonamento "elevador", que trata os cilindros do disco como se fossem andares de um prédio. Porém a a variação que esse elevador funciona de forma circular para equalizar a frequência com a qual cada cilindro/andar é visitado.\\
 
 \subsection{gerência de Processos}\label{sec:BSDPROC}
+A gerência de processos do FreeBSD tem como objetivo priorizar processos interativos sobre processos de processamento contínuo. Isso é feito atribuindo prioridades a processos. Os processos são computados em time slices, os processos que usam todo o time slice têm sua prioridade diminuída enquanto processos que são bloqueados(quesitam i/o) durante seu time slice possuem suas prioridades mantidas. Processos que fazem tempo que não são rodados têm sua prioridade aumentada para evitar starvation. O FreeBSD também dá suporte a aplicações de tempo real, mantendo essas aplicações numa fila diferente da fila dos outros processos.\cite{DesignImplementationFreeBSD}\\
 
 \subsection{Funcionamento de interrupções}\label{sec:BSDInt}
 

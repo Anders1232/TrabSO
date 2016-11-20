@@ -4,45 +4,45 @@ The top-level auxiliary file: RelatorioSO.aux
 The style file: unsrt.bst
 Database file #1: arquivo.bib.bib
 Warning--I didn't find a database entry for "GerenciaIOLinuxSS"
-You've used 16 entries,
+You've used 17 entries,
             1791 wiz_defined-function locations,
-            514 strings with 5405 characters,
-and the built_in function-call counts, 1766 in all, are:
-= -- 160
-> -- 16
+            518 strings with 5607 characters,
+and the built_in function-call counts, 1875 in all, are:
+= -- 170
+> -- 17
 < -- 0
-+ -- 16
++ -- 17
 - -- 0
 * -- 2
-:= -- 187
-add.period$ -- 48
-call.type$ -- 16
-change.case$ -- 16
+:= -- 198
+add.period$ -- 51
+call.type$ -- 17
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 80
-empty$ -- 289
+cite$ -- 17
+duplicate$ -- 85
+empty$ -- 307
 format.name$ -- 0
-if$ -- 465
+if$ -- 494
 int.to.chr$ -- 0
-int.to.str$ -- 16
+int.to.str$ -- 17
 missing$ -- 0
-newline$ -- 83
+newline$ -- 88
 num.names$ -- 0
-pop$ -- 128
+pop$ -- 136
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 47
+skip$ -- 50
 stack$ -- 0
 substring$ -- 0
-swap$ -- 16
+swap$ -- 17
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 0
-width$ -- 18
-write$ -- 146
+width$ -- 19
+write$ -- 155
 (There was 1 warning)

@@ -132,7 +132,7 @@ A gerência de processos do FreeBSD tem como objetivo priorizar processos intera
 \section{Hurd}\label{sec:Hurd}
 
 \subsection{Arquitetura}\label{sec:HurdArq}
-O kernel GNU/Hurd possui a arquitetura cliente/servidor e possui o microkernel GNU/Mach que contém instruções de modo kernel. No Hurd, pode-se atrelar à arquivos, máquinas de tradução. Que podem prover diversas funcionalidades, como por exemplo implementar o protocolo ftp de forma transparente, prover gerenciamento de histórico de arquivos entre outras coisas muito interessantes.\cite{HurdPaper}
+O kernel GNU/Hurd possui a arquitetura cliente/servidor e faz uso de microkernels os quais podem executar instruções privilegiadas. O microkernel instalado por padrão é o GNU/Mach. Porém existem outros microkernels que ao longo do tempo tentaram-se colocar no Hurd, como por exemplo o L4 e o Viengoos. No Hurd, pode-se atrelar à arquivos, máquinas de tradução. Que podem prover diversas funcionalidades, como por exemplo implementar o protocolo ftp de forma transparente, prover gerenciamento de histórico de arquivos entre outras coisas muito interessantes.\cite{HurdPaper}
 
 \subsection{Gerência de Memória}\label{sec:HurdMem}
 

@@ -55,7 +55,7 @@ O Advanced Packaging Tool(APT) foi criado no projeto Debian e atualmente é usan
 \section{Linux}\label{sec:linux}
 
 \subsection{Arquitetura}\label{sec:LinuxArq}
-O Linux é um kernel monolítico criado por Linus Benedict Towards em 1991.\cite{LinuxHistory} Enquanto o GNU Project ficava fazendo tentativas de criar um kernel não monolítico(o que resultou no Hurd) o Linus conseguiu criar um kernel monolítico que era compatível com o sistema GNU. Desde então quase todos os esforços de desenvolvimento do kernel do sistema operacional GNU se voltaram para o Linux.\\
+O Linux é um kernel monolítico Unix-like criado por Linus Benedict Towards em 1991.\cite{LinuxHistory} Enquanto o GNU Project ficava fazendo tentativas de criar um kernel não monolítico(o que resultou no Hurd) o Linus conseguiu criar um kernel monolítico que era compatível com o sistema GNU. Desde então quase todos os esforços de desenvolvimento do kernel do sistema operacional GNU se voltaram para o Linux.\\
 
 \subsection{Gerência de Memória}\label{sec:LinuxMem}
 
@@ -123,9 +123,10 @@ processos podem contem múltiplas threads que compartilham seus recursos\cite{Li
 \subsection{Segurança}\label{sec:LinuxSec}
 
 \includegraphics[scale = 0.2]{FreeBSD.png}\\
-\section{FreeBSD}\label{sec:BSD}
+\section{kFreeBSD}\label{sec:BSD}
 
 \subsection{Arquitetura}\label{sec:BSDArq}
+O FreeBSD é um sistema operacional monolítico Unix-like descendente do sistema operacional BSD. Como esse sistema operacional é considerado livre, o Debian Project extraiu o kernel desse sistema operacional o colocou no sistema GNU Debian. Esse kernel é chamado de kFreeBSD, o que significa "kernel of FreeBSD".\cite{Debian-kFreeBSD-wiki}
 
 \subsection{Gerência de Memória}\label{sec:BSDMem}
 O FreeBSD usa uma política de troca de páginas ao estilo Last Recent Used(LRU)\cite{FreeBsdArc}

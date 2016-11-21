@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  21 NOV 2016 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  21 NOV 2016 14:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1292,65 +1292,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
 Underfull \vbox (badness 5771) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
 
-Overfull \hbox (2.36859pt too wide) in paragraph at lines 140--152
+Overfull \hbox (2.36859pt too wide) in paragraph at lines 141--153
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 [3 <./img/FreeBSD.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
 <img/SistemasArquivoskFreeBSD.jpeg, id=25, 728.7225pt x 500.87125pt>
 File: img/SistemasArquivoskFreeBSD.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivoskFreeBSD.jpeg>
 Package pdftex.def Info: img/SistemasArquivoskFreeBSD.jpeg used on input line 1
-63.
+64.
 (pdftex.def)             Requested size: 247.76237pt x 170.29396pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 <img/Hurd.png, id=26, 481.8pt x 240.9pt>
 File: img/Hurd.png Graphic file (type png)
  <use img/Hurd.png>
-Package pdftex.def Info: img/Hurd.png used on input line 183.
+Package pdftex.def Info: img/Hurd.png used on input line 184.
 (pdftex.def)             Requested size: 240.8994pt x 120.44969pt.
 
-Overfull \hbox (2.29953pt too wide) in paragraph at lines 183--184
+Overfull \hbox (2.29953pt too wide) in paragraph at lines 184--185
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
@@ -1358,10 +1357,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 File: img/SistemasArquivosHurd.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivosHurd.jpeg>
-Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 198.
+Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 199.
 (pdftex.def)             Requested size: 253.65143pt x 166.87593pt.
 
-Overfull \hbox (0.60156pt too wide) in paragraph at lines 198--199
+Overfull \hbox (0.60156pt too wide) in paragraph at lines 199--200
  [][] 
  []
 
@@ -1379,13 +1378,13 @@ ki / Brain _ Fuck _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
 \T1/ptm/m/n/8 http : / / ptgmedia . pearsoncmg . com / images / 9780321968975 /
  samplepages /
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 90--93
+Underfull \hbox (badness 4254) in paragraph at lines 95--98
 []\T1/ptm/m/n/8 Hurd.  $www . gnu . org / software / hurd / doc / hurd . ps$.  
 Aces-sado em
  []
@@ -1410,10 +1409,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25167 strings out of 494925
- 618629 string characters out of 6180251
- 821010 words of memory out of 5000000
- 28004 multiletter control sequences out of 15000+600000
+ 25169 strings out of 494925
+ 618667 string characters out of 6180251
+ 822010 words of memory out of 5000000
+ 28006 multiletter control sequences out of 15000+600000
  106335 words of font info for 120 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  62i,7n,96p,1100b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1421,7 +1420,7 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on RelatorioSO.pdf (5 pages, 504229 bytes).
+Output written on RelatorioSO.pdf (5 pages, 504507 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream

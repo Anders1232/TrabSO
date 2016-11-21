@@ -58,6 +58,11 @@ Chapter 7 interrupts and interrupt handling.
 \newblock \url{http://www.tldp.org/LDP/tlk/dd/interrupts.html}.
 \newblock Acessado em 20/11/2016.
 
+\bibitem{Debian-kFreeBSD-wiki}
+Debian gnu/kfreebsd - debian wiki.
+\newblock \url{https://wiki.debian.org/Debian_GNU/kFreeBSD}.
+\newblock Acessado em 21/11/2016.
+
 \bibitem{FreeBsdArc}
 Freebsd architecture handbook.
 \newblock

@@ -16,6 +16,21 @@ Freesoftware.
 \newblock \url{https://www.gnu.org/philosophy/free-sw}.
 \newblock Acessado em 16/11/2016.
 
+\bibitem{LinuxHistory}
+History of linux.
+\newblock \url{https://en.wikipedia.org/wiki/History_of_Linux}.
+\newblock Acessado em 20/11/2016.
+
+\bibitem{GerenciaMemLinux}
+Chapter 3 memory management.
+\newblock \url{http://www.tldp.org/LDP/tlk/mm/memory.html}.
+\newblock Acessado em 20/11/2016.
+
+\bibitem{GerenciaIOLinux}
+Cfq.
+\newblock \url{https://en.wikipedia.org/wiki/CFQ}.
+\newblock Acessado em 20/11/2016.
+
 \bibitem{LinuxSchedulerIBM}
 Inside the linux 2.6 completely fair scheduler.
 \newblock
@@ -38,11 +53,37 @@ Brain fuck scheduler.
 \newblock \url{https://en.wikipedia.org/wiki/Brain_Fuck_Scheduler}.
 \newblock Acessado em 19/11/2016.
 
+\bibitem{InterruptsLinux}
+Chapter 7 interrupts and interrupt handling.
+\newblock \url{http://www.tldp.org/LDP/tlk/dd/interrupts.html}.
+\newblock Acessado em 20/11/2016.
+
+\bibitem{Debian-kFreeBSD-wiki}
+Debian gnu/kfreebsd - debian wiki.
+\newblock \url{https://wiki.debian.org/Debian_GNU/kFreeBSD}.
+\newblock Acessado em 21/11/2016.
+
 \bibitem{FreeBsdArc}
 Freebsd architecture handbook.
 \newblock
   \url{ftp://ftp.freebsd.org/pub/FreeBSD/doc/en_US.ISO8859-1/books/arch-handbook/book.pdf}.
 \newblock Acessado em 18/11/2016.
+
+\bibitem{kFreeBSD-ext4}
+Ext4 on freebsd - the freebsd forums.
+\newblock \url{https://forums.freebsd.org/threads/26844/}.
+\newblock Acessado em 21/11/2016.
+
+\bibitem{FreeBSD-Hybrid}
+Hibrid - freebsd wiki.
+\newblock \url{https://wiki.freebsd.org/Hybrid}.
+\newblock Acessado em 20/11/2016.
+
+\bibitem{DesignImplementationFreeBSD}
+The design and implementation of the freebsd operation system.
+\newblock
+  \url{http://ptgmedia.pearsoncmg.com/images/9780321968975/samplepages/9780321968975.pdf}.
+\newblock Acessado em 20/11/2016.
 
 \bibitem{HurdPaper}
 Towards a new strategy of os design, an achitectural overview by thmos

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.15)  21 NOV 2016 18:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.15)  21 NOV 2016 19:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -918,63 +918,72 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
 )))
-(./RelatorioSO.aux)
+(./RelatorioSO.aux
+
+LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
+
+
+LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
+
+
+LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
+
+)
 \openout1 = `RelatorioSO.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count143
 \scratchdimen=\dimen197
@@ -1044,7 +1053,13 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
 our preamble.
- on input line 24.
+ on input line 26.
+
+<img/GnuDebian.png, id=4, 372.39125pt x 324.21124pt>
+File: img/GnuDebian.png Graphic file (type png)
+ <use img/GnuDebian.png>
+Package pdftex.def Info: img/GnuDebian.png used on input line 28.
+(pdftex.def)             Requested size: 111.71823pt x 97.26411pt.
 
 
 ! Package babel Error: You haven't defined the language brazil yet.
@@ -1053,179 +1068,284 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 \selectlanguage{brazil}
+l.29 \selectlanguage{brazil}
                             
 Your command will be ignored, type <return> to proceed
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<img/Tux.png, id=5, 552.0625pt x 200.75pt>
+File: img/Tux.png Graphic file (type png)
+ <use img/Tux.png>
+Package pdftex.def Info: img/Tux.png used on input line 54.
+(pdftex.def)             Requested size: 220.82108pt x 80.29857pt.
 
-LaTeX Warning: Citation `GerenciaMemLinux' on page 1 undefined on input line 58
-.
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \vbox (badness 4156) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
+<img/arqtLinux.png, id=7, 887.315pt x 570.13pt>
+File: img/arqtLinux.png Graphic file (type png)
+ <use img/arqtLinux.png>
+Package pdftex.def Info: img/arqtLinux.png used on input line 62.
+(pdftex.def)             Requested size: 266.19655pt x 171.04031pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
+Overfull \hbox (13.14668pt too wide) in paragraph at lines 62--63
+ [][] 
  []
 
 
-LaTeX Warning: Citation `GerenciaMemLinux' on page 1 undefined on input line 67
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
-
- []
-
-
-LaTeX Warning: Citation `GerenciaIOLinux' on page 1 undefined on input line 70.
-
-
-
-LaTeX Warning: Citation `GerenciaIOLinuxSS' on page 1 undefined on input line 7
-3.
-
-
-Underfull \hbox (badness 3250) in paragraph at lines 76--79
-[]\T1/ptm/m/n/10 Os primeiros escalon-adores do linux eram bas-tante
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
-
- []
-
-
-Underfull \hbox (badness 7030) in paragraph at lines 76--79
-\T1/ptm/m/n/10 sim-ples com com-plex-i-dade O(n).Ele era rel-a-ti-va-mente
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-[]\T1/ptm/m/n/10 O ar-ray de tare-fas ati-vas e o de ex-pi-radas.No
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Underfull \hbox (badness 1558) in paragraph at lines 82--83
-[]\T1/ptm/m/n/10 Dada uma pri-or-i-dade,as tare-fas são escalon-adas com
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+ <./img/GnuDebian.png> <./img/Tux.png> <./img/arqtLinux.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+
+ []
+
+<img/SistemasArquivosLinux.jpeg, id=17, 806.01125pt x 676.5275pt>
+File: img/SistemasArquivosLinux.jpeg Graphic file (type jpg)
+
+<use img/SistemasArquivosLinux.jpeg>
+Package pdftex.def Info: img/SistemasArquivosLinux.jpeg used on input line 90.
+(pdftex.def)             Requested size: 241.80524pt x 202.95981pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 97--100
+[]\T1/ptm/m/n/10 Os primeiros escalon-adores do linux eram bas-tante
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
+
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 97--100
+\T1/ptm/m/n/10 sim-ples com com-plex-i-dade O(n). Ele era rel-a-ti-va-mente
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 []\T1/ptm/m/n/10 A nova mu-dança veio por meio do al-go-ritmo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-\T1/ptm/m/n/10 RSDL(Rotating Stair-case Dead-line Sched-uler),proposto
+Underfull \hbox (badness 5403) in paragraph at lines 107--108
+\T1/ptm/m/n/10 RSDL(Rotating Stair-case Dead-line Sched-uler), pro-posto
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-
-Underfull \hbox (badness 1852) in paragraph at lines 88--89
-\T1/ptm/m/n/10 es-perando por I/O ten-ham al-gum tempo para ex-e-cução
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[2 <./img/SistemasArquivosLinux.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 2126) in paragraph at lines 101--102
+Underfull \hbox (badness 2126) in paragraph at lines 121--123
 []\T1/ptm/m/n/10 Outra al-ter-na-tiva mod-erna ao escalon-ador O(1) é o
  []
 
 
-Underfull \hbox (badness 5245) in paragraph at lines 109--110
-\T1/ptm/m/n/10 se chama irqac-tion.Cada irqac-tion con-tém in-for-mações
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-\T1/ptm/m/n/10 so-bre o geren-ci-a-mento dessa in-ter-rupção,incluindo o
- []
-
-
-Underfull \hbox (badness 1975) in paragraph at lines 109--110
-\T1/ptm/m/n/10 en-dereço da rotina cor-re-spon-dente de gerên-ci-a-mento da
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 
-LaTeX Warning: Citation `InterruptsLinux' on page 2 undefined on input line 111
-.
+LaTeX Warning: Citation `SegLinux' on page 3 undefined on input line 133.
 
-[2] (./RelatorioSO.bbl
+
+Underfull \hbox (badness 2359) in paragraph at lines 133--134
+\T1/ptm/m/n/10 de in-trusão (basea-dos em rede e host), ver-i-fi-cação de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+LaTeX Warning: Citation `SegLinux' on page 3 undefined on input line 135.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+<img/FreeBSD.png, id=21, 1129.21875pt x 451.6875pt>
+File: img/FreeBSD.png Graphic file (type png)
+ <use img/FreeBSD.png>
+Package pdftex.def Info: img/FreeBSD.png used on input line 137.
+(pdftex.def)             Requested size: 225.83975pt x 90.33589pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+[3 <./img/FreeBSD.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 152--153
+[]\T1/ptm/m/n/10 O FreeBSD e, con-se-quente-mente o kFreeBSD, não
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+
+Overfull \hbox (2.36859pt too wide) in paragraph at lines 155--167
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+<img/SistemasArquivoskFreeBSD.jpeg, id=27, 728.7225pt x 500.87125pt>
+File: img/SistemasArquivoskFreeBSD.jpeg Graphic file (type jpg)
+
+<use img/SistemasArquivoskFreeBSD.jpeg>
+Package pdftex.def Info: img/SistemasArquivoskFreeBSD.jpeg used on input line 1
+78.
+(pdftex.def)             Requested size: 247.76237pt x 170.29396pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+<img/Hurd.png, id=28, 481.8pt x 240.9pt>
+File: img/Hurd.png Graphic file (type png)
+ <use img/Hurd.png>
+Package pdftex.def Info: img/Hurd.png used on input line 198.
+(pdftex.def)             Requested size: 240.8994pt x 120.44969pt.
+
+Overfull \hbox (2.29953pt too wide) in paragraph at lines 198--199
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+[4 <./img/SistemasArquivoskFreeBSD.jpeg> <./img/Hurd.png>]
+<img/SistemasArquivosHurd.jpeg, id=33, 724.7075pt x 476.78125pt>
+File: img/SistemasArquivosHurd.jpeg Graphic file (type jpg)
+
+<use img/SistemasArquivosHurd.jpeg>
+Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 213.
+(pdftex.def)             Requested size: 253.65143pt x 166.87593pt.
+
+Overfull \hbox (0.60156pt too wide) in paragraph at lines 213--214
+ [][] 
+ []
+
+(./RelatorioSO.bbl
 Underfull \hbox (badness 2134) in paragraph at lines 4--8
 []\T1/ptm/m/n/8 A brief his-tory of de-bian.  $https : / / www . debian . org /
  doc / manuals /
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 37--40
+Underfull \hbox (badness 4328) in paragraph at lines 52--55
 []\T1/ptm/m/n/8 Brain fuck sched-uler.  $https : / / en . wikipedia . org / wik
 i / Brain _ Fuck _
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 59--62
+Underfull \hbox (badness 10000) in paragraph at lines 83--87
+\T1/ptm/m/n/8 http : / / ptgmedia . pearsoncmg . com / images / 9780321968975 /
+ samplepages /
+ []
+
+
+Underfull \hbox (badness 4254) in paragraph at lines 100--103
 []\T1/ptm/m/n/8 Hurd.  $www . gnu . org / software / hurd / doc / hurd . ps$.  
 Aces-sado em
  []
@@ -1242,28 +1362,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (./RelatorioSO.aux)
+[5 <./img/SistemasArquivosHurd.jpeg>] (./RelatorioSO.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 21017 strings out of 495028
- 478382 string characters out of 6181497
+ 21070 strings out of 495028
+ 479508 string characters out of 6181497
  641071 words of memory out of 5000000
- 23780 multiletter control sequences out of 15000+600000
+ 23822 multiletter control sequences out of 15000+600000
  107442 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,7n,74p,1081b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,7n,74p,1087b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on RelatorioSO.pdf (3 pages, 58194 bytes).
+Output written on RelatorioSO.pdf (5 pages, 585081 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

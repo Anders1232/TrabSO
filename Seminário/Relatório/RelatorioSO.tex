@@ -121,6 +121,16 @@ Quando a interrupção acontece, o Linux deve determinar a sua origem lendo o st
 O linux dá suporte a threads tratando-as como processos e escalonando-os juntamente. Um processo pode ser visto como uma thread mas
 processos podem contem múltiplas threads que compartilham seus recursos\cite{LinuxSchedulerIBM}.
 \subsection{Segurança}\label{sec:LinuxSec}
+O Debian sempre tem pelo menos três versões em desenvolvimento: a unstable, a testing e a stable. E às vezes também tem a versão oldstable e oldoldstable. A versão unstable, também chamada de sid é aquela onde o desenvolvimento acontece, é muito pouco estável e nem tudo que é produzido vai para as outras versões.\\
+
+A versão testing contém os pacotes que se mostraram com alguma estabilidade no unstable e que pelo menos conseguem ser compilados para a maioria das arquiteturas do Debian. No testing os pacotes passam por um processo de maturação até serem considerados bastante confiáveis. Quando o sistema testing como um todo chega a um estágio avançado de desenvolvimento ele é promovido a stable.\\
+
+A versão stable é a principal versão do GNU Debian, é considerado muito estável pois os pacotes pertencentes à essa distribuição já passaram por exaustivos testes e se comprovaram estáveis e seguros.\\
+
+A versão oldstable é a versão stable antes da versão testing ter se tornado a stable, ela tem foco em manter atualizações de segurança e é mantida por interessados em usar essa específica versão. A versão oldoldstable é a versão oldstable antes da stable se tornar oldstable, e tem o mesmo princípio de funcionamento da oldstable.\\
+
+Os pacotes da versão stable passar por tanto tempo de teste que geralmente possuem versões consideradas antigas por alguns usuários. Esses usuários podem usar a versão testing sem muitos riscos. Tamanha estabilidade dos pacotes provê segurança ao sistema como um todo, considerado um dos melhores para ser usado em servidores.\\
+
 
 \includegraphics[scale = 0.2]{FreeBSD.png}\\
 \section{kFreeBSD}\label{sec:BSD}

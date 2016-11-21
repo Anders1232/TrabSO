@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  21 NOV 2016 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  21 NOV 2016 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,51 +1278,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
-<img/FreeBSD.png, id=20, 1129.21875pt x 451.6875pt>
-File: img/FreeBSD.png Graphic file (type png)
- <use img/FreeBSD.png>
-Package pdftex.def Info: img/FreeBSD.png used on input line 125.
-(pdftex.def)             Requested size: 225.83975pt x 90.33589pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 1688) in paragraph at lines 124--125
+[]\T1/ptm/m/n/10 O De-bian sem-pre tem pelo me-nos três ver-sões em
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 
-Underfull \vbox (badness 5771) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+<img/FreeBSD.png, id=20, 1129.21875pt x 451.6875pt>
+File: img/FreeBSD.png Graphic file (type png)
+ <use img/FreeBSD.png>
+Package pdftex.def Info: img/FreeBSD.png used on input line 135.
+(pdftex.def)             Requested size: 225.83975pt x 90.33589pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--139
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 140--141
-[]\T1/ptm/m/n/10 O Fre-eBSD e, con-se-quen-te-mente o kFre-eBSD, não
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
-Overfull \hbox (2.36859pt too wide) in paragraph at lines 143--155
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
 [3 <./img/FreeBSD.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 3068) in paragraph at lines 150--151
+[]\T1/ptm/m/n/10 O Fre-eBSD e, con-se-quen-te-mente o kFre-eBSD, não
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Overfull \hbox (2.36859pt too wide) in paragraph at lines 153--165
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
@@ -1331,51 +1358,53 @@ File: img/SistemasArquivoskFreeBSD.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivoskFreeBSD.jpeg>
 Package pdftex.def Info: img/SistemasArquivoskFreeBSD.jpeg used on input line 1
-66.
+76.
 (pdftex.def)             Requested size: 247.76237pt x 170.29396pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 <img/Hurd.png, id=26, 481.8pt x 240.9pt>
 File: img/Hurd.png Graphic file (type png)
  <use img/Hurd.png>
-Package pdftex.def Info: img/Hurd.png used on input line 186.
+Package pdftex.def Info: img/Hurd.png used on input line 196.
 (pdftex.def)             Requested size: 240.8994pt x 120.44969pt.
 
-Overfull \hbox (2.29953pt too wide) in paragraph at lines 186--187
+Overfull \hbox (2.29953pt too wide) in paragraph at lines 196--197
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-<img/SistemasArquivosHurd.jpeg, id=27, 724.7075pt x 476.78125pt>
+[4 <./img/SistemasArquivoskFreeBSD.jpeg> <./img/Hurd.png>]
+<img/SistemasArquivosHurd.jpeg, id=31, 724.7075pt x 476.78125pt>
 File: img/SistemasArquivosHurd.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivosHurd.jpeg>
-Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 201.
+Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 211.
 (pdftex.def)             Requested size: 253.65143pt x 166.87593pt.
 
-Overfull \hbox (0.60156pt too wide) in paragraph at lines 201--202
+Overfull \hbox (0.60156pt too wide) in paragraph at lines 211--212
  [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./RelatorioSO.bbl
 Underfull \hbox (badness 2134) in paragraph at lines 4--8
@@ -1383,7 +1412,7 @@ Underfull \hbox (badness 2134) in paragraph at lines 4--8
  doc / manuals /
  []
 
-[4 <./img/SistemasArquivoskFreeBSD.jpeg> <./img/Hurd.png>]
+
 Underfull \hbox (badness 4328) in paragraph at lines 52--55
 []\T1/ptm/m/n/8 Brain fuck sche-du-ler.  $https : / / en . wikipedia . org / wi
 ki / Brain _ Fuck _
@@ -1413,9 +1442,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
-
- <./img/SistemasArquivosHurd.jpeg>] (./RelatorioSO.aux)
+[5 <./img/SistemasArquivosHurd.jpeg>] (./RelatorioSO.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1432,7 +1459,7 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on RelatorioSO.pdf (5 pages, 504538 bytes).
+Output written on RelatorioSO.pdf (5 pages, 505879 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream

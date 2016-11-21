@@ -13,14 +13,16 @@
 
 \graphicspath{ {img/} }
 
-\title{GNU Debian}
+\title{\includegraphics[scale = 0.3]{GnuDebian.png}\\
+	GNU Debian}
 
-\author{
+\author{	
 \IEEEauthorblockN{Francisco Anderson Bezerra Rodrigues, Marcelo Bulhões Fonseca, Vitor Silva De Deus} \\
 \IEEEauthorblockA{Departamento de Ciência da Computação, \\ Universidade de Brasília\\
 %\IEEEauthorblockA{Email: anders1232@aluno.unb.br}
 }
 }
+
 \begin{document} 
 
 \maketitle
@@ -49,6 +51,7 @@ O Advanced Packaging Tool(APT) foi criado no projeto Debian e atualmente é usan
 
 \section{Requisitos de Aplicações}\label{sec:req}
 
+\includegraphics[scale = 0.4]{Tux.png}\\
 \section{Linux}\label{sec:linux}
 
 \subsection{Arquitetura}\label{sec:LinuxArq}
@@ -80,7 +83,6 @@ A getencia de entrada e saída no linux é realizada por um escalonador chamado 
 	\label{fig:SisAqrLinux}
 \end{figure}
 %\includegraphics[scale = 0.27]{SistemasArquivosLinux.jpeg}
-
 \subsection{gerência de Processos}\label{sec:LinuxPROC}
 
 Os primeiros escalonadores do linux eram bastante simples, sem foco em arquiteturas massivas ou com muitos processadores multithread. O escalonador do linux 1.2 usava uma fila circular com Round-Robin. No linux 2.2 foi inserido outro escalonador com políticas de escalonamento para tarefas de tempo real, tarefas não preemptivas e tarefas de tempo não real, ou seja,  classes de escalonamento. Além disso também foi incluído suporte para SMP(symmetric multiprocessing)\cite{LinuxSchedulerIBM}.\\
@@ -120,6 +122,7 @@ O linux dá suporte a threads tratando-as como processos e escalonando-os juntam
 processos podem contem múltiplas threads que compartilham seus recursos\cite{LinuxSchedulerIBM}.
 \subsection{Segurança}\label{sec:LinuxSec}
 
+\includegraphics[scale = 0.2]{FreeBSD.png}\\
 \section{FreeBSD}\label{sec:BSD}
 
 \subsection{Arquitetura}\label{sec:BSDArq}
@@ -148,6 +151,7 @@ o FreeBSD poddui suporte a threads POSIX(Portable Operation System Interface). S
 
 \subsection{Segurança}\label{sec:BSDSec}
 
+\includegraphics[scale = 0.5]{Hurd.png}\\
 \section{Hurd}\label{sec:Hurd}
 
 \subsection{Arquitetura}\label{sec:HurdArq}

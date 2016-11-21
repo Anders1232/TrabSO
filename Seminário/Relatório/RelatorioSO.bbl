@@ -69,6 +69,11 @@ Freebsd architecture handbook.
   \url{ftp://ftp.freebsd.org/pub/FreeBSD/doc/en_US.ISO8859-1/books/arch-handbook/book.pdf}.
 \newblock Acessado em 18/11/2016.
 
+\bibitem{kFreeBSD-ext4}
+Ext4 on freebsd - the freebsd forums.
+\newblock \url{https://forums.freebsd.org/threads/26844/}.
+\newblock Acessado em 21/11/2016.
+
 \bibitem{FreeBSD-Hybrid}
 Hibrid - freebsd wiki.
 \newblock \url{https://wiki.freebsd.org/Hybrid}.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  21 NOV 2016 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  21 NOV 2016 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,17 +1302,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--139
  []
 
 
-Overfull \hbox (2.36859pt too wide) in paragraph at lines 141--153
+Underfull \hbox (badness 3068) in paragraph at lines 140--141
+[]\T1/ptm/m/n/10 O Fre-eBSD e, con-se-quen-te-mente o kFre-eBSD, não
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Overfull \hbox (2.36859pt too wide) in paragraph at lines 143--155
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 [3 <./img/FreeBSD.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
@@ -1321,35 +1331,35 @@ File: img/SistemasArquivoskFreeBSD.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivoskFreeBSD.jpeg>
 Package pdftex.def Info: img/SistemasArquivoskFreeBSD.jpeg used on input line 1
-64.
+66.
 (pdftex.def)             Requested size: 247.76237pt x 170.29396pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 <img/Hurd.png, id=26, 481.8pt x 240.9pt>
 File: img/Hurd.png Graphic file (type png)
  <use img/Hurd.png>
-Package pdftex.def Info: img/Hurd.png used on input line 184.
+Package pdftex.def Info: img/Hurd.png used on input line 186.
 (pdftex.def)             Requested size: 240.8994pt x 120.44969pt.
 
-Overfull \hbox (2.29953pt too wide) in paragraph at lines 184--185
+Overfull \hbox (2.29953pt too wide) in paragraph at lines 186--187
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
@@ -1357,34 +1367,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--185
 File: img/SistemasArquivosHurd.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivosHurd.jpeg>
-Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 199.
+Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 201.
 (pdftex.def)             Requested size: 253.65143pt x 166.87593pt.
 
-Overfull \hbox (0.60156pt too wide) in paragraph at lines 199--200
+Overfull \hbox (0.60156pt too wide) in paragraph at lines 201--202
  [][] 
  []
 
-[4 <./img/SistemasArquivoskFreeBSD.jpeg> <./img/Hurd.png> <./img/SistemasArquiv
-osHurd.jpeg>] (./RelatorioSO.bbl
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./RelatorioSO.bbl
 Underfull \hbox (badness 2134) in paragraph at lines 4--8
 []\T1/ptm/m/n/8 A brief his-tory of de-bian.  $https : / / www . debian . org /
  doc / manuals /
  []
 
-
+[4 <./img/SistemasArquivoskFreeBSD.jpeg> <./img/Hurd.png>]
 Underfull \hbox (badness 4328) in paragraph at lines 52--55
 []\T1/ptm/m/n/8 Brain fuck sche-du-ler.  $https : / / en . wikipedia . org / wi
 ki / Brain _ Fuck _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--82
+Underfull \hbox (badness 10000) in paragraph at lines 83--87
 \T1/ptm/m/n/8 http : / / ptgmedia . pearsoncmg . com / images / 9780321968975 /
  samplepages /
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 95--98
+Underfull \hbox (badness 4254) in paragraph at lines 100--103
 []\T1/ptm/m/n/8 Hurd.  $www . gnu . org / software / hurd / doc / hurd . ps$.  
 Aces-sado em
  []
@@ -1403,16 +1415,16 @@ Before submitting the final camera ready copy, remember to:
 
 [5
 
-] (./RelatorioSO.aux)
+ <./img/SistemasArquivosHurd.jpeg>] (./RelatorioSO.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25169 strings out of 494925
- 618667 string characters out of 6180251
- 822010 words of memory out of 5000000
- 28006 multiletter control sequences out of 15000+600000
+ 25170 strings out of 494925
+ 618682 string characters out of 6180251
+ 821010 words of memory out of 5000000
+ 28007 multiletter control sequences out of 15000+600000
  106335 words of font info for 120 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  62i,7n,96p,1100b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1420,7 +1432,7 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on RelatorioSO.pdf (5 pages, 504507 bytes).
+Output written on RelatorioSO.pdf (5 pages, 504538 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream

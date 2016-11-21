@@ -132,10 +132,12 @@ O FreeBSD é um sistema operacional monolítico Unix-like descendente do sistema
 O FreeBSD usa uma política de troca de páginas ao estilo Last Recent Used(LRU)\cite{FreeBsdArc}
 
 \subsection{Gerencia de arquivo}\label{sec:BSDArquivo}
-O FreeBSD da suporte pra diversos sistemas de arquivos linux. entre eles estão Ext2, UFS,FAT16 e FAT32. Desde versões anteriores existe suporte ao ext2fs. O ext2 foi baseado no Unix File System(UFS) e uma solução ao design do minix filesystem. Com a atualização para ext3fs e ext4fs foram adicionados recursos ao ext2 como journaling e extensão. \\
+O FreeBSD da suporte pra diversos sistemas de arquivos linux. entre eles estão Ext2, UFS,FAT16 e FAT32. Desde versões anteriores existe suporte ao ext2fs. O ext2 foi baseado no Unix File System(UFS) e uma solução ao design do minix filesystem.\\
 
 O bloco no ext2fs é composto por setores de tamanho fixo 512 bytes, o tamanho do bloco é definido na formatação, podendo chegar a 1024, 2048 ou 4096 bytes e um superbloco apresenta tamanho 1024. \\ 
 Para encontrar blocos livres o ext2fs faz o uso de mapa de bits. Utiliza-se também um mapa de bits para i-node.\\ 
+
+O FreeBSD e, consequentemente o kFreeBSD, não possuem suporte completo ao ext3 nem ao ext4. Relativo ao ext3 o kFreeBSD contém suporte parcial, sem fazer uso do journaling que o ext3 tem. E em relação ao ext4 o FreeBSD tem suporte apenas para leitura.\cite{kFreeBSD-ext4}\\
 
 \begin{center}
 	\begin{tabular}{c|c|c|c|c}

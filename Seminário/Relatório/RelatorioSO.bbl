@@ -58,6 +58,11 @@ Chapter 7 interrupts and interrupt handling.
 \newblock \url{http://www.tldp.org/LDP/tlk/dd/interrupts.html}.
 \newblock Acessado em 20/11/2016.
 
+\bibitem{DebianVersions}
+Debian releases.
+\newblock \url{https://www.debian.org/releases/}.
+\newblock Acessado em 21/11/2016.
+
 \bibitem{Debian-kFreeBSD-wiki}
 Debian gnu/kfreebsd - debian wiki.
 \newblock \url{https://wiki.debian.org/Debian_GNU/kFreeBSD}.
@@ -84,6 +89,11 @@ The design and implementation of the freebsd operation system.
 \newblock
   \url{http://ptgmedia.pearsoncmg.com/images/9780321968975/samplepages/9780321968975.pdf}.
 \newblock Acessado em 20/11/2016.
+
+\bibitem{DebiankFreeBSDVersions}
+Debian gnu - kfreebsd - security.
+\newblock \url{https://wiki.debian.org/Debian_GNU/kFreeBSD/Security}.
+\newblock Acessado em 21/11/2016.
 
 \bibitem{HurdPaper}
 Towards a new strategy of os design, an achitectural overview by thmos

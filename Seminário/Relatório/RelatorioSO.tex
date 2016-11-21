@@ -129,7 +129,7 @@ A versão stable é a principal versão do GNU Debian, é considerado muito est�
 
 A versão oldstable é a versão stable antes da versão testing ter se tornado a stable, ela tem foco em manter atualizações de segurança e é mantida por interessados em usar essa específica versão. A versão oldoldstable é a versão oldstable antes da stable se tornar oldstable, e tem o mesmo princípio de funcionamento da oldstable.\\
 
-Os pacotes da versão stable passar por tanto tempo de teste que geralmente possuem versões consideradas antigas por alguns usuários. Esses usuários podem usar a versão testing sem muitos riscos. Tamanha estabilidade dos pacotes provê segurança ao sistema como um todo, considerado um dos melhores para ser usado em servidores.\\
+Os pacotes da versão stable passar por tanto tempo de teste que geralmente possuem versões consideradas antigas por alguns usuários. Esses usuários podem usar a versão testing sem muitos riscos. Tamanha estabilidade dos pacotes provê segurança ao sistema como um todo, considerado um dos melhores para ser usado em servidores\cite{DebianVersions}.\\
 
 
 \includegraphics[scale = 0.2]{FreeBSD.png}\\
@@ -152,7 +152,7 @@ O FreeBSD e, consequentemente o kFreeBSD, não possuem suporte completo ao ext3 
 \begin{center}
 	\begin{tabular}{c|c|c|c|c}
 		\hline
-		cel x & Minix FS & Ext FS & Ext2 FS & Xia FS \\
+		 & Minix FS & Ext FS & Ext2 FS & Xia FS \\
 		Max FS size & 64 MB & 2 GB & 4 TB & 2 GB \\
 		Max file size & 64 MB & 2 GB & 2 GB & 64 MB \\
 		Max file name & 16/30 c & 255 c &255 c & 248 c \\
@@ -192,6 +192,7 @@ O FreeBSD também dá suporte a aplicações de tempo real, mantendo essas aplic
 o FreeBSD poddui suporte a threads POSIX(Portable Operation System Interface). Seu escalonador trabalha com threads, o que implica em que as threads funcionam no nível de núcleo.\cite{DesignImplementationFreeBSD}
 
 \subsection{Segurança}\label{sec:BSDSec}
+Como o GNU Debian Linux, o GNu Debian kFreeBSD também possui versões oldstable e stable. E também recebe atualizações de segurança pela equipe de segurança do Debian.\cite{DebiankFreeBSDVersions}\\
 
 \includegraphics[scale = 0.5]{Hurd.png}\\
 \section{Hurd}\label{sec:Hurd}
@@ -220,7 +221,9 @@ No GNU/Hurd as operações de entrada e saída são feitas com o uso de portas d
 O GNU/Hurd faz uso agressivo de Threads como o objetivo de extrair o máximo do hardware.\cite{Hurd} Todas as bibliotecas do GNU/Hurd são thread-safe, ou seja, chamadas concorrentes aos serviços da biblioteca não fazem ela se comportar de forma inesperada.
 
 \subsection{Segurança}\label{sec:HurdSec}
-Um dos objetivos do Hurd é minimizar a quantidade de código que é executada no modo kernel através do uso de microkernel GNU Mach. O que aumenta a confiabilidade do sistema como um todo.
+Um dos objetivos do Hurd é minimizar a quantidade de código que é executada no modo kernel através do uso de microkernel GNU Mach. O que aumenta a confiabilidade do sistema como um todo.\\
+
+Porém, como o Hurd possui uma escassez crônica de denvolvedores, ele apenas possui a versão unstable. Ou seja, o GNU Debian Hurd não possui uma versão estável.
 
 \bibliographystyle{unsrt}
 \bibliography{arquivo.bib}

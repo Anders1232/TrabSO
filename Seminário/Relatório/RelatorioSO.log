@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  20 NOV 2016 21:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  20 NOV 2016 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1020,7 +1020,14 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
 de.tex
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
-))) (./RelatorioSO.aux)
+))) (./RelatorioSO.aux
+
+LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
+
+
+LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
+
+)
 \openout1 = `RelatorioSO.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -1075,8 +1082,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 24.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count141
 \scratchdimen=\dimen199
@@ -1177,27 +1183,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
+<img/SistemasArquivosLinux.jpeg, id=4, 806.01125pt x 676.5275pt>
+File: img/SistemasArquivosLinux.jpeg Graphic file (type jpg)
 
-LaTeX Warning: Citation `GerenciaIOLinuxSS' on page 1 undefined on input line 7
-4.
+<use img/SistemasArquivosLinux.jpeg>
+Package pdftex.def Info: img/SistemasArquivosLinux.jpeg used on input line 78.
+(pdftex.def)             Requested size: 241.80524pt x 202.95981pt.
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 77--80
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 86--89
 []\T1/ptm/m/n/10 Os pri-mei-ros es-ca-lo-na-do-res do li-nux eram bas-tante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 77--80
+Underfull \hbox (badness 2837) in paragraph at lines 86--89
 \T1/ptm/m/n/10 sim-ples com com-ple-xi-dade O(n). Ele era re-la-ti-va-mente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
@@ -1205,72 +1217,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 []\T1/ptm/m/n/10 A nova mu-dança veio por meio do al-go-ritmo
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 87--88
+Underfull \hbox (badness 5403) in paragraph at lines 96--97
 \T1/ptm/m/n/10 RSDL(Rotating Stair-case De-a-dline Sche-du-ler), pro-posto
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 101--103
+Underfull \hbox (badness 2126) in paragraph at lines 110--112
 []\T1/ptm/m/n/10 Outra al-ter-na-tiva mo-derna ao es-ca-lo-na-dor O(1) é o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-
-Underfull \vbox (badness 1072) has occurred while \output is active []
-
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+[2 <./img/SistemasArquivosLinux.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
+<img/SistemasArquivoskFreeBSD.jpeg, id=16, 728.7225pt x 500.87125pt>
+File: img/SistemasArquivoskFreeBSD.jpeg Graphic file (type jpg)
 
-Underfull \hbox (badness 5622) in paragraph at lines 124--125
+<use img/SistemasArquivoskFreeBSD.jpeg>
+Package pdftex.def Info: img/SistemasArquivoskFreeBSD.jpeg used on input line 1
+35.
+(pdftex.def)             Requested size: 247.76237pt x 170.29396pt.
+
+Underfull \hbox (badness 5622) in paragraph at lines 142--143
 []\T1/ptm/m/n/10 A ge-rên-cia de pro-ces-sos do Fre-eBSD tem como
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 124--125
+Underfull \hbox (badness 2073) in paragraph at lines 142--143
 \T1/ptm/m/n/10 Pro-ces-sos que fa-zem tempo que não são ro-da-dos têm
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
+
+<img/SistemasArquivosHurd.jpeg, id=17, 724.7075pt x 476.78125pt>
+File: img/SistemasArquivosHurd.jpeg Graphic file (type jpg)
+
+<use img/SistemasArquivosHurd.jpeg>
+Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 165.
+(pdftex.def)             Requested size: 253.65143pt x 166.87593pt.
+
+Overfull \hbox (0.60156pt too wide) in paragraph at lines 165--166
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./RelatorioSO.bbl
 Underfull \hbox (badness 2134) in paragraph at lines 4--8
@@ -1278,7 +1308,7 @@ Underfull \hbox (badness 2134) in paragraph at lines 4--8
  doc / manuals /
  []
 
-
+[3 <./img/SistemasArquivoskFreeBSD.jpeg>]
 Underfull \hbox (badness 4328) in paragraph at lines 52--55
 []\T1/ptm/m/n/8 Brain fuck sche-du-ler.  $https : / / en . wikipedia . org / wi
 ki / Brain _ Fuck _
@@ -1308,28 +1338,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (./RelatorioSO.aux)
+[4 <./img/SistemasArquivosHurd.jpeg>] (./RelatorioSO.aux)
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25126 strings out of 494925
- 617715 string characters out of 6180251
- 820010 words of memory out of 5000000
- 27972 multiletter control sequences out of 15000+600000
- 107442 words of font info for 121 fonts, out of 8000000 for 9000
+ 25145 strings out of 494925
+ 618274 string characters out of 6180251
+ 821010 words of memory out of 5000000
+ 27987 multiletter control sequences out of 15000+600000
+ 106335 words of font info for 120 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  62i,7n,96p,1100b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on RelatorioSO.pdf (3 pages, 59886 bytes).
+f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on RelatorioSO.pdf (4 pages, 351043 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 36 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.15)  21 NOV 2016 19:53
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.9)  21 NOV 2016 20:16
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1216,13 +1220,48 @@ Underfull \hbox (badness 2359) in paragraph at lines 133--134
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
+=======
+Underfull \hbox (badness 1688) in paragraph at lines 124--125
+[]\T1/ptm/m/n/10 O De-bian sem-pre tem pelo me-nos três ver-sões em
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 
  []
 
 
+<<<<<<< HEAD
 LaTeX Warning: Citation `SegLinux' on page 3 undefined on input line 135.
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+<img/FreeBSD.png, id=20, 1129.21875pt x 451.6875pt>
+File: img/FreeBSD.png Graphic file (type png)
+ <use img/FreeBSD.png>
+Package pdftex.def Info: img/FreeBSD.png used on input line 135.
+(pdftex.def)             Requested size: 225.83975pt x 90.33589pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
@@ -1234,18 +1273,33 @@ File: img/FreeBSD.png Graphic file (type png)
 Package pdftex.def Info: img/FreeBSD.png used on input line 137.
 (pdftex.def)             Requested size: 225.83975pt x 90.33589pt.
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
+
+ []
+
+[3 <./img/FreeBSD.png>]
+Underfull \hbox (badness 3068) in paragraph at lines 150--151
+[]\T1/ptm/m/n/10 O Fre-eBSD e, con-se-quen-te-mente o kFre-eBSD, não
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
  []
 
 [3 <./img/FreeBSD.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
+<<<<<<< HEAD
  []
 
 
@@ -1255,21 +1309,36 @@ Underfull \hbox (badness 3068) in paragraph at lines 152--153
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 152--153
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (2.36859pt too wide) in paragraph at lines 155--167
+=======
+Overfull \hbox (2.36859pt too wide) in paragraph at lines 153--165
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
  [] 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 170--171
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 
  []
 
@@ -1278,43 +1347,80 @@ File: img/SistemasArquivoskFreeBSD.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivoskFreeBSD.jpeg>
 Package pdftex.def Info: img/SistemasArquivoskFreeBSD.jpeg used on input line 1
+<<<<<<< HEAD
 78.
+=======
+76.
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 (pdftex.def)             Requested size: 247.76237pt x 170.29396pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+<<<<<<< HEAD
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 
+Underfull \hbox (badness 1852) in paragraph at lines 195--196
+\T1/ptm/m/n/10 atu-a-li-za-ções de se-gu-rança pela equipe de se-gu-rança do
+ []
+
+
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 
  []
 
 <img/Hurd.png, id=28, 481.8pt x 240.9pt>
 File: img/Hurd.png Graphic file (type png)
  <use img/Hurd.png>
+<<<<<<< HEAD
 Package pdftex.def Info: img/Hurd.png used on input line 198.
 (pdftex.def)             Requested size: 240.8994pt x 120.44969pt.
 
 Overfull \hbox (2.29953pt too wide) in paragraph at lines 198--199
+=======
+Package pdftex.def Info: img/Hurd.png used on input line 197.
+(pdftex.def)             Requested size: 240.8994pt x 120.44969pt.
+
+Overfull \hbox (2.29953pt too wide) in paragraph at lines 197--198
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 [][] 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 198--199
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 
  []
 
 [4 <./img/SistemasArquivoskFreeBSD.jpeg> <./img/Hurd.png>]
+<<<<<<< HEAD
 <img/SistemasArquivosHurd.jpeg, id=33, 724.7075pt x 476.78125pt>
 File: img/SistemasArquivosHurd.jpeg Graphic file (type jpg)
 
@@ -1326,6 +1432,24 @@ Overfull \hbox (0.60156pt too wide) in paragraph at lines 213--214
  [][] 
  []
 
+=======
+<img/SistemasArquivosHurd.jpeg, id=31, 724.7075pt x 476.78125pt>
+File: img/SistemasArquivosHurd.jpeg Graphic file (type jpg)
+
+<use img/SistemasArquivosHurd.jpeg>
+Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 212.
+(pdftex.def)             Requested size: 253.65143pt x 166.87593pt.
+
+Overfull \hbox (0.60156pt too wide) in paragraph at lines 212--213
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 (./RelatorioSO.bbl
 Underfull \hbox (badness 2134) in paragraph at lines 4--8
 []\T1/ptm/m/n/8 A brief his-tory of de-bian.  $https : / / www . debian . org /
@@ -1339,13 +1463,13 @@ i / Brain _ Fuck _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
+Underfull \hbox (badness 10000) in paragraph at lines 88--92
 \T1/ptm/m/n/8 http : / / ptgmedia . pearsoncmg . com / images / 9780321968975 /
  samplepages /
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 100--103
+Underfull \hbox (badness 4254) in paragraph at lines 110--113
 []\T1/ptm/m/n/8 Hurd.  $www . gnu . org / software / hurd / doc / hurd . ps$.  
 Aces-sado em
  []
@@ -1363,14 +1487,18 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [5 <./img/SistemasArquivosHurd.jpeg>] (./RelatorioSO.aux)
+<<<<<<< HEAD
 
 LaTeX Warning: There were undefined references.
 
+=======
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  21070 strings out of 495028
  479508 string characters out of 6181497
  641071 words of memory out of 5000000
@@ -1384,6 +1512,20 @@ f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
 Output written on RelatorioSO.pdf (5 pages, 585081 bytes).
+=======
+ 25172 strings out of 494925
+ 618722 string characters out of 6180251
+ 821010 words of memory out of 5000000
+ 28009 multiletter control sequences out of 15000+600000
+ 106335 words of font info for 120 fonts, out of 8000000 for 9000
+ 16 hyphenation exceptions out of 8191
+ 62i,7n,96p,1100b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on RelatorioSO.pdf (5 pages, 506243 bytes).
+>>>>>>> a2b7c58f9719180bc47e441747aad907d574b02f
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream

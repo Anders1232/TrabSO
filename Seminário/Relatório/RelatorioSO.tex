@@ -130,8 +130,33 @@ processos podem contem múltiplas threads que compartilham seus recursos\cite{Li
 \subsection{Gerência de Memória}\label{sec:BSDMem}
 O FreeBSD usa uma política de troca de páginas ao estilo Last Recent Used(LRU)\cite{FreeBsdArc}
 
+\subsection{Gerencia de arquivo}\label{sec:BSDArquivo}
+O FreeBSD da suporte pra diversos sistemas de arquivos linux. entre eles estão Ext2/3/4 UFS,FAT16 e FAT32. Desde versões anteriores existe suporte ao ext2fs, e sucessivamente ao ext3/4 fs. O ext2 foi baseado no Unix File System(UFS) e uma solução ao design do minix filesystem. Com a atualização para ext3fs e ext4fs foram adicionados recursos ao ext2 como journaling e extensão. \\
+
+O bloco no ext2fs é composto por setores de tamanho fixo 512 bytes, o tamanho do bloco é definido na formatação, podendo chegar a 1024, 2048 ou 4096 bytes e um superbloco apresenta tamanho 1024. \\ 
+Para encontrar blocos livres o ext2fs faz o uso de mapa de bits. Utiliza-se também um mapa de bits para i-node.\\ 
+
+\begin{center}
+	\begin{tabular}{c|c|c|c|c}
+		\hline
+		cel x & Minix FS & Ext FS & Ext2 FS & Xia FS \\
+		Max FS size & 64 MB & 2 GB & 4 TB & 2 GB \\
+		Max file size & 64 MB & 2 GB & 2 GB & 64 MB \\
+		Max file name & 16/30 c & 255 c &255 c & 248 c \\
+		3 times support & No & No & Yes & Yes \\
+		Extensible & No & No & Yes & No \\
+		Var. block size & No & No & Yes & No \\
+		Maintained & Yes & No & Yes & ?
+		\hline
+	\end{tabular}
+\end{center}
+
 \subsection{gerência de E/S}\label{sec:BSDES}
-Para gerenciar o acesso a dispositivos de entrada e saída, o FreeBSD emprega o C-LOOK scheduler\cite{FreeBSD-Hybrid}. Que também é chamado de escalonamento "elevador", que trata os cilindros do disco como se fossem andares de um prédio. Porém a a variação que esse elevador funciona de forma circular para equalizar a frequência com a qual cada cilindro/andar é visitado.\\
+Para gerenciar o acesso a dispositivos de entrada e saída, o FreeBSD no geral emprega o C-LOOK scheduler\cite{FreeBSD-Hybrid}. Que também é chamado de escalonamento "elevador", que trata os cilindros do disco como se fossem andares de um prédio. Porém a a variação que esse elevador funciona de forma circular para equalizar a frequência com a qual cada cilindro/andar é visitado.\\
+
+Esse escalonamento consiste em organizar a fila em ordem de crescente offset de E/S, com isso tenta-se maximizar a transferência aumentando o número de E/S em uma busca no disco, desta forma o algoritmo não consegue assegurar “justiça” e resultar em starvetion de outros processos.
+ 
+O SO não se restringe apenas a este escalonamente, isto pode depender do sistema de arquivo usado, como o caso do ZFS(Zfile System) que utiliza do seu próprio método de escalonamento. Podendo assim fazer uso de outros metodos. \\
 
 \begin{figure}[h!]
 	\centering
@@ -142,7 +167,11 @@ Para gerenciar o acesso a dispositivos de entrada e saída, o FreeBSD emprega o 
 %\includegraphics[scale = 0.27]{SistemasArquivoskFreeBSD.jpeg}
 
 \subsection{gerência de Processos}\label{sec:BSDPROC}
-A gerência de processos do FreeBSD tem como objetivo priorizar processos interativos sobre processos de processamento contínuo. Isso é feito atribuindo prioridades a processos. Os processos são computados em time slices, os processos que usam todo o time slice têm sua prioridade diminuída enquanto processos que são bloqueados(quesitam i/o) durante seu time slice possuem suas prioridades mantidas. Processos que fazem tempo que não são rodados têm sua prioridade aumentada para evitar starvation. O FreeBSD também dá suporte a aplicações de tempo real, mantendo essas aplicações numa fila diferente da fila dos outros processos.\cite{DesignImplementationFreeBSD}\\
+FreeBSD trabalha com o escalonador de processos ULE, o ULE segue um estilo tradicional com filas de execução e fazendo uso de time slice. Tenta ser justo mas pode favorecer mais os processos interativos, o que o diferencia do CFS(escalonador usado no linux). Isso se dá ao uso baseado em filas multiníveis de tempo compartilhado, o algoritmo  separa os processos em threads e os classifica pra poder dar prioridade ao tipo do processo. Assim, os processos que usam todo o time slice têm sua prioridade diminuída e os processos que fazem tempo que não são rodados têm sua prioridade aumentada para evitar starvation.\\
+
+O FreeBSD também dá suporte a aplicações de tempo real, mantendo essas aplicações numa fila diferente da fila dos outros processos.\cite{DesignImplementationFreeBSD}\\ \\
+
+
 
 \subsection{Funcionamento de interrupções}\label{sec:BSDInt}
 

@@ -123,10 +123,10 @@ Hurd.
 \newblock \url{www.gnu.org/software/hurd/doc/hurd.ps}.
 \newblock Acessado em 16/11/2016.
 
-\bibitem{kFreeBSD-GerenciaInterrupção}
-Interrupt Handling.
-\newblock \url{https://www.freebsd.org/doc/en_US.ISO8859-1/books/arch-handbook/smp-design.html}.
-\newblock Acessado em 21/11/2016.
+%\bibitem{kFreeBSD-GerenciaInterrupção}
+%Interrupt Handling.
+%\newblock \url{https://www.freebsd.org/doc/en_US.ISO8859-1/books/arch-handbook/smp-design.html}.
+%s\newblock Acessado em 21/11/2016.
 
 
 \end{thebibliography}

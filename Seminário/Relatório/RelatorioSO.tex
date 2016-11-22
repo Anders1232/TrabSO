@@ -35,19 +35,23 @@
 
 
 \section{Introdução}\label{sec:intro}
-Debian é um projeto e um sistema operacional iniciado em 16 Agosto de 1993 por Ian Murdock\cite{DebianHistory}. Cada versão possui o nome de um personagem de Toy Story. É uma distribuição utilizada por várias organizações pelo mundo\cite{DebianUsers} graças à sua estabilidade, que o torna ideal para servidores.
+O Debian é um projeto e um sistema operacional iniciado em 16 Agosto de 1993 por Ian Murdock\cite{DebianHistory}. Cada versão possui o nome de um personagem de Toy Story. É uma distribuição utilizada por várias organizações pelo mundo\cite{DebianUsers} graças à sua estabilidade, que o torna ideal para servidores.
+
+O sistema Debian atualmente oferece suporte para o kernel linux[?] e o kernel FreeBSD[?]. Atualmente o desenvolvimento para prover o Debian para outros kernels, principalmente para o Hurd[] que está em versão unstable, se encontram em progresso. 
 
 \section{Propósito do Debian}\label{sec:prop}
-Debian é um sistema operacional com o objetivo de ser um sistema operacional completamente livre. No qual qualquer um pode baixar, modificar e compartilhar. De acordo com o projeto GNU~\cite{FreeSoftware}, um software para ser considerado livre, deve permitir que seus usuários possuam todas as seguintes liberdades fundamentais:
+O Debian é um sistema operacional com o objetivo de ser software completamente livre. No qual qualquer um pode baixar, modificar e compartilhar. De acordo com o projeto GNU~\cite{FreeSoftware}, um software para ser considerado livre, deve permitir que seus usuários possuam todas as seguintes liberdades fundamentais:
 \begin{itemize}
-	\item Liberdade para rodar o software da forma que o usuário quiser, e para qualquer propósito.
-	\item Liberdade para estudar como o programa funciona, e poder editá-lo para que o programa compute da forma que o usuário quiser.
-	\item Liberdade para redistribuir cópias.
-	\item Liberdade para distribuir suas modificações para outras pessoas.
+	\item Rodar o software da forma que o usuário quiser, e para qualquer propósito.
+	\item Estudar como o programa funciona, e poder editá-lo para que o programa compute da forma que o usuário quiser.
+	\item Redistribuir cópias.
+	\item Distribuir suas modificações para outras pessoas.
 \end{itemize}
 Para que essas liberdades sejam possíveis é necessário que o código fonte do software seja disponibilizado.
 
 O Advanced Packaging Tool(APT) foi criado no projeto Debian e atualmente é usando em várias distribuições. Muitas delas baseadas no próprio Debian, como o Ubuntu e o Mint(que também possui uma versão baseada no Ubuntu).
+
+
 
 \section{Requisitos de Aplicações}\label{sec:req}
 Os pacotes, para serem aceitos no repositório principal(main) de sistema precisam ter seu código fonte organizado e, depois disso fazer um pacote de código fonte(source-package) que esteja em conformidade com a política de empacotamento de debian.\cite{DebiankPackaging}Com base no pacote de código fonte pode-se gerar automaticamente os pacotes de compilados para distribuição.
@@ -188,6 +192,17 @@ o FreeBSD poddui suporte a threads POSIX(Portable Operation System Interface). S
 
 \subsection{Segurança}\label{sec:BSDSec}
 Como o GNU Debian Linux, o GNu Debian kFreeBSD também possui versões oldstable e stable. E também recebe atualizações de segurança pela equipe de segurança do Debian.\cite{DebiankFreeBSDVersions}\\
+Para assegurar o controle de acessos e privilégios há três tipos de modo de usuário:
+\begin{itemize}
+	\item sistema.
+	\item usuário.
+	\item superUsuário.
+\end{itemize}
+Modo sistema são internas e são atribuídas para rodar serviços como DNS, emails ,etc. Esse modo serve principalmente para assegurar a segurança do sistema, visto que, atribuir a todos esses serviços como root, as aplicações não teriam restrição de acesso e ação dentro do sistema \\
+O modo Usuário é atribuída aos usuarios do sistema, ao acesso comum para atender necessidades cotidianas. Neste modo existem restrições de privilégio de acesso \\
+SuperUsuário(root) é o acesso como o gerenciador do sistema. Neste modo não existem restrições de acesso. Para lidar com privilégios de modo seguro, o acesso root pode ser adquirido pelo comando su, que permite virar SuperUsuário. \\
+A permissão de privilégios e acesso a recurso podem ser controlados pelo 
+gerenciamento de grupos e não só aos 3 modos de acesso citados anteriormente. Um grupo tem seus privilégios determinados e é composto por uma lista de usuários \\
 
 \includegraphics[scale = 0.5]{Hurd.png}\\
 \section{Hurd}\label{sec:Hurd}

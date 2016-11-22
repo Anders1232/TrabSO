@@ -16,6 +16,12 @@ Freesoftware.
 \newblock \url{https://www.gnu.org/philosophy/free-sw}.
 \newblock Acessado em 16/11/2016.
 
+\bibitem{DebiankPackaging}
+Debian new maintainers' guide.
+\newblock
+  \url{https://www.debian.org/doc/manuals/maint-guide/first.en.html#workflow}.
+\newblock Acessado em 21/11/2016.
+
 \bibitem{LinuxHistory}
 History of linux.
 \newblock \url{https://en.wikipedia.org/wiki/History_of_Linux}.
@@ -57,6 +63,12 @@ Brain fuck scheduler.
 Chapter 7 interrupts and interrupt handling.
 \newblock \url{http://www.tldp.org/LDP/tlk/dd/interrupts.html}.
 \newblock Acessado em 20/11/2016.
+
+\bibitem{SegLinux}
+Securing debian manual capítulo 8 - ferramentas de segurança no debian.
+\newblock
+  \url{https://www.debian.org/doc/manuals/securing-debian-howto/ch-sec-tools.pt-br.html}.
+\newblock Acessado em 21/11/2016.
 
 \bibitem{DebianVersions}
 Debian releases.

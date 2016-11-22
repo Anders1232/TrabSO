@@ -199,7 +199,7 @@ O FreeBSD também dá suporte a aplicações de tempo real, mantendo essas aplic
 
 
 \subsection{Funcionamento de interrupções}\label{sec:BSDInt}
-
+Uma troca pra thread de Interrupção em FreeBSD sofrem uma completa troca de contexto. O FreeBSD lida com manipulação de interrupção com seu próprio contexto de thread. Com isso ele provê um contexto para os gerenciadores de interrupção, permitindo que eles sejam bloqueados nos locks. Pra lidar com latencia o kernel é preemptivo e assim, para evitá-la, as threads de interrupção possuem a mesma prioridade de tempo real do kernel. Interrupções não devem ser executados por muito tempo para evitar starvation de outros threads do kernel. \\
 \subsection{Suporte a Threads}\label{sec:BSDThreads}
 o FreeBSD poddui suporte a threads POSIX(Portable Operation System Interface). Seu escalonador trabalha com threads, o que implica em que as threads funcionam no nível de núcleo.\cite{DesignImplementationFreeBSD}
 

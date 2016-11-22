@@ -50,6 +50,8 @@ Para que essas liberdades sejam possíveis é necessário que o código fonte do
 O Advanced Packaging Tool(APT) foi criado no projeto Debian e atualmente é usando em várias distribuições. Muitas delas baseadas no próprio Debian, como o Ubuntu e o Mint(que também possui uma versão baseada no Ubuntu).
 
 \section{Requisitos de Aplicações}\label{sec:req}
+Os pacotes, para serem aceitos no repositório principal(main) de sistema precisam ter seu código fonte organizado e, depois disso fazer um pacote de código fonte(source-package) que esteja em conformidade com a política de empacotamento de debian.\cite{DebiankPackaging}Com base no pacote de código fonte pode-se gerar automaticamente os pacotes de compilados para distribuição.
+
 
 \includegraphics[scale = 0.4]{Tux.png}\\
 \section{Linux}\label{sec:linux}
@@ -59,7 +61,7 @@ O Linux é um kernel monolítico Unix-like criado por Linus Benedict Towards em 
 
 \begin{figure}[htb!]
 	\centering
-	\includegraphics[scale=0.3]{arqtLinux.png}
+	\includegraphics[scale=0.25]{arqtLinux.png}
 	\caption{Aquitetura Linux.}
 	\label{fig:SisAqrLinux}
 \end{figure}
@@ -70,7 +72,7 @@ A comunicação com o kernel é realizada por meio de uma biblioteca que os mód
 
 O linux usa segmentação-paginação para alocação de espaço em memória. Em sistemas Alpha AXP usa páginas de 8 kbytes e em sistemas Intel x86 usa páginas de 4kbytes. A cada uma dessas páginas é dado um único número, o PFN(page frame number)\cite{GerenciaMemLinux}.\\
 
-Um endereço de memória virtual é composto de duas partes. Um offset e o numero de frame da página virtual. Cada processo possui uma tabela de páginas. Cada entrada nessa tabela contém as seguintes informações:\\
+Um endereço de memória virtual é composto de duas partes. Um offset e o número de frame da página virtual. Cada processo possui uma tabela de páginas. Cada entrada nessa tabela contém as seguintes informações:\\
 
 \begin{enumerate}
 	\item flag de validade:indica se a entrada é válida
@@ -95,7 +97,7 @@ A getencia de entrada e saída no linux é realizada por um escalonador chamado 
 \subsection{gerência de Processos}\label{sec:LinuxPROC}
 
 Os primeiros escalonadores do linux eram bastante simples, sem foco em arquiteturas massivas ou com muitos processadores multithread. O escalonador do linux 1.2 usava uma fila circular com Round-Robin. No linux 2.2 foi inserido outro escalonador com políticas de escalonamento para tarefas de tempo real, tarefas não preemptivas e tarefas de tempo não real, ou seja,  classes de escalonamento. Além disso também foi incluído suporte para SMP(symmetric multiprocessing)\cite{LinuxSchedulerIBM}.\\
-\\
+
  No kernel 2.4 foi  inserido outro escalonador relativamente simples com complexidade O(n). Ele era relativamente ineficiente, limitava escalabilidade e era lento para processos de tempo real. Também se mostrou ruim para arquiteturas de multiprocessador. No kernel 2.6, introduziu-se o chamado de escalonador O(1), por ter complexidade O(1). Esse possuía suporte a SMP e cada fila de execução possuía dois arrays de prioridade.\\
 
  O array de tarefas ativas e o de expiradas. No caso, cada array contém uma fila de processos por nível de prioridade. Essas filas contém listas de processos prontos em cada nível de prioridade. Os  arrays de prioridade também contém mapas de bits para para descobrir eficientemente a maior prioridade entre as tarefas prontas no sistema sem precisar percorrer as filas. Achar a próxima tarefa a ser executada é simplesmente selecionar o próximo elemento nas listas.\\
@@ -116,8 +118,6 @@ Uma árvore "red-black" é uma árvore auto-balanceável, as operações na árv
 	\item O novo nó mais a esquerda será escolhido repetindo a iteração\cite{LinuxSchedulerWiki}
 \end{enumerate}
 
-
-
 Outra alternativa moderna ao escalonador O(1) é o BFS(Brain fuck scheduler). Também desenvolvido por Con Kolivas, esse escalonador evita o uso de configurações e heurísticas Em alguns benchmarks apresenta desempenho levemente ou moderadamente maior que o CFS mas não chegou a tomar o seu lugar. Está presente em distribuições como Sabayon Linux\cite{LinuxSchedulerBFS}.
 \cite{LinuxSchedulerWiki}
 
@@ -129,6 +129,7 @@ Quando a interrupção acontece, o Linux deve determinar a sua origem lendo o st
 \subsection{Suporte a Threads}\label{sec:LinuxThreads}
 O linux dá suporte a threads tratando-as como processos e escalonando-os juntamente. Um processo pode ser visto como uma thread mas
 processos podem contem múltiplas threads que compartilham seus recursos\cite{LinuxSchedulerIBM}.
+
 \subsection{Segurança}\label{sec:LinuxSec}
 Debian fornece também uma série de ferramentas de segurança que podem tornar uma máquina com o sistema Debian adaptada para os propósitos de segurança. Estes propósitos incluem proteção dos sistemas de informação através de firewalls (de pacotes ou de aplicação), detecção de intrusão (baseados em rede e host), verificação de vulnerabilidades, antivirus, redes privadas, etc\cite{SegLinux}.\\
 
@@ -146,12 +147,11 @@ Os pacotes da versão stable passar por tanto tempo de teste que geralmente poss
 
 \includegraphics[scale = 0.2]{FreeBSD.png}\\
 \section{kFreeBSD}\label{sec:BSD}
-
 \subsection{Arquitetura}\label{sec:BSDArq}
 O FreeBSD é um sistema operacional monolítico Unix-like descendente do sistema operacional BSD. Como esse sistema operacional é considerado livre, o Debian Project extraiu o kernel desse sistema operacional o colocou no sistema GNU Debian. Esse kernel é chamado de kFreeBSD, o que significa "kernel of FreeBSD".\cite{Debian-kFreeBSD-wiki}
 
 \subsection{Gerência de Memória}\label{sec:BSDMem}
-O FreeBSD usa uma política de troca de páginas ao estilo Last Recent Used(LRU)\cite{FreeBsdArc}
+O FreeBSD usa uma política de troca de páginas ao estilo Last Recent Used(LRU).\cite{FreeBsdArc}
 
 \subsection{Gerencia de arquivo}\label{sec:BSDArquivo}
 O FreeBSD da suporte pra diversos sistemas de arquivos linux. entre eles estão Ext2, UFS,FAT16 e FAT32. Desde versões anteriores existe suporte ao ext2fs. O ext2 foi baseado no Unix File System(UFS) e uma solução ao design do minix filesystem.\\
@@ -161,27 +161,11 @@ Para encontrar blocos livres o ext2fs faz o uso de mapa de bits. Utiliza-se tamb
 
 O FreeBSD e, consequentemente o kFreeBSD, não possuem suporte completo ao ext3 nem ao ext4. Relativo ao ext3 o kFreeBSD contém suporte parcial, sem fazer uso do journaling que o ext3 tem. E em relação ao ext4 o FreeBSD tem suporte apenas para leitura.\cite{kFreeBSD-ext4}\\
 
-\begin{center}
-	\begin{tabular}{c|c|c|c|c}
-		\hline
-		 & Minix FS & Ext FS & Ext2 FS & Xia FS \\
-		Max FS size & 64 MB & 2 GB & 4 TB & 2 GB \\
-		Max file size & 64 MB & 2 GB & 2 GB & 64 MB \\
-		Max file name & 16/30 c & 255 c &255 c & 248 c \\
-		3 times support & No & No & Yes & Yes \\
-		Extensible & No & No & Yes & No \\
-		Var. block size & No & No & Yes & No \\
-		Maintained & Yes & No & Yes & ?
-%		\hline
-	\end{tabular}
-\end{center}
-
 \subsection{gerência de E/S}\label{sec:BSDES}
 Para gerenciar o acesso a dispositivos de entrada e saída, o FreeBSD no geral emprega o C-LOOK scheduler\cite{FreeBSD-Hybrid}. Que também é chamado de escalonamento "elevador", que trata os cilindros do disco como se fossem andares de um prédio. Porém a a variação que esse elevador funciona de forma circular para equalizar a frequência com a qual cada cilindro/andar é visitado.\\
 
-Esse escalonamento consiste em organizar a fila em ordem de crescente offset de E/S, com isso tenta-se maximizar a transferência aumentando o número de E/S em uma busca no disco, desta forma o algoritmo não consegue assegurar “justiça” e resultar em starvetion de outros processos.
- 
-O SO não se restringe apenas a este escalonamente, isto pode depender do sistema de arquivo usado, como o caso do ZFS(Zfile System) que utiliza do seu próprio método de escalonamento. Podendo assim fazer uso de outros metodos. \\
+Esse escalonamento consiste em organizar a fila em ordem de crescente offset de E/S, com isso tenta-se maximizar a transferência aumentando o número de E/S em uma busca no disco, desta forma o algoritmo não consegue assegurar “justiça” e resultar em starvation de outros processos. 
+O SO não se restringe apenas a este escalonamento, isto pode depender do sistema de arquivo usado, como o caso do ZFS(Zfile System) que utiliza do seu próprio método de escalonamento. Podendo assim fazer uso de outros métodos \\
 
 \begin{figure}[h!]
 	\centering
@@ -196,10 +180,9 @@ FreeBSD trabalha com o escalonador de processos ULE, o ULE segue um estilo tradi
 
 O FreeBSD também dá suporte a aplicações de tempo real, mantendo essas aplicações numa fila diferente da fila dos outros processos.\cite{DesignImplementationFreeBSD}\\ \\
 
-
-
 \subsection{Funcionamento de interrupções}\label{sec:BSDInt}
 Uma troca pra thread de Interrupção em FreeBSD sofrem uma completa troca de contexto. O FreeBSD lida com manipulação de interrupção com seu próprio contexto de thread. Com isso ele provê um contexto para os gerenciadores de interrupção, permitindo que eles sejam bloqueados nos locks. Pra lidar com latencia o kernel é preemptivo e assim, para evitá-la, as threads de interrupção possuem a mesma prioridade de tempo real do kernel. Interrupções não devem ser executados por muito tempo para evitar starvation de outros threads do kernel. \\
+
 \subsection{Suporte a Threads}\label{sec:BSDThreads}
 o FreeBSD poddui suporte a threads POSIX(Portable Operation System Interface). Seu escalonador trabalha com threads, o que implica em que as threads funcionam no nível de núcleo.\cite{DesignImplementationFreeBSD}
 
@@ -212,10 +195,8 @@ Como o GNU Debian Linux, o GNu Debian kFreeBSD também possui versões oldstable
 \subsection{Arquitetura}\label{sec:HurdArq}
 O kernel GNU/Hurd possui a arquitetura cliente/servidor e faz uso de microkernels os quais podem executar instruções privilegiadas. O microkernel instalado por padrão é o GNU/Mach. Porém existem outros microkernels que ao longo do tempo tentaram-se colocar no Hurd, como por exemplo o L4, Coyotos e o Viengoos. No Hurd, pode-se atrelar à arquivos, máquinas de tradução. Que podem prover diversas funcionalidades, como por exemplo implementar o protocolo ftp de forma transparente, prover gerenciamento de histórico de arquivos entre outras coisas muito interessantes.\cite{HurdPaper}
 
-\subsection{Gerência de Memória}\label{sec:HurdMem}
-
-\subsection{gerência de Processos}\label{sec:HURDPROC}
-
+%\subsection{Gerência de Memória}\label{sec:HurdMem}
+%\subsection{gerência de Processos}\label{sec:HURDPROC}
 \subsection{gerência de E/S}\label{sec:HurdES}
 No GNU/Hurd as operações de entrada e saída são feitas com o uso de portas de comunicação que implementam pelo menos o protocolo de arquivo ou o protocolo de socket. As operações são realizadas a partir de chamadas de procedimento remoto(RPC's) nessas portas de comunicação\cite{HurdIO}.
 
@@ -226,8 +207,7 @@ No GNU/Hurd as operações de entrada e saída são feitas com o uso de portas d
 	\label{fig:SisAqrLinux}
 \end{figure}
 %\includegraphics[scale = 0.27]{SistemasArquivosHurd.jpeg}
-
-\subsection{Funcionamento de interrupções}\label{sec:HurdInt}
+%\subsection{Funcionamento de interrupções}\label{sec:HurdInt}
 
 \subsection{Suporte a Threads}\label{sec:HurdThreads}
 O GNU/Hurd faz uso agressivo de Threads como o objetivo de extrair o máximo do hardware.\cite{Hurd} Todas as bibliotecas do GNU/Hurd são thread-safe, ou seja, chamadas concorrentes aos serviços da biblioteca não fazem ela se comportar de forma inesperada.
@@ -235,7 +215,7 @@ O GNU/Hurd faz uso agressivo de Threads como o objetivo de extrair o máximo do 
 \subsection{Segurança}\label{sec:HurdSec}
 Um dos objetivos do Hurd é minimizar a quantidade de código que é executada no modo kernel através do uso de microkernel GNU Mach. O que aumenta a confiabilidade do sistema como um todo.\\
 
-Porém, como o Hurd possui uma escassez crônica de denvolvedores, ele apenas possui a versão unstable. Ou seja, o GNU Debian Hurd não possui uma versão estável.
+Porém, como o Hurd possui uma escassez crônica de desenvolvedores, ele apenas possui a versão unstable. Ou seja, o GNU Debian Hurd não possui uma versão estável.
 
 \bibliographystyle{unsrt}
 \bibliography{arquivo.bib}

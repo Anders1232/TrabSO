@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.20)  21 NOV 2016 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.20)  22 NOV 2016 00:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,17 +933,8 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
 de.tex
 File: pgflibraryplotmarks.code.tex 2013/07/20 v3.0.0 (rcs-revision 1.13)
-))) (./RelatorioSO.aux
-
-LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
-
-
-LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
-
-
-LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
-
-)
+)))
+No file RelatorioSO.aux.
 \openout1 = `RelatorioSO.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -998,7 +989,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count141
 \scratchdimen=\dimen199
@@ -1087,6 +1078,15 @@ l.29 \selectlanguage{brazil}
                             
 Your command will be ignored, type <return> to proceed
 
+
+LaTeX Warning: Citation `DebianHistory' on page 1 undefined on input line 38.
+
+
+LaTeX Warning: Citation `DebianUsers' on page 1 undefined on input line 38.
+
+
+LaTeX Warning: Citation `FreeSoftware' on page 1 undefined on input line 41.
+
 LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1096,36 +1096,35 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+LaTeX Warning: Citation `DebiankPackaging' on page 1 undefined on input line 53
+.
+
 <img/Tux.png, id=5, 552.0625pt x 200.75pt>
 File: img/Tux.png Graphic file (type png)
  <use img/Tux.png>
-Package pdftex.def Info: img/Tux.png used on input line 54.
+Package pdftex.def Info: img/Tux.png used on input line 56.
 (pdftex.def)             Requested size: 220.82108pt x 80.29857pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Underfull \vbox (badness 4156) has occurred while \output is active []
+LaTeX Warning: Citation `LinuxHistory' on page 1 undefined on input line 60.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 <img/arqtLinux.png, id=7, 887.315pt x 570.13pt>
 File: img/arqtLinux.png Graphic file (type png)
  <use img/arqtLinux.png>
-Package pdftex.def Info: img/arqtLinux.png used on input line 62.
-(pdftex.def)             Requested size: 266.19655pt x 171.04031pt.
+Package pdftex.def Info: img/arqtLinux.png used on input line 64.
+(pdftex.def)             Requested size: 221.8282pt x 142.53215pt.
 
-Overfull \hbox (13.14668pt too wide) in paragraph at lines 62--63
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
@@ -1133,9 +1132,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
 
  <./img/GnuDebian.png> <./img/Tux.png> <./img/arqtLinux.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
- []
+LaTeX Warning: Citation `GerenciaMemLinux' on page 2 undefined on input line 73
+.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
@@ -1143,38 +1142,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--74
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<img/SistemasArquivosLinux.jpeg, id=17, 806.01125pt x 676.5275pt>
+
+LaTeX Warning: Citation `GerenciaMemLinux' on page 2 undefined on input line 82
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+
+ []
+
+
+LaTeX Warning: Citation `GerenciaIOLinux' on page 2 undefined on input line 85.
+
+
+
+LaTeX Warning: Citation `GerenciaIOLinux' on page 2 undefined on input line 88.
+
+
+<img/SistemasArquivosLinux.jpeg, id=18, 806.01125pt x 676.5275pt>
 File: img/SistemasArquivosLinux.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivosLinux.jpeg>
-Package pdftex.def Info: img/SistemasArquivosLinux.jpeg used on input line 90.
+Package pdftex.def Info: img/SistemasArquivosLinux.jpeg used on input line 92.
 (pdftex.def)             Requested size: 241.80524pt x 202.95981pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 97--100
+LaTeX Warning: Citation `LinuxSchedulerIBM' on page 2 undefined on input line 9
+9.
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 99--100
 []\T1/ptm/m/n/10 Os primeiros escalon-adores do linux eram bas-tante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--100
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 97--100
+Underfull \hbox (badness 2837) in paragraph at lines 101--102
 \T1/ptm/m/n/10 sim-ples com com-plex-i-dade O(n). Ele era rel-a-ti-va-mente
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--100
-
  []
 
 
@@ -1188,29 +1203,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
  []
 
 
+LaTeX Warning: Citation `LinuxSchedulerMIT' on page 2 undefined on input line 1
+05.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 []\T1/ptm/m/n/10 A nova mu-dança veio por meio do al-go-ritmo
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 107--108
+Underfull \hbox (badness 5403) in paragraph at lines 109--110
 \T1/ptm/m/n/10 RSDL(Rotating Stair-case Dead-line Sched-uler), pro-posto
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 [2 <./img/SistemasArquivosLinux.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
+
+
+LaTeX Warning: Citation `LinuxSchedulerIBM' on page 3 undefined on input line 1
+13.
+
+
+LaTeX Warning: Citation `LinuxSchedulerWiki' on page 3 undefined on input line 
+118.
+
+
+LaTeX Warning: Citation `LinuxSchedulerBFS' on page 3 undefined on input line 1
+21.
+
+
+LaTeX Warning: Citation `LinuxSchedulerWiki' on page 3 undefined on input line 
+122.
 
 
 Underfull \hbox (badness 2126) in paragraph at lines 121--123
@@ -1223,65 +1263,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
  []
 
 
-LaTeX Warning: Citation `SegLinux' on page 3 undefined on input line 133.
+LaTeX Warning: Citation `InterruptsLinux' on page 3 undefined on input line 127
+.
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 133--134
+LaTeX Warning: Citation `LinuxSchedulerIBM' on page 3 undefined on input line 1
+31.
+
+
+LaTeX Warning: Citation `SegLinux' on page 3 undefined on input line 134.
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 134--135
 \T1/ptm/m/n/10 de in-trusão (basea-dos em rede e host), ver-i-fi-cação de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 
-LaTeX Warning: Citation `SegLinux' on page 3 undefined on input line 135.
+LaTeX Warning: Citation `SegLinux' on page 3 undefined on input line 136.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 137--138
+Underfull \hbox (badness 1688) in paragraph at lines 138--139
 []\T1/ptm/m/n/10 O De-bian sem-pre tem pelo menos três ver-sões em
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+LaTeX Warning: Citation `DebianVersions' on page 4 undefined on input line 146.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 <img/FreeBSD.png, id=25, 1129.21875pt x 451.6875pt>
 File: img/FreeBSD.png Graphic file (type png)
  <use img/FreeBSD.png>
-Package pdftex.def Info: img/FreeBSD.png used on input line 147.
+Package pdftex.def Info: img/FreeBSD.png used on input line 148.
 (pdftex.def)             Requested size: 225.83975pt x 90.33589pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
+
+
+LaTeX Warning: Citation `Debian-kFreeBSD-wiki' on page 4 undefined on input lin
+e 151.
+
+
+LaTeX Warning: Citation `FreeBsdArc' on page 4 undefined on input line 154.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
@@ -1294,6 +1354,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--161
  []
 
 
+LaTeX Warning: Citation `kFreeBSD-ext4' on page 4 undefined on input line 162.
+
+
 Underfull \hbox (badness 3068) in paragraph at lines 162--163
 []\T1/ptm/m/n/10 O FreeBSD e, con-se-quente-mente o kFreeBSD, não
  []
@@ -1304,17 +1367,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
  []
 
 
-Overfull \hbox (2.36859pt too wide) in paragraph at lines 165--177
- [] 
+LaTeX Warning: Citation `FreeBSD-Hybrid' on page 4 undefined on input line 165.
+
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 165--166
+\T1/ptm/m/n/10 o FreeBSD no geral em-prega o C-LOOK scheduler[[]].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 1708) in paragraph at lines 167--169
+\T1/ptm/m/n/10 SO não se re-stringe ape-nas a este escalon-a-mento, isto
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
 
  []
 
@@ -1323,56 +1395,80 @@ File: img/SistemasArquivoskFreeBSD.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivoskFreeBSD.jpeg>
 Package pdftex.def Info: img/SistemasArquivoskFreeBSD.jpeg used on input line 1
-88.
+72.
 (pdftex.def)             Requested size: 247.76237pt x 170.29396pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+
+LaTeX Warning: Citation `DesignImplementationFreeBSD' on page 4 undefined on in
+put line 181.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 [4 <./img/FreeBSD.png> <./img/SistemasArquivoskFreeBSD.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
-
- []
+LaTeX Warning: Citation `DesignImplementationFreeBSD' on page 5 undefined on in
+put line 187.
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 207--208
+LaTeX Warning: Citation `DebiankFreeBSDVersions' on page 5 undefined on input l
+ine 190.
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 190--191
 \T1/ptm/m/n/10 at-u-al-iza-ções de se-gu-rança pela equipe de se-gu-rança do
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 <img/Hurd.png, id=31, 481.8pt x 240.9pt>
 File: img/Hurd.png Graphic file (type png)
  <use img/Hurd.png>
-Package pdftex.def Info: img/Hurd.png used on input line 209.
+Package pdftex.def Info: img/Hurd.png used on input line 192.
 (pdftex.def)             Requested size: 240.8994pt x 120.44969pt.
 
-Overfull \hbox (2.29953pt too wide) in paragraph at lines 209--210
+Overfull \hbox (2.29953pt too wide) in paragraph at lines 192--193
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
+
+
+LaTeX Warning: Citation `HurdPaper' on page 5 undefined on input line 196.
+
+
+LaTeX Warning: Citation `HurdIO' on page 5 undefined on input line 201.
 
 <img/SistemasArquivosHurd.jpeg, id=32, 724.7075pt x 476.78125pt>
 File: img/SistemasArquivosHurd.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivosHurd.jpeg>
-Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 224.
+Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 205.
 (pdftex.def)             Requested size: 253.65143pt x 166.87593pt.
 
-Overfull \hbox (0.60156pt too wide) in paragraph at lines 224--225
+Overfull \hbox (0.60156pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
@@ -1380,7 +1476,10 @@ Overfull \hbox (0.60156pt too wide) in paragraph at lines 224--225
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+LaTeX Warning: Citation `Hurd' on page 5 undefined on input line 213.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
@@ -1391,19 +1490,19 @@ Underfull \hbox (badness 2134) in paragraph at lines 4--8
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 52--55
+Underfull \hbox (badness 4328) in paragraph at lines 58--61
 []\T1/ptm/m/n/8 Brain fuck sched-uler.  $https : / / en . wikipedia . org / wik
 i / Brain _ Fuck _
  []
 
 [5 <./img/Hurd.png> <./img/SistemasArquivosHurd.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
 \T1/ptm/m/n/8 http : / / ptgmedia . pearsoncmg . com / images / 9780321968975 /
  samplepages /
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 110--113
+Underfull \hbox (badness 4254) in paragraph at lines 122--125
 []\T1/ptm/m/n/8 Hurd.  $www . gnu . org / software / hurd / doc / hurd . ps$.  
 Aces-sado em
  []
@@ -1427,14 +1526,14 @@ Before submitting the final camera ready copy, remember to:
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 24134 strings out of 495000
- 585227 string characters out of 6181168
- 762750 words of memory out of 5000000
- 26909 multiletter control sequences out of 15000+600000
+ 24130 strings out of 495000
+ 585173 string characters out of 6181168
+ 762748 words of memory out of 5000000
+ 26907 multiletter control sequences out of 15000+600000
  107442 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,7n,77p,1087b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1443,7 +1542,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on RelatorioSO.pdf (6 pages, 586931 bytes).
+Output written on RelatorioSO.pdf (6 pages, 587279 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

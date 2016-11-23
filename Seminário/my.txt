@@ -79,3 +79,136 @@ http://www.planetaunix.com.br/2014/08/gerenciamento-de-grupos-no-freebsd.html
 https://wiki.debian.org/Gnome?action=show&redirect=GNOME
 https://wiki.gnome.org/action/show/Apps/Nautilus?action=show&redirect=Nautilus
 https://en.wikipedia.org/wiki/GTK%2B
+
+
+
+A gerência de processos do FreeBSD tem como objetivo priorizar processos interativos sobre processos de processamento contínuo. Isso é feito atribuindo prioridades a processos. Os processos são computados em time slices, os processos que usam todo o time slice têm sua prioridade diminuída enquanto processos que são bloqueados(quesitam i/o) durante seu time slice possuem suas prioridades mantidas. Processos que fazem tempo que não são rodados têm sua prioridade aumentada para evitar starvation. ]
+
+
+
+================================= erratas artigo ============================================
+
+
+
+*mudança no artigo
+adicionar:vamos falar do hurd, linux e freebsd na intro
+Texto incompleto e imagem 2 cortando o texto em gerencia de processos.
+sugerir subir figura 1 pra arquitetura
+Suporte a threads FreeBSD erro ortografico
+Figura 4 no lugar errado
+Rescrever de acordo com Deus
+
+================================= Roteiro ============================================
+
+
+Equipe
+	-a gente! :D 
+Debian
+	O Debian(intro)
+		-o SO, quem fez, 
+		-andamento, projeto.
+		-SO e seus kernels
+	O proposito do debian
+		-software livre,
+		-software livre pt2,
+		-raposinha firefox,
+		-apt-get,
+	Requisitos de aplicação
+		-como criar pacote .deb
+Linux 
+	-arquiterura
+		-kernel linux(história)
+		-kernel linux (comunicação)
+	-Gerencia de memoria
+		-alocação de espaço de memoria
+		-Paginação
+		-imagem
+		-tabela de paginas
+		-Politica LRU
+		-swapping
+	-Gerencia de processos 
+		-Escalonadores linux 1.2
+		-Escalonadores linux 2.2
+		-kernel 2.4: complexidade(n)
+		-Escalonador O(1)
+		-Escalonador O(1) funcionamento
+		-Escalonador O(1) funcionamento pt2
+		-troca do escalonador O(1) pelo RSDL
+		-CFS
+		-arvore red-black: complexidade e tals
+		-arvore red-black funcionamento
+		-BFS
+
+	-Sistema de arquivos
+		-Sistemas de arquivos do linux
+		-imagem figura 2
+
+	-Gerenciador de Interrupções
+		-encaminhamento do codigo pro gerenciador
+
+	-Suporte a threads
+
+	-Segurança
+		-ferramentas de segurança 
+		-softwares de criptografia(SSH GNU)
+		-versionamento
+		-versionamento pt2
+		-versionamento pt3
+FreeBSD
+	-Arquitetura
+		-Debian e o kernel FreeBSD
+		-Figura FreeBSD
+	
+	-Gerencia de memoria(LRU)
+
+	-Gerencia de arquivo 
+		-suportes a sf
+		-ext2(mapa de bits)
+
+	-Gerencia de E/S
+		-escalonador do elevador
+		-escalonador do elevador(funcionamento)
+		-Outros escalonadores 
+		-Figura 3
+	
+	-Gerencia de processos
+		-Gerenciador ULE
+		-Gerenciador ULE: funcionamento
+		-Outros gerenciadores
+
+	-Suporte a threads
+		-suporte a threads POSIX
+
+	-Funcionamento de Interrupções
+		-Troca de threads
+		-manipulação de interrupção
+		-latencia
+
+	-Segurança
+		-Modos de usuarios
+		-sistema
+		-usuario
+		-superUsuário
+		-Grupos de usuario
+		-versionamento
+Hurd
+	-Figura hurd
+	-Arquitetura
+		-kernel hurd:Cliente/servidor
+		-microkernel padrao
+		-microkernel, outros
+
+	-Gerencia E/S
+		-Portas de comunicação
+
+		-Figura 4 gerencia de arquivo kfreebsd! trocar pra do Hurd
+	
+	-Suporte a threads
+		-GNU/Hurd
+		- Bibliotecas Thread safe
+
+	-Segurança
+		-minimizar codigo: micro kernel 
+		-escassez de desenvolvedores
+		-não tem versão stable
+Fim

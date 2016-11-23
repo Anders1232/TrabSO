@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.15)  22 NOV 2016 18:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.15)  22 NOV 2016 23:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -923,6 +923,9 @@ File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
 LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
 
 
+LaTeX Warning: Label `sec:BSDArquivo' multiply defined.
+
+
 LaTeX Warning: Label `fig:SisAqrLinux' multiply defined.
 
 
@@ -1109,116 +1112,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--67
 File: img/SistemasArquivosLinux.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivosLinux.jpeg>
-Package pdftex.def Info: img/SistemasArquivosLinux.jpeg used on input line 78.
+Package pdftex.def Info: img/SistemasArquivosLinux.jpeg used on input line 77.
 (pdftex.def)             Requested size: 241.80524pt x 202.95981pt.
 
-Underfull \hbox (badness 2837) in paragraph at lines 84--86
+Underfull \hbox (badness 2837) in paragraph at lines 85--87
 \T1/ptm/m/n/10 sim-ples com com-plex-i-dade O(n). Ele era rel-a-ti-va-mente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 []\T1/ptm/m/n/10 A nova mu-dança veio por meio do al-go-ritmo
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 91--92
+Underfull \hbox (badness 5403) in paragraph at lines 92--93
 \T1/ptm/m/n/10 RSDL(Rotating Stair-case Dead-line Sched-uler), pro-posto
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 103--104
+Underfull \hbox (badness 2126) in paragraph at lines 104--105
 []\T1/ptm/m/n/10 Outra al-ter-na-tiva mod-erna ao escalon-ador O(1) é o
  []
 
 [2 <./img/SistemasArquivosLinux.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 116--117
+Underfull \hbox (badness 1688) in paragraph at lines 117--118
 []\T1/ptm/m/n/10 O De-bian sem-pre tem pelo menos três ver-sões em
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+LaTeX Warning: Citation `GruposUsuarioLinux' on page 3 undefined on input line 
+127.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 137--138
+Underfull \hbox (badness 3068) in paragraph at lines 139--140
 []\T1/ptm/m/n/10 O FreeBSD e, con-se-quente-mente o kFreeBSD, não
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-
  []
 
 
@@ -1226,22 +1233,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-<img/SistemasArquivoskFreeBSD.jpeg, id=25, 728.7225pt x 500.87125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+<img/SistemasArquivoskFreeBSD.jpeg, id=26, 728.7225pt x 500.87125pt>
 File: img/SistemasArquivoskFreeBSD.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivoskFreeBSD.jpeg>
 Package pdftex.def Info: img/SistemasArquivoskFreeBSD.jpeg used on input line 1
-45.
+47.
 (pdftex.def)             Requested size: 247.76237pt x 170.29396pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
@@ -1254,33 +1260,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
  []
 
 
-Underfull \hbox (badness 5939) in paragraph at lines 167--170
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 157--158
+\T1/ptm/m/n/10 de in-ter-rupção pos-suem a mesma pri-or-i-dade de tempo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 5939) in paragraph at lines 169--172
 []\T1/ptm/m/n/10 Modo sis-tema são in-ter-nas e são atribuí-das para
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--170
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
 [4 <./img/SistemasArquivoskFreeBSD.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-<img/SistemasArquivosHurd.jpeg, id=29, 724.7075pt x 476.78125pt>
+<img/SistemasArquivosHurd.jpeg, id=30, 724.7075pt x 476.78125pt>
 File: img/SistemasArquivosHurd.jpeg Graphic file (type jpg)
 
 <use img/SistemasArquivosHurd.jpeg>
-Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 182.
+Package pdftex.def Info: img/SistemasArquivosHurd.jpeg used on input line 184.
 (pdftex.def)             Requested size: 253.65143pt x 166.87593pt.
 
-Overfull \hbox (0.60156pt too wide) in paragraph at lines 182--183
+Overfull \hbox (0.60156pt too wide) in paragraph at lines 184--185
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
@@ -1322,25 +1343,29 @@ Before submitting the final camera ready copy, remember to:
 
 [5 <./img/SistemasArquivosHurd.jpeg>] (./RelatorioSO.aux)
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21054 strings out of 495028
- 479285 string characters out of 6181497
+ 21056 strings out of 495028
+ 479311 string characters out of 6181497
  644071 words of memory out of 5000000
- 23810 multiletter control sequences out of 15000+600000
- 106335 words of font info for 120 fonts, out of 8000000 for 9000
+ 23811 multiletter control sequences out of 15000+600000
+ 107442 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,9n,74p,1093b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmri8a.pfb>
-Output written on RelatorioSO.pdf (5 pages, 506994 bytes).
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on RelatorioSO.pdf (5 pages, 513999 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  50 words of extra memory for PDF output out of 10000 (max. 10000000)
 

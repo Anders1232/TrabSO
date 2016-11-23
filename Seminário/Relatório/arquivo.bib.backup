@@ -161,8 +161,3 @@
 	Howpublished = {\url{http://www.planetaunix.com.br/2014/08/gerenciamento-de-grupos-no-freebsd.html}}, 
 	Note = {Acessado em 21/11/2016},
 	Title = {Gerenciamento de grupos no FreeBSD}}
-	
-@misc{GruposUsuarioLinux,
-	Howpublished = {\url{https://en.wikipedia.org/wiki/File_system_permissions}}, 
-	Note = {Acessado em 22/11/2016},
-	Title = {File system permissions}}

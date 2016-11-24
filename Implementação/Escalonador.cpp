@@ -6,7 +6,7 @@ int RegistroProcessEscalonador::operator<(RegistroProcessoEscalonador &a)
 }
 
 
-void Escolanador::AdicionarProcesso(int idProcesso, int prioridadeInicial)
+void Escalonador::AdicionarProcesso(int idProcesso, int prioridadeInicial)
 {
 	if(0== prioridadeInicial)
 	{
@@ -21,7 +21,7 @@ void Escolanador::AdicionarProcesso(int idProcesso, int prioridadeInicial)
 		registroProcessos.push_back(temp);
 	}
 }
-int Escolanador::Escalonar(void)//retorna o id do primeiro processo da fila que vai ser rodado
+int Escalonador::Escalonar(void)//retorna o id do primeiro processo da fila que vai ser rodado
 {
 	if(0!= processosTempoReal.size())
 	{
@@ -41,7 +41,7 @@ int Escolanador::Escalonar(void)//retorna o id do primeiro processo da fila que 
 	return registroProcessos[0].idProcesso;
 }
 
-void Escolanador::ProcessoTerminou(int idProcesso)
+void Escalonador::ProcessoTerminou(int idProcesso)
 {
 	if(idProcesso == processosTempoReal.front())
 	{

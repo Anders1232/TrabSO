@@ -1,3 +1,5 @@
+#include<stdbool.h>
+
 enum Recurso
 {
 	IMPRESSORA,
@@ -11,7 +13,7 @@ class GerenciadorRecursos
 	public:
 		bool Alocar(Recurso rec);
 		bool Desalocar(Recurso rec);
-		GerenciarRecursos();
+		GerenciadorRecursos(void);
 	private:
 		int impressora; //inicia com 2
 		int scanner;// inicializa com 1
@@ -19,17 +21,4 @@ class GerenciadorRecursos
 		int sata;//=2
 };
 
-/*
-if(rec == IMPRESSORA)
-{
-	if(impressora ==0)
-	{
-		return false;
-	}
-	else
-	{
-		impressora--;
-		return true;
-	}
-}
-*/
+

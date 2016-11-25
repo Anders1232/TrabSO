@@ -5,6 +5,7 @@
 #include <vector>
 
 #define MEMORIA_NAO_USADA -1
+#define ALOCACAO_FALHOU -1
 
 struct regListaVazia
 {

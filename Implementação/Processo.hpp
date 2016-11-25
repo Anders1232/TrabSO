@@ -27,8 +27,10 @@ class Processo
 		biiiiiirl usaScanner(void);
 		biiiiiirl usaSata(void);
 		biiiiiirl usaModem(void);
-		int informarPrioridade(void);
-		int informarQuantidadeMemoria(void); 
+		int ObterPrioridade(void);
+		int ObterQuantidadeMemoria(void); 
+		int ObterID(void);
+		void InformarOffsetMemoria(int);
 	private:
 		int id;
 		int tempoInicializacao;

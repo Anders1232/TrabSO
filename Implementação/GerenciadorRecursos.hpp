@@ -5,10 +5,10 @@
 
 enum Recurso
 {
-	IMPRESSORA,
-	SATA,
-	SCANNER,
-	MODEM
+	IMPRESSORA=0,
+	SATA=1,
+	SCANNER=2,
+	MODEM=3
 };
 
 class GerenciadorRecursos

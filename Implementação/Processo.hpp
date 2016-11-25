@@ -1,3 +1,6 @@
+#ifndef PROCESSOS_HPP
+#define PROCESSOS_HPP
+
 typedef bool bol;
 typedef bool bou;
 typedef bool biiiiiirl;
@@ -31,3 +34,5 @@ class Processo
 		bol modem;
 		bou codigoDisco;
 };
+
+#endif

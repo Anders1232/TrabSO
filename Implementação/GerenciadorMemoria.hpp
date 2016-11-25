@@ -1,4 +1,6 @@
-//http://www.cplusplus.com/reference/list/list/sort/
+#ifndef GERENCIADOR_MEMORIA_HPP
+#define GERENCIADOR_MEMORIA_HPP
+
 #include <list>
 #include <vector>
 
@@ -18,3 +20,5 @@ class GerenciadorMemoria
 		std::vector<int> memoria;
 		std::list<regListaVazia> listaDeEspacosVazios;
 };
+
+#endif

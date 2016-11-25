@@ -1,3 +1,6 @@
+#ifndef ESCALONADOR_HPP
+#define ESCALONADOR_HPP
+
 #include<list>
 #include<vector>
 
@@ -20,3 +23,5 @@ class Escalonador
 		std::list<int /*idProcesso*/> processosTempoReal;
 		std::vector<RegistroProcessoEscalonador> registroProcessos;
 };
+
+#endif

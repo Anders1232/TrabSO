@@ -1,3 +1,6 @@
+#ifndef GERENCIADOR_PROCESSOS_HPP
+#define GERENCIADOR_PROCESSOS_HPP
+
 #include<string>
 #include<vector>
 #include"Processo.hpp"
@@ -16,3 +19,5 @@ class GerenciadorProcessos
 		GerenciadorRecursos gereciadorRecursos;
 		Escalonador escalonador;
 };
+
+#endif

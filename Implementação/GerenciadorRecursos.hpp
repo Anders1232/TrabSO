@@ -1,3 +1,6 @@
+#ifndef GERENCIADOR_RECURSOS_HPP
+#define GERENCIADOR_RECURSOS_HPP
+
 #include<stdbool.h>
 
 enum Recurso
@@ -21,4 +24,4 @@ class GerenciadorRecursos
 		int sata;//=2
 };
 
-
+#endif

@@ -13,6 +13,16 @@ regListaVazia::regListaVazia(int a, int b)
 
 }
 
+GerenciadorMemoria::GerenciadorMemoria(int quantidadeDeBlocos)
+{
+	listaDeEspacosVazios.push_back(regListaVazia(0, quantidadeDeBlocos));
+	memoria.reserve(quantidadeDeBlocos);
+	for(int cont =0; cont < quantidadeDeBlocos; cont++)
+	{
+		memoria[cont] = MEMORIA_NAO_USADA;
+	}
+}
+
 int GerenciadorMemoria::Alocar(int processo, int tamanho){
 
 	int auxPosicao,auxTamanho;

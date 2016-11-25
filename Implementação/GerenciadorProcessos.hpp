@@ -17,7 +17,8 @@ class GerenciadorProcessos
 		std::vector<Processo> processosQueNaoForamIniciados;
 		std::vector<Processo> processosEmExecucao;
 		std::vector<Processo> processosTerminados;
-		GerenciadorMemoria gerenciadorMemoria;
+		GerenciadorMemoria memoriaComum = 960;
+		GerenciadorMemoria memoriaTempoReal= 64;
 		GerenciadorRecursos gereciadorRecursos;
 		Escalonador escalonador;
 };

@@ -160,6 +160,7 @@ void GerenciadorProcessos::GO(){
 				else
 				{
 					/*colocar no escalonador*/
+					escalonador.AdicionarProcesso(proc.ObterID(), proc.ObterPrioridade());
 				}
 			}
 			else
@@ -182,9 +183,12 @@ void GerenciadorProcessos::GO(){
 				else
 				{
 					/*colocar no escalonador*/
+					escalonador.AdicionarProcesso(proc.ObterID(), proc.ObterPrioridade());
 				}
 			}
 		}
+		processosEmExecucao.push_back(proc);
+		processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
 
 		//escalonar um processo pra ser executado
 		//Se o processo acabar, por na lista de terminados e liberar seus recursos

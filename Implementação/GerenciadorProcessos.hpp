@@ -8,6 +8,9 @@
 #include"GerenciadorRecursos.hpp"
 #include"Escalonador.hpp"
 
+#define TAMANHO_MEMORIA_COMUM 960
+#define TAMANHO_MEMORIA_VIRTUAL 64
+
 class GerenciadorProcessos
 {
 	public:
@@ -17,8 +20,8 @@ class GerenciadorProcessos
 		std::vector<Processo> processosQueNaoForamIniciados;
 		std::vector<Processo> processosEmExecucao;
 		std::vector<Processo> processosTerminados;
-		GerenciadorMemoria memoriaComum = 960;
-		GerenciadorMemoria memoriaTempoReal= 64;
+		GerenciadorMemoria memoriaComum = TAMANHO_MEMORIA_COMUM;
+		GerenciadorMemoria memoriaTempoReal= TAMANHO_MEMORIA_VIRTUAL;
 		GerenciadorRecursos gereciadorRecursos;
 		Escalonador escalonador;
 };

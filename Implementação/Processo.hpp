@@ -22,8 +22,15 @@ class Processo
 			int modem,
 			int codigoDisco
 		);
+		int obterMomentoEntrada(void);
+		biiiiiirl usaImpressora(void);
+		biiiiiirl usaScanner(void);
+		biiiiiirl usaSata(void);
+		biiiiiirl usaModem(void);
+		int informarPrioridade(void);
+		int informarQuantidadeMemoria(void); 
 	private:
-//		int id;
+		int id;
 		int tempoInicializacao;
 		int prioridade;
 		int offsetMemoria;

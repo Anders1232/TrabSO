@@ -1,6 +1,7 @@
 #include "Processo.hpp"
 
 Processo::Processo(
+
 			int tempoInicializacao,
 			int prioridade,
 			int tempoProcessador,
@@ -20,4 +21,31 @@ Processo::Processo(
 	codigoDisco((codigoDisco>0)? true: false)
 {
 	offsetMemoria= PROCESSO_NAO_CARREGADO;
+	static int identificador=0;
+	this->id= identificador++;
 }
+
+
+int Processo::obterMomentoEntrada(void){
+
+	return tempoInicializacao;
+}
+
+
+biiiiiirl Processo::usaImpressora(void){
+	
+	return impressora;
+}
+biiiiiirl Processo::usaScanner(void){
+	
+	return scanner;
+}
+biiiiiirl Processo::usaSata(void){
+	
+	return codigoDisco;
+}
+biiiiiirl Processo::usaModem(void){
+	
+	return modem;
+} 
+

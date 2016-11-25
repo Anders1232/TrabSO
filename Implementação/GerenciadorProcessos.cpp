@@ -20,18 +20,22 @@ void GerenciadorProcessos::LerArquivo(std::string &nomeArquivo)
 	
 	int arg1, arg2, arg3, arg4,/*agora os booleanos*/ arg5, arg6, arg7, arg8;
 	int argumentosLidos=8;
-	while(8==argumentosLidos)
+	do
 	{
-		
 		argumentosLidos= fscanf(arq, "%d, %d, %d, %d, %d, %d, %d, %d \n", &arg1, &arg2, &arg3, &arg4, &arg5, &arg6, &arg7, &arg8);
-		
-		Processo proc(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
-		
-		processosQueNaoForamIniciados.push_back(proc);
-		std::cout << "processo lido: ";
-		std::cout << arg1 <<" "<< arg2<<" "<< arg3<<" "<< arg4<<" "<< arg5<<" "<< arg6<<" "<<arg7<<" "<< arg8 << " \n ";
-
+		if(8==argumentosLidos)
+		{
+			Processo proc(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+			processosQueNaoForamIniciados.push_back(proc);
+			std::cout << "processo lido: ";
+			std::cout << arg1 <<" "<< arg2<<" "<< arg3<<" "<< arg4<<" "<< arg5<<" "<< arg6<<" "<<arg7<<" "<< arg8 << " \n ";
+		}
+		else
+		{
+			break;
+		}
 	}
+	while(1);
 	std::cout <<"Lido:" << processosQueNaoForamIniciados.size() <<" \n ";
 
 	

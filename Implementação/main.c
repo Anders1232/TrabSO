@@ -6,8 +6,8 @@
 #include <string.h>
 
 using namespace std;
-#include "GerenciadorMemoria.hpp"
 #include "GerenciadorProcessos.hpp"
+#include "GerenciadorMemoria.hpp"
 #include "GerenciadorRecursos.hpp"
 #include "Escalonador.hpp"
 

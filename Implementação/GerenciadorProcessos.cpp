@@ -4,6 +4,9 @@
 #include<cstdlib>
 #include <iostream>
 
+
+
+
 #define ASSERT(arg1)\
 	if(!arg1)\
 	{\
@@ -38,5 +41,13 @@ void GerenciadorProcessos::LerArquivo(std::string &nomeArquivo)
 	while(1);
 	std::cout <<"Lido:" << processosQueNaoForamIniciados.size() <<" \n ";
 
-	
+	GO();
+}
+
+
+
+void GerenciadorProcessos::GO(){
+
+
+
 }

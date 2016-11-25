@@ -6,6 +6,12 @@
 #include <string.h>
 
 using namespace std;
+#include "GerenciadorMemoria.hpp"
+#include "GerenciadorProcessos.hpp"
+#include "GerenciadorRecursos.hpp"
+#include "Escalonador.hpp"
+
+
 //faz leitura do arquivo process.txt
 void leitura(const char*);
 //leitura dos dados do processo n;

@@ -8,4 +8,4 @@ class GerenciadorProcessos
 		GerenciadorMemoria gerenciadorMemoria;
 		GerenciadorRecursos gereciadorRecursos;
 		Escalonador escalonador;
-}
+};

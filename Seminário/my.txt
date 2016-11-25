@@ -103,8 +103,8 @@ Rescrever de acordo com Deus
 
 Equipe
 	-a gente! :D 
-Debian
-	O Debian(intro)
+-Debian
+	-O Debian(intro)
 		-o SO, quem fez, 
 		-andamento, projeto.
 		-SO e seus kernels
@@ -212,3 +212,6 @@ Hurd
 		-escassez de desenvolvedores
 		-não tem versão stable
 Fim
+
+
+qarta e quinta a tarde nao da. 

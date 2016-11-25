@@ -7,7 +7,6 @@
 
 using namespace std;
 #include "GerenciadorProcessos.hpp"
-#include "GerenciadorProcessos.cpp"
 #include "GerenciadorMemoria.hpp"
 #include "GerenciadorRecursos.hpp"
 #include "Escalonador.hpp"

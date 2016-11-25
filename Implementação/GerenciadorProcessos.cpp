@@ -59,8 +59,6 @@ void GerenciadorProcessos::GO(){
 	{
 		//verificar se tem processo na lista de  n-inicializados que vao entrar no timeslice
 		//Se sim, verifica se tem memoria, se sim, remover da lista de n-inicializado e por na fila de execucao 
-		//escalonar um processo pra ser executado
-		//Se o processo acabar, por na lista de terminados e liberar seus recursos
 		while(timeslice==processosQueNaoForamIniciados.begin()->obterMomentoEntrada())
 		{
 			//verificar se usa algum recurso
@@ -105,7 +103,7 @@ void GerenciadorProcessos::GO(){
 				if(!recursosAlocados[2])
 				{
 					printf("O processo %d não será executado pois o modem já esá alocado!\n");
-					for(int cont =0; cont < 2; cont++)
+					for(int cont =0; cont < 3; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -127,7 +125,7 @@ void GerenciadorProcessos::GO(){
 				if(!recursosAlocados[3])
 				{
 					printf("O processo %d não será executado pois o modem já esá alocado!\n", proc.ObterID());
-					for(int cont =0; cont < 3; cont++)
+					for(int cont =0; cont < 4; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -147,8 +145,8 @@ void GerenciadorProcessos::GO(){
 				//colocar na fila de tempo real
 				if(ALOCACAO_FALHOU == memoriaTempoReal.Alocar(proc.informarQuantidadeMemoria()))
 				{
-					printf("O processo %d não será executado pois não tem memória te tempo real suficiente para o mesmo ser executado!\n", proc.ObterID());
-					for(int cont =0; cont < 3; cont++)
+					printf("O processo %d não será executado pois não tem memória de tempo real suficiente para o mesmo ser executado!\n", proc.ObterID());
+					for(int cont =0; cont < 4; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -164,28 +162,34 @@ void GerenciadorProcessos::GO(){
 					/*colocar no escalonador*/
 				}
 			}
-			else if(prio<20)
+			else
 			{
-				//colocar na fila de alto prioridade
-			}
-			else if(prio< 40)
-			{
-				//prioridade media
-			}
-			else{
-				//prioridade baixa :(
-			}
-
-			if(prio!=0)
-			{ 
-				if(proc.informarQuantidadeMemoria()){
-					//aloca
+				//fila dos normais
+				if(ALOCACAO_FALHOU == memoriaComum.Alocar(proc.informarQuantidadeMemoria()))
+				{
+					printf("O processo %d não será executado pois não tem memória suficiente para o mesmo ser executado!\n", proc.ObterID());
+					for(int cont =0; cont < 4; cont++)
+					{
+						if(recursosAlocados[cont])
+						{
+							gereciadorRecursos.Desalocar(cont)
+						}
+					}
+					numProcessosQueNaoRodaram++;
+					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
+					continue;
 				}
-				else{
-					//nao aloca
+				else
+				{
+					/*colocar no escalonador*/
 				}
 			}
 		}
+
+		//escalonar um processo pra ser executado
+		//Se o processo acabar, por na lista de terminados e liberar seus recursos
+
+
 
 		timeslice++;//por ultimo é isso
 	}

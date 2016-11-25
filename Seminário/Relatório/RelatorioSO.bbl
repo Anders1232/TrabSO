@@ -37,16 +37,16 @@ Cfq.
 \newblock \url{https://en.wikipedia.org/wiki/CFQ}.
 \newblock Acessado em 20/11/2016.
 
-\bibitem{LinuxSchedulerIBM}
-Inside the linux 2.6 completely fair scheduler.
-\newblock
-  \url{https://www.ibm.com/developerworks/library/l-completely-fair-scheduler/}.
-\newblock Acessado em 19/11/2016.
-
 \bibitem{LinuxSchedulerMIT}
 The linux process scheduler.
 \newblock
   \url{http://www.informit.com/articles/article.aspx?p=101760&seqNum=2}.
+\newblock Acessado em 19/11/2016.
+
+\bibitem{LinuxSchedulerIBM}
+Inside the linux 2.6 completely fair scheduler.
+\newblock
+  \url{https://www.ibm.com/developerworks/library/l-completely-fair-scheduler/}.
 \newblock Acessado em 19/11/2016.
 
 \bibitem{LinuxSchedulerWiki}
@@ -74,6 +74,11 @@ Securing debian manual capítulo 8 - ferramentas de segurança no debian.
 Debian releases.
 \newblock \url{https://www.debian.org/releases/}.
 \newblock Acessado em 21/11/2016.
+
+\bibitem{GruposUsuarioLinux}
+File system permissions.
+\newblock \url{https://en.wikipedia.org/wiki/File_system_permissions}.
+\newblock Acessado em 22/11/2016.
 
 \bibitem{Debian-kFreeBSD-wiki}
 Debian gnu/kfreebsd - debian wiki.

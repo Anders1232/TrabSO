@@ -15,6 +15,6 @@ class GerenciadorMemoria
 		int Alocar(int processo, int tamanho);
 		bool Desalocar(int offsetMemoria,int numBlocosDeMemoria);
 	private:
-		vector<int> memoria;
-		list<regListaVazia> listaDeEspacosVazios;
+		std::vector<int> memoria;
+		std::list<regListaVazia> listaDeEspacosVazios;
 };

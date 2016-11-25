@@ -10,7 +10,7 @@ struct RegistroProcessoEscalonador
 };
 
 
-class Escolanador
+class Escalonador
 {
 	public:
 		void AdicionarProcesso(int idProcesso, int prioridadeInicial);

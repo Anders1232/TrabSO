@@ -7,6 +7,7 @@
 
 using namespace std;
 #include "GerenciadorProcessos.hpp"
+#include "GerenciadorProcessos.cpp"
 #include "GerenciadorMemoria.hpp"
 #include "GerenciadorRecursos.hpp"
 #include "Escalonador.hpp"
@@ -24,12 +25,17 @@ int main(int argc, char const *argv[])
 	string nomeArquivo;
 	if(argv[1]){
 		leitura(argv[1]);
+
 	}
-	else{
+	else{ //opcao 2!!
 		cout << "de como entrada o nomo do arquivo de processos \n ex:process.txt";
 		cin >> nomeArquivo;
-		//parei essa opcao pq é chato pacaraio essas conversoes de const char*, string e char*
-		//leitura((const char*)nomeArquivo);
+		
+		GerenciadorProcessos Processao;
+
+		Processao.LerArquivo(nomeArquivo);
+
+
 	}
 
 

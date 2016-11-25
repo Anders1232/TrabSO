@@ -1,4 +1,4 @@
-#include "GerenciadorMemória.cpp"
+#include "GerenciadorMemoria.hpp"
 int Alocar(int processo, int tamanho){
 
 	int auxPosicao,auxTamanho;

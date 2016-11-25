@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
 
 	}
 	else{ //opcao 2!!
-		cout << "de como entrada o nomo do arquivo de processos \n ex:process.txt";
+		cout << "de como entrada o nomo do arquivo de processos \n ex:process.txt\n";
 		cin >> nomeArquivo;
 		
 		GerenciadorProcessos Processao;

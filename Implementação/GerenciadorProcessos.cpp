@@ -20,9 +20,8 @@ void GerenciadorProcessos::LerArquivo(std::string &nomeArquivo)
 	{
 		argumentosLidos= fscanf(arq, "%d, %d, %d, %d, %d, %d, %d, %d\n", &arg1, &arg2, &arg3, &arg4, &arg5, &arg6, &arg7, &arg8);
 		Processo proc(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
-		processos.push_back(proc);
+		processosQueNaoForamIniciados.push_back(proc);
 	}
 	while(8==argumentosLidos);
-	printf("\n%lu processos lidos com sucesso!\n", processos.size());
-		exit(1);
+	
 }

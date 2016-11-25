@@ -1,2 +1,2 @@
 SO:
-g++ main.c -o alo
+	g++ main.c -o alo

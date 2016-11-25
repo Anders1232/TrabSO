@@ -14,7 +14,9 @@ class GerenciadorProcessos
 		void LerArquivo(std::string &nomeArquivo);
 		void GO(void);
 	private:
-		std::vector<Processo> processos;
+		std::vector<Processo> processosQueNaoForamIniciados;
+		std::vector<Processo> processosEmExecucao;
+		std::vector<Processo> processosTerminados;
 		GerenciadorMemoria gerenciadorMemoria;
 		GerenciadorRecursos gereciadorRecursos;
 		Escalonador escalonador;

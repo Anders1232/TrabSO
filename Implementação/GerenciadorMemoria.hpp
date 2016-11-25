@@ -9,6 +9,7 @@ struct regListaVazia
 	int posicao;
 	int tamanho;
 	int operator<(regListaVazia &reg);
+	regListaVazia(int, int);
 };
 
 class GerenciadorMemoria

@@ -5,10 +5,10 @@ Processo::Processo(
 			int prioridade,
 			int tempoProcessador,
 			int numBlocosDeMemoria,
-			biiiiiirl impressora,
-			bool scanner,
-			bol modem,
-			bou codigoDisco
+			int impressora,
+			int scanner,
+			int modem,
+			int codigoDisco
 ):
 	tempoInicializacao(tempoInicializacao),
 	prioridade(prioridade),

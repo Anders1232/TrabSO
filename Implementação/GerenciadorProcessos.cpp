@@ -9,7 +9,7 @@
 	{\
 		fprintf(stderr, "Assertion failed at %s:%d\n",__FILE__,__LINE__);\
 		exit(1);\
-	}\
+	}
 	
 
 void GerenciadorProcessos::LerArquivo(std::string &nomeArquivo)

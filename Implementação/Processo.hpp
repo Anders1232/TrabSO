@@ -17,10 +17,10 @@ class Processo
 //			int offsetMemoria;
 			int tempoProcessador,
 			int numBlocosDeMemoria,
-			biiiiiirl impressora,
-			bool scanner,
-			bol modem,
-			bou codigoDisco
+			int impressora,
+			int scanner,
+			int modem,
+			int codigoDisco
 		);
 	private:
 //		int id;

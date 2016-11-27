@@ -54,7 +54,7 @@ void GerenciadorProcessos::GO(){
 	unsigned int numProcessosQueNaoRodaram= 0;
 	unsigned int numProcessos= processosQueNaoForamIniciados.size();
 	std::sort(processosQueNaoForamIniciados.begin(), processosQueNaoForamIniciados.end(), ordenarTempoEntrada );
-
+	Processo &proc = *(processosQueNaoForamIniciados.begin());
 	while(processosTerminados.size() + numProcessosQueNaoRodaram != numProcessos)
 	{
 		//verificar se tem processo na lista de  n-inicializados que vao entrar no timeslice
@@ -68,7 +68,7 @@ void GerenciadorProcessos::GO(){
 			{
 				recursosAlocados[cont]= false;
 			}
-			Processo &proc = *(processosQueNaoForamIniciados.begin());
+			//Processo &proc = *(processosQueNaoForamIniciados.begin());
 			if(proc.usaImpressora())
 			{
 				recursosAlocados[0] = gereciadorRecursos.Alocar(IMPRESSORA);
@@ -90,7 +90,7 @@ void GerenciadorProcessos::GO(){
 					printf("O processo %d não será executado pois o scanner já esá alocado!\n", proc.ObterID());
 					if(recursosAlocados[0])
 					{
-						gereciadorRecursos.Desalocar(IMPRESSORA)
+						gereciadorRecursos.Desalocar(IMPRESSORA);
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
@@ -102,12 +102,12 @@ void GerenciadorProcessos::GO(){
 				recursosAlocados[2] = gereciadorRecursos.Alocar(MODEM);
 				if(!recursosAlocados[2])
 				{
-					printf("O processo %d não será executado pois o modem já esá alocado!\n");
+					printf("O processo %d não será executado pois o modem já esá alocado!\n",proc.ObterID());
 					for(int cont =0; cont < 3; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
-							gereciadorRecursos.Desalocar(cont)
+							gereciadorRecursos.Desalocar(cont);
 						}
 					}
 					numProcessosQueNaoRodaram++;
@@ -121,6 +121,7 @@ void GerenciadorProcessos::GO(){
 				if(!usarRecurso)
 				{
 					//desalocar tudo que ja foi alocado pra nao rodar
+				}
 				recursosAlocados[3] = gereciadorRecursos.Alocar(MODEM);
 				if(!recursosAlocados[3])
 				{
@@ -129,7 +130,7 @@ void GerenciadorProcessos::GO(){
 					{
 						if(recursosAlocados[cont])
 						{
-							gereciadorRecursos.Desalocar(cont)
+							gereciadorRecursos.Desalocar(cont);
 						}
 					}
 					numProcessosQueNaoRodaram++;
@@ -138,19 +139,19 @@ void GerenciadorProcessos::GO(){
 				}
 			}
 			//ver se tem memoria
-			int prio = proc.informarPrioridade();
+			int prio = proc.ObterPrioridade();
 			ASSERT((0 <= prio));
 			if(prio==0)
 			{
-				//colocar na fila de tempo real
-				if(ALOCACAO_FALHOU == memoriaTempoReal.Alocar(proc.informarQuantidadeMemoria()))
+				//colocar na fila de tempo real. TEM DUAS FUNCOES CHAMADAS ALOCAR!
+				if(ALOCACAO_FALHOU == memoriaTempoReal.Alocar(proc.ObterQuantidadeMemoria() ))
 				{
 					printf("O processo %d não será executado pois não tem memória de tempo real suficiente para o mesmo ser executado!\n", proc.ObterID());
 					for(int cont =0; cont < 4; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
-							gereciadorRecursos.Desalocar(cont)
+							gereciadorRecursos.Desalocar(cont);
 						}
 					}
 					numProcessosQueNaoRodaram++;
@@ -166,14 +167,14 @@ void GerenciadorProcessos::GO(){
 			else
 			{
 				//fila dos normais
-				if(ALOCACAO_FALHOU == memoriaComum.Alocar(proc.informarQuantidadeMemoria()))
+				if(ALOCACAO_FALHOU == memoriaComum.Alocar(proc.ObterQuantidadeMemoria()))
 				{
 					printf("O processo %d não será executado pois não tem memória suficiente para o mesmo ser executado!\n", proc.ObterID());
 					for(int cont =0; cont < 4; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
-							gereciadorRecursos.Desalocar(cont)
+							gereciadorRecursos.Desalocar(cont);
 						}
 					}
 					numProcessosQueNaoRodaram++;

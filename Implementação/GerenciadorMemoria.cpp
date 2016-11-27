@@ -57,4 +57,6 @@ bool GerenciadorMemoria::Desalocar(int offsetMemoria,int numBlocosDeMemoria){
 	listaDeEspacosVazios.insert (it, regListaVazia(offsetMemoria,numBlocosDeMemoria));
 	listaDeEspacosVazios.sort();
 
+	return true;
+
 }

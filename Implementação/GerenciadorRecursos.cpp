@@ -14,7 +14,7 @@ bool GerenciadorRecursos::Alocar(Recurso rec)
 {
 	switch (rec)
 	{
-		case IMPRESSORA:
+		case RECURSO_IMPRESSORA:
 		{
 			if(0== impressora)
 			{
@@ -23,7 +23,7 @@ bool GerenciadorRecursos::Alocar(Recurso rec)
 			impressora--;
 			return true;
 		}
-		case SATA:
+		case RECURSO_SATA:
 		{
 			if(0== sata)
 			{
@@ -32,7 +32,7 @@ bool GerenciadorRecursos::Alocar(Recurso rec)
 			sata--;
 			return true;
 		}
-		case SCANNER:
+		case RECURSO_SCANNER:
 		{
 			if(0== scanner)
 			{
@@ -41,7 +41,7 @@ bool GerenciadorRecursos::Alocar(Recurso rec)
 			scanner--;
 			return true;
 		}
-		case MODEM:
+		case RECURSO_MODEM:
 		{
 			if(0== modem)
 			{

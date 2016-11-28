@@ -4,12 +4,14 @@
 #include<list>
 #include<vector>
 
+#define PRIORIDADE_TEMPO_REAL 0
+
 struct RegistroProcessoEscalonador
 {
 	int idProcesso;
 	int aging;
 	int prioridadePos;
-	int operator<(RegistroProcessoEscalonador &a);
+	bool operator<(RegistroProcessoEscalonador const &a) const;
 };
 
 

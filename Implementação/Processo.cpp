@@ -49,3 +49,17 @@ biiiiiirl Processo::usaModem(void){
 	return modem;
 } 
 
+int Processo::ObterID(void)
+{
+	return id;
+}
+
+int Processo::ObterPrioridade(void)
+{
+	return prioridade;
+}
+
+int Processo::ObterQuantidadeMemoria(void)
+{
+	return numBlocosDeMemoria;
+}

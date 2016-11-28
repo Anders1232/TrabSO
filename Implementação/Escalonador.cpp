@@ -1,6 +1,7 @@
 #include "Escalonador.hpp"
+#include <algorithm>
 
-int RegistroProcessEscalonador::operator<(RegistroProcessoEscalonador &a)
+bool RegistroProcessoEscalonador::operator<(RegistroProcessoEscalonador const &a) const
 {
 	return this->aging < a.aging;
 }
@@ -8,14 +9,14 @@ int RegistroProcessEscalonador::operator<(RegistroProcessoEscalonador &a)
 
 void Escalonador::AdicionarProcesso(int idProcesso, int prioridadeInicial)
 {
-	if(0== prioridadeInicial)
+	if(PRIORIDADE_TEMPO_REAL == prioridadeInicial)
 	{
 		processosTempoReal.push_back(idProcesso);
 	}
 	else
 	{
-		RegistroProcessEscalonador temp;
-		temp.idProcesso == idProcesso;
+		RegistroProcessoEscalonador temp;
+		temp.idProcesso = idProcesso;
 		temp.aging = prioridadeInicial;
 		temp.prioridadePos = prioridadeInicial+1;
 		registroProcessos.push_back(temp);
@@ -25,15 +26,15 @@ int Escalonador::Escalonar(void)//retorna o id do primeiro processo da fila que 
 {
 	if(0!= processosTempoReal.size())
 	{
-		return processosTempoReal[0];
+		return processosTempoReal.front();
 	}
 	else
 	{
 		registroProcessos[0].aging= registroProcessos[0].prioridadePos;
 		(registroProcessos[0].prioridadePos)++;
-		registroProcessos.sort();
+		std::sort(registroProcessos.begin(), registroProcessos.end());
 //		std::stable_sort(registroProcessos.begin(), registroProcessos.end());
-		for(int cont =0 ;cont < registroProcessos.size(); cont++)
+		for(unsigned int cont =0 ;cont < registroProcessos.size(); cont++)
 		{
 			(registroProcessos[cont].aging)--;
 		}
@@ -50,7 +51,7 @@ void Escalonador::ProcessoTerminou(int idProcesso)
 	}
 	else
 	{
-		for(int cont =0; cont < registroProcessos.size(); cont++)
+/*		for(unsigned int cont =0; cont < registroProcessos.size(); cont++)
 		{
 			if(idProcesso == registroProcessos[cont].idProcesso)
 			{
@@ -58,7 +59,31 @@ void Escalonador::ProcessoTerminou(int idProcesso)
 				return;
 			}
 		}
+*/
+		for(std::vector<RegistroProcessoEscalonador>::iterator algo; algo != registroProcessos.end(); algo++)
+		{
+			if(algo->idProcesso == idProcesso)
+			{
+				registroProcessos.erase(algo);
+				return;
+			}
+		}
 	}
-	throw new std::tring("[ERRO] Processo não encontrado! Arquivo: %s\t\t:%d\n", __FILE__, __LINE__);
+	char str[350];
+	sprintf(str, "[ERRO] Processo não encontrado! Arquivo: %s\t\t:%d\n", __FILE__, __LINE__);
+	throw new std::string(str);
 }
 
+/*
+void Escalonador::AdicionarProcesso(int idProcesso, int prioridadeInicial)
+{
+	if(PRIORIDADE_TEMPO_REAL == prioridadeInicial)
+	{
+		processosTempoReal.push_back(idProcesso);
+	}
+	else
+	{
+		registroProcessos.push_back(RegistroProcessoEscalonador(idProcesso, prioridadeInicial, prioridadeInicial+1));
+	}
+}
+*/

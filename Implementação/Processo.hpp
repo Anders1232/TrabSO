@@ -28,7 +28,7 @@ class Processo
 		biiiiiirl usaSata(void);
 		biiiiiirl usaModem(void);
 		int ObterPrioridade(void);
-		int ObterQuantidadeMemoria(void); 
+		int ObterQuantidadeMemoria(void);
 		int ObterID(void);
 		void InformarOffsetMemoria(int);
 	private:

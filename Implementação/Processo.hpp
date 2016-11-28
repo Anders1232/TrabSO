@@ -1,11 +1,17 @@
 #ifndef PROCESSOS_HPP
 #define PROCESSOS_HPP
 
+//#include <stdbool.h>
+
 typedef bool bol;
 typedef bool bou;
 typedef bool biiiiiirl;
 
 #define PROCESSO_NAO_CARREGADO -1
+
+typedef bool ResultadoExecucao;
+#define PROCESSO_TERMINOU true
+#define PROCASSO_NAO_TERMINOU false
 
 class Processo
 {
@@ -31,6 +37,7 @@ class Processo
 		int ObterQuantidadeMemoria(void);
 		int ObterID(void);
 		void InformarOffsetMemoria(int);
+		ResultadoExecucao RodarProcesso(void);
 	private:
 		int id;
 		int tempoInicializacao;

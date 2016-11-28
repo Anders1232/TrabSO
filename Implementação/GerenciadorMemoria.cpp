@@ -1,6 +1,7 @@
 #include "GerenciadorMemoria.hpp"
 
 //#include<iterator>
+#include<stdio.h>
 
 int regListaVazia::operator<(regListaVazia &reg)
 {
@@ -50,7 +51,7 @@ int GerenciadorMemoria::Alocar(int processo, int tamanho){
 	}
 	return(-1);
 }
-
+/*
 bool GerenciadorMemoria::Desalocar(int offsetMemoria,int numBlocosDeMemoria){
 
 	std::list<regListaVazia>::iterator it = listaDeEspacosVazios.begin();
@@ -59,4 +60,11 @@ bool GerenciadorMemoria::Desalocar(int offsetMemoria,int numBlocosDeMemoria){
 
 	return true;
 
+}
+*/
+
+bool GerenciadorMemoria::Desalocar(int idProcesso)
+{
+	printf("Implementar %s:%d\n", __FILE__, __LINE__);
+	return true;
 }

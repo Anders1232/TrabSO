@@ -15,6 +15,7 @@ struct regListaVazia
 	regListaVazia(int, int);
 };
 
+
 class GerenciadorMemoria
 {
 	public:
@@ -25,6 +26,8 @@ class GerenciadorMemoria
 	private:
 		std::vector<int> memoria;
 		std::list<regListaVazia> listaDeEspacosVazios;
+		void adicionarNaLista(int tamanho,int offset);
+
 };
 
 #endif

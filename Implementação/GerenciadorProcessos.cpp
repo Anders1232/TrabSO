@@ -195,6 +195,45 @@ void GerenciadorProcessos::GO(){
 		processosEmExecucao.push_back(proc);
 		processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
 
+		int processoSelecionado= escalonador.Escalonar();
+		for(std::vector<Processo>::iterator it= processosEmExecucao.begin(); it != processosEmExecucao.end(); it++)
+//		for(int cont =0; cont < processosEmExecucao.size(); cont++)
+		{
+			if(it->ObterID() == processoSelecionado)
+			{
+				ResultadoExecucao res= it->RodarProcesso();
+				if(PROCESSO_TERMINOU == res)
+				{
+					if(PRIORIDADE_TEMPO_REAL == it->ObterPrioridade())
+					{
+						memoriaTempoReal.Desalocar(processoSelecionado);
+					}
+					else
+					{
+						memoriaComum.Desalocar(processoSelecionado);
+					}
+					if(it->usaImpressora())
+					{
+						gereciadorRecursos.Desalocar(RECURSO_IMPRESSORA);
+					}
+					if(it->usaModem())
+					{
+						gereciadorRecursos.Desalocar(RECURSO_MODEM);
+					}
+					if(it->usaSata())
+					{
+						gereciadorRecursos.Desalocar(RECURSO_SATA);
+					}
+					if(it->usaScanner())
+					{
+						gereciadorRecursos.Desalocar(RECURSO_SCANNER);
+					}
+					processosTerminados.push_back(*it);
+					processosEmExecucao.erase(it);
+				}
+			}
+		}
+		
 		//escalonar um processo pra ser executado
 		//Se o processo acabar, por na lista de terminados e liberar seus recursos
 

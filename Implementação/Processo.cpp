@@ -63,3 +63,14 @@ int Processo::ObterQuantidadeMemoria(void)
 {
 	return numBlocosDeMemoria;
 }
+
+ResultadoExecucao Processo::RodarProcesso(void)
+{
+	tempoProcessador--;
+	if(0 == tempoProcessador)
+	{
+		return PROCESSO_TERMINOU;
+	}
+	return PROCASSO_NAO_TERMINOU;
+}
+

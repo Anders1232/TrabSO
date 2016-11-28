@@ -30,14 +30,14 @@ int Escalonador::Escalonar(void)//retorna o id do primeiro processo da fila que 
 	}
 	else
 	{
-		registroProcessos[0].aging= registroProcessos[0].prioridadePos;
-		(registroProcessos[0].prioridadePos)++;
-		std::sort(registroProcessos.begin(), registroProcessos.end());
-//		std::stable_sort(registroProcessos.begin(), registroProcessos.end());
+		std::stable_sort(registroProcessos.begin(), registroProcessos.end());
 		for(unsigned int cont =0 ;cont < registroProcessos.size(); cont++)
 		{
 			(registroProcessos[cont].aging)--;
 		}
+		registroProcessos[0].aging= registroProcessos[0].prioridadePos;
+		(registroProcessos[0].prioridadePos)++;
+//		std::stable_sort(registroProcessos.begin(), registroProcessos.end());
 	}
 	return registroProcessos[0].idProcesso;
 }

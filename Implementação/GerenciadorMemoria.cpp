@@ -86,7 +86,6 @@ bool GerenciadorMemoria::Desalocar(int idProcesso)
 				indice = i; 	//pega o primeiro espaço que ele ocupa
 			}
 			count++;
-			memoria.at(i)= MEMORIA_NAO_USADA; 	//seta como livre
 
 		}
 		else if(achou) //caso esteja em blocos consecutivos
@@ -97,7 +96,7 @@ bool GerenciadorMemoria::Desalocar(int idProcesso)
 	if(!achou)
 	{
 		fprintf(stderr, "\n\nDeu ruim %s:%d\n\n", __FILE__, __LINE__);
-//		exit(1);
+		exit(1);
 	}
 	adicionarNaLista(count, indice);
 
@@ -163,4 +162,14 @@ int GerenciadorMemoria::ObterOffset(int idProcesso)
 	}
 	return (-1);
 
+}
+
+void GerenciadorMemoria::printMemory(){
+	int a = memoria.size();
+	printf("%d\n",a);
+	for(unsigned int i = 0;i < memoria.size(); i++)
+	{
+		printf("%d",memoria[i]);
+
+	}
 }

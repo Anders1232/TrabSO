@@ -14,7 +14,7 @@
 	}
 	
 
-GerenciadorProcessos::GerenciadorProcessos(std::string &nomeArquivo)
+void GerenciadorProcessos::GerenciadorProcessos(std::string &nomeArquivo)
 {
 	FILE *arq= fopen(nomeArquivo.c_str(), "r");
 	ASSERT(arq);

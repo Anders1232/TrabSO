@@ -198,46 +198,24 @@ void GerenciadorProcessos::GO(){
 		else
 		{
 			int processoSelecionado= escalonador.Escalonar();
-			for(std::vector<Processo*>::iterator it= processosEmExecucao.begin(); it != processosEmExecucao.end(); it++)
+			std::vector<Processo*>::iterator it;
+
+			for(it = processosEmExecucao.begin(); it < processosEmExecucao.end(); it++)
 //			for(int cont =0; cont < processosEmExecucao.size(); cont++)
 			{
 				if( (*it)->ObterID() == processoSelecionado)
 				{
-<<<<<<< HEAD
-					if(PRIORIDADE_TEMPO_REAL == (*it)->ObterPrioridade())
-					{
-						memoriaTempoReal.printMemory();
-						memoriaTempoReal.Desalocar(processoSelecionado);
-					}
-					else
-					{
-						memoriaComum.printMemory();
-						memoriaComum.Desalocar(processoSelecionado);
-					}
-					if((*it)->usaImpressora())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_IMPRESSORA);
-					}
-					if((*it)->usaModem())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_MODEM);
-					}
-					if((*it)->usaSata())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_SATA);
-					}
-					if((*it)->usaScanner())
-=======
 					ResultadoExecucao res= (*it)->RodarProcesso();
 					if(PROCESSO_TERMINOU == res)
->>>>>>> d33e81ddb352b8c5d0bd55abb5a7dffcdecd8e08
 					{
 						if(PRIORIDADE_TEMPO_REAL == (*it)->ObterPrioridade())
 						{
+							memoriaTempoReal.printMemory();
 							memoriaTempoReal.Desalocar(processoSelecionado);
 						}
 						else
 						{
+							memoriaComum.printMemory();
 							memoriaComum.Desalocar(processoSelecionado);
 						}
 						if((*it)->usaImpressora())

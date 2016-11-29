@@ -24,7 +24,7 @@ Processo::Processo(
 {
 	offsetMemoria= PROCESSO_NAO_CARREGADO;
 	static int identificador=0;
-	this->id= identificador++;
+	this->id= ++identificador;
 	instrucoesExecutadas =0;
 }
 

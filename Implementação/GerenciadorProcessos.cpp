@@ -255,18 +255,19 @@ drives: 0
 */
 void GerenciadorProcessos::Despachar(Processo &proc)
 {
+	int prioridade= proc.ObterPrioridade();
+	int id = proc.ObterID();
 	printf("dispatcher =>\n");
-	printf("PID: %d\n", proc.ObterID());
-	int prioridade= proc.ObterPrioridade()
+	printf("PID: %d\n", id);
 	if(0 == prioridade)
 	{
-		printf("offset: %d\n", memoriaTempoReal.ObterOffset(proc));
+		printf("offset: %d\n", memoriaTempoReal.ObterOffset(id));
 	}
 	else
 	{
-		printf("offset: %d\n", memoriaComum.ObterOffset(proc));
+		printf("offset: %d\n", memoriaComum.ObterOffset(id));
 	}
-	printf("blocks: %s\n", proc.ObterQuantidadeMemoria());
+	printf("blocks: %d\n", proc.ObterQuantidadeMemoria());
 	printf("priority: %d\n", prioridade);
 	printf("time: %d\n", proc.ObterTempoParaExecutar());
 	printf("printers: %d\n", (proc.usaImpressora())? 1 : 0);

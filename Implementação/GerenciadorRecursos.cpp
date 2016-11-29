@@ -105,7 +105,7 @@ bool GerenciadorRecursos::Desalocar(Recurso rec)
 		}
 		default:
 		{
-			fprintf(stderr, "[ERRO]Tentando alocar recurso desconhecido.\t\t%s\t\t%d\n", __FILE__, __LINE__);
+			fprintf(stderr, "[ERRO]Tentando alocar recurso desconhecido(%d).\t\t%s\t\t%d\n",rec, __FILE__, __LINE__);
 			exit(1);
 		}
 	}

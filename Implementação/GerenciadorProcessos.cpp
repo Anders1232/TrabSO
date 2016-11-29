@@ -106,7 +106,7 @@ void GerenciadorProcessos::GO(){
 				if(false == recursosAlocados[2])
 				{
 					printf("O processo %d não será executado pois o modem já esá alocado!\n",proc->ObterID());
-					for(int cont =0; cont < 3; cont++)
+					for(int cont =1; cont < 5; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -130,7 +130,7 @@ void GerenciadorProcessos::GO(){
 				if(false == recursosAlocados[3])
 				{
 					printf("O processo %d não será executado pois o modem já esá alocado!\n", proc->ObterID());
-					for(int cont =0; cont < 4; cont++)
+					for(int cont =1; cont < 5; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -152,7 +152,7 @@ void GerenciadorProcessos::GO(){
 				if(ALOCACAO_FALHOU == memoriaTempoReal.Alocar(proc->ObterID(), proc->ObterQuantidadeMemoria() ))
 				{
 					printf("O processo %d não será executado pois não tem memória de tempo real suficiente para o mesmo ser executado!\n", proc->ObterID());
-					for(int cont =0; cont < 4; cont++)
+					for(int cont =1; cont < 5; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -171,7 +171,7 @@ void GerenciadorProcessos::GO(){
 				if(ALOCACAO_FALHOU == memoriaComum.Alocar(proc->ObterID(), proc->ObterQuantidadeMemoria()))
 				{
 					printf("O processo %d não será executado pois não tem memória suficiente para o mesmo ser executado!\n", proc->ObterID());
-					for(int cont =0; cont < 4; cont++)
+					for(int cont =1; cont < 5; cont++)
 					{
 						if(recursosAlocados[cont])
 						{

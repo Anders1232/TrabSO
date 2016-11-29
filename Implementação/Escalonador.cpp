@@ -1,5 +1,7 @@
 #include "Escalonador.hpp"
 #include <algorithm>
+#include <stdio.h>
+#include <string>
 
 bool RegistroProcessoEscalonador::operator<(RegistroProcessoEscalonador const &a) const
 {

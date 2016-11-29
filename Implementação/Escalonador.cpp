@@ -8,7 +8,6 @@ bool RegistroProcessoEscalonador::operator<(RegistroProcessoEscalonador const &a
 	return this->aging < a.aging;
 }
 
-
 void Escalonador::AdicionarProcesso(int idProcesso, int prioridadeInicial)
 {
 	if(PRIORIDADE_TEMPO_REAL == prioridadeInicial)

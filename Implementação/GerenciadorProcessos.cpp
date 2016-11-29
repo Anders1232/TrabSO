@@ -195,41 +195,44 @@ void GerenciadorProcessos::GO(){
 			sleep(1);
 			CONTINUE_LOOP_PRINCIPAL;
 		}
-		int processoSelecionado= escalonador.Escalonar();
-		for(std::vector<Processo*>::iterator it= processosEmExecucao.begin(); it != processosEmExecucao.end(); it++)
-//		for(int cont =0; cont < processosEmExecucao.size(); cont++)
+		else
 		{
-			if( (*(it) )->ObterID() == processoSelecionado)
+			int processoSelecionado= escalonador.Escalonar();
+			for(std::vector<Processo*>::iterator it= processosEmExecucao.begin(); it != processosEmExecucao.end(); it++)
+//			for(int cont =0; cont < processosEmExecucao.size(); cont++)
 			{
-				ResultadoExecucao res= (*it)->RodarProcesso();
-				if(PROCESSO_TERMINOU == res)
+				if( (*it)->ObterID() == processoSelecionado)
 				{
-					if(PRIORIDADE_TEMPO_REAL == (*it)->ObterPrioridade())
+					ResultadoExecucao res= (*it)->RodarProcesso();
+					if(PROCESSO_TERMINOU == res)
 					{
-						memoriaTempoReal.Desalocar(processoSelecionado);
+						if(PRIORIDADE_TEMPO_REAL == (*it)->ObterPrioridade())
+						{
+							memoriaTempoReal.Desalocar(processoSelecionado);
+						}
+						else
+						{
+							memoriaComum.Desalocar(processoSelecionado);
+						}
+						if((*it)->usaImpressora())
+						{
+							gereciadorRecursos.Desalocar(RECURSO_IMPRESSORA);
+						}
+						if((*it)->usaModem())
+						{
+							gereciadorRecursos.Desalocar(RECURSO_MODEM);
+						}
+						if((*it)->usaSata())
+						{
+							gereciadorRecursos.Desalocar(RECURSO_SATA);
+						}
+						if((*it)->usaScanner())
+						{
+							gereciadorRecursos.Desalocar(RECURSO_SCANNER);
+						}
+						processosTerminados.push_back(*it);
+						processosEmExecucao.erase(it);
 					}
-					else
-					{
-						memoriaComum.Desalocar(processoSelecionado);
-					}
-					if((*it)->usaImpressora())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_IMPRESSORA);
-					}
-					if((*it)->usaModem())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_MODEM);
-					}
-					if((*it)->usaSata())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_SATA);
-					}
-					if((*it)->usaScanner())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_SCANNER);
-					}
-					processosTerminados.push_back(*it);
-					processosEmExecucao.erase(it);
 				}
 			}
 		}
@@ -276,7 +279,7 @@ void GerenciadorProcessos::Despachar(Processo &proc)
 
 GerenciadorProcessos::~GerenciadorProcessos()
 {
-	for(int cont =0; cont < processosTerminados.size(); cont++)
+	for(unsigned int cont =0; cont < processosTerminados.size(); cont++)
 	{
 		delete processosTerminados[cont];
 	}

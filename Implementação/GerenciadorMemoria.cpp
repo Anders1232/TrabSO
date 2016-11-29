@@ -127,7 +127,17 @@ void GerenciadorMemoria::adicionarNaLista(int tamanho,int offset){
 			listaDeEspacosVazios.sort();
 		}
 	}
-		
-
 }
 
+int GerenciadorMemoria::ObterOffset(int idProcesso)
+{
+	for(unsigned int i = 0;i < memoria.size(); i++)
+	{
+		if(memoria[i] == idProcesso)
+		{
+			return i;
+		}
+	}
+	return (-1);
+
+}

@@ -267,7 +267,7 @@ void GerenciadorProcessos::Despachar(Processo &proc)
 	printf("printers: %d\n", (proc.usaImpressora())? 1 : 0);
 	printf("scanners: %d\n", (proc.usaScanner())? 1 : 0);
 	printf("modems: %d\n", (proc.usaModem())? 1 : 0);
-	printf("drives: %d\n", (proc.usaSata)? 1 : 0);
+	printf("drives: %d\n", (proc.usaSata())? 1 : 0);
 	printf("\n");
 }
 

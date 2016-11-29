@@ -73,7 +73,7 @@ ResultadoExecucao Processo::RodarProcesso(void)
 	{
 		printf("P%d STARTED\n", id);
 	}
-	printf("P%d\t instruction %d\n", id, instrucoesExecutadas);
+	printf("P%d instruction %d\n", id, instrucoesExecutadas);
 	sleep(1);
 	instrucoesExecutadas++;
 	if(instrucoesExecutadas == tempoProcessador)

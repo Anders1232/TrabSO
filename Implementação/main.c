@@ -23,17 +23,14 @@ int main(int argc, char const *argv[])
 {
 	string nomeArquivo;
 	if(argv[1]){
-		leitura(argv[1]);
-
+		nomeArquivo= argv[1];
 	}
 	else{ //opcao 2!!
 		cout << "de como entrada o nomo do arquivo de processos \n ex:process.txt\n";
 		cin >> nomeArquivo;
 		
-		GerenciadorProcessos Processao = GerenciadorProcessos(nomeArquivo);
 	}
-
-
+	GerenciadorProcessos Processao = GerenciadorProcessos(nomeArquivo);
 	return 0;
 }
 

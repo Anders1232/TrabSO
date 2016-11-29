@@ -3,8 +3,10 @@
 #include<cstdlib>
 #include <iostream>
 #include <algorithm>
+#include <unistd.h>
 
 
+#define CONTINUE_LOOP_PRINCIPAL timeslice++;continue
 
 #define ASSERT(arg1)\
 	if(!arg1)\
@@ -77,7 +79,7 @@ void GerenciadorProcessos::GO(){
 					printf("O processo %d não será executado pois a impressora já esá alocada!\n", proc.ObterID());
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					continue;
+					CONTINUE_LOOP_PRINCIPAL;
 				}
 			}
 			if(proc.usaScanner())
@@ -93,7 +95,7 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					continue;
+					CONTINUE_LOOP_PRINCIPAL;
 				}
 			}
 			if(proc.usaModem())
@@ -111,7 +113,7 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					continue;
+					CONTINUE_LOOP_PRINCIPAL;
 				}
 			}
 			if(proc.usaSata())
@@ -134,7 +136,7 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					continue;
+					CONTINUE_LOOP_PRINCIPAL;
 				}
 			}
 			//ver se tem memoria
@@ -155,7 +157,7 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					continue;
+					CONTINUE_LOOP_PRINCIPAL;
 				}
 				else
 				{
@@ -178,7 +180,7 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					continue;
+					CONTINUE_LOOP_PRINCIPAL;
 				}
 				else
 				{
@@ -186,10 +188,16 @@ void GerenciadorProcessos::GO(){
 					escalonador.AdicionarProcesso(proc.ObterID(), proc.ObterPrioridade());
 				}
 			}
+			processosEmExecucao.push_back(proc);
+			processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
 		}
-		processosEmExecucao.push_back(proc);
-		processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
 
+		if(0 == processosEmExecucao.size())
+		{
+			printf("Nesse timeslice não havia nenhum processo para ser executado, standby\n");
+			sleep(1);
+			CONTINUE_LOOP_PRINCIPAL;
+		}
 		int processoSelecionado= escalonador.Escalonar();
 		for(std::vector<Processo>::iterator it= processosEmExecucao.begin(); it != processosEmExecucao.end(); it++)
 //		for(int cont =0; cont < processosEmExecucao.size(); cont++)
@@ -228,9 +236,6 @@ void GerenciadorProcessos::GO(){
 				}
 			}
 		}
-		
-
-
 		timeslice++;//por ultimo é isso
 	}
 

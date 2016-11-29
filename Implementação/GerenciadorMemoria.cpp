@@ -89,7 +89,7 @@ bool GerenciadorMemoria::Desalocar(int idProcesso)
 	if(!achou)
 	{
 		fprintf(stderr, "\n\nDeu ruim %s:%d\n\n", __FILE__, __LINE__);
-		//exit(1);
+		exit(1);
 	}
 	adicionarNaLista(count, indice);
 

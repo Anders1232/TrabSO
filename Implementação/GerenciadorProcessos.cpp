@@ -146,7 +146,7 @@ void GerenciadorProcessos::GO(){
 			//ver se tem memoria
 			int prio = proc->ObterPrioridade();
 			ASSERT((0 <= prio));
-			if(prio==0)
+			if(prio==PRIORIDADE_TEMPO_REAL)
 			{
 				//colocar na fila de tempo real. TEM DUAS FUNCOES CHAMADAS ALOCAR!
 				if(ALOCACAO_FALHOU == memoriaTempoReal.Alocar(proc->ObterID(), proc->ObterQuantidadeMemoria() ))
@@ -186,6 +186,7 @@ void GerenciadorProcessos::GO(){
 			escalonador.AdicionarProcesso(proc->ObterID(), proc->ObterPrioridade());
 			processosEmExecucao.push_back(proc);
 			processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
+			Despachar(*proc);
 		}
 
 		if(0 == processosEmExecucao.size())
@@ -273,4 +274,12 @@ void GerenciadorProcessos::Despachar(Processo &proc)
 	printf("modems: %d\n", (proc.usaModem())? 1 : 0);
 	printf("drives: %d\n", (proc.usaSata())? 1 : 0);
 	printf("\n");
+}
+
+GerenciadorProcessos::~GerenciadorProcessos()
+{
+	for(int cont =0; cont < processosTerminados.size(); cont++)
+	{
+		delete processosTerminados[cont];
+	}
 }

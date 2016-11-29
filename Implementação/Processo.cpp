@@ -84,3 +84,8 @@ ResultadoExecucao Processo::RodarProcesso(void)
 	return PROCASSO_NAO_TERMINOU;
 }
 
+
+int Processo::ObterTempoParaExecutar(void)
+{
+	return tempoProcessador;
+}

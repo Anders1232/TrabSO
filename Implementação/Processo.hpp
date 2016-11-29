@@ -38,6 +38,7 @@ class Processo
 		int ObterID(void);
 		void InformarOffsetMemoria(int);
 		ResultadoExecucao RodarProcesso(void);
+		int ObterTempoParaExecutar(void);
 	private:
 		int id;
 		int tempoInicializacao;

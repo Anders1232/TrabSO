@@ -60,7 +60,7 @@ void GerenciadorProcessos::GO(){
 	{
 		//verificar se tem processo na lista de  n-inicializados que vao entrar no timeslice
 		//Se sim, verifica se tem memoria, se sim, remover da lista de n-inicializado e por na fila de execucao 
-		while(timeslice==processosQueNaoForamIniciados.begin()->obterMomentoEntrada())
+		while((processosQueNaoForamIniciados.size()>0)?	(timeslice==processosQueNaoForamIniciados.begin()->obterMomentoEntrada() ) : false)
 		{
 			//verificar se usa algum recurso
 			//ver se tem recurso que ele precisa
@@ -79,7 +79,8 @@ void GerenciadorProcessos::GO(){
 					printf("O processo %d não será executado pois a impressora já esá alocada!\n", proc.ObterID());
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					CONTINUE_LOOP_PRINCIPAL;
+//					CONTINUE_LOOP_PRINCIPAL;
+					continue;
 				}
 			}
 			if(proc.usaScanner())
@@ -95,7 +96,8 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					CONTINUE_LOOP_PRINCIPAL;
+//					CONTINUE_LOOP_PRINCIPAL;
+					continue;
 				}
 			}
 			if(proc.usaModem())
@@ -113,7 +115,8 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					CONTINUE_LOOP_PRINCIPAL;
+//					CONTINUE_LOOP_PRINCIPAL;
+					continue;
 				}
 			}
 			if(proc.usaSata())
@@ -136,7 +139,8 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					CONTINUE_LOOP_PRINCIPAL;
+//					CONTINUE_LOOP_PRINCIPAL;
+					continue;
 				}
 			}
 			//ver se tem memoria
@@ -157,12 +161,8 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					CONTINUE_LOOP_PRINCIPAL;
-				}
-				else
-				{
-					/*colocar no escalonador*/
-					escalonador.AdicionarProcesso(proc.ObterID(), proc.ObterPrioridade());
+//					CONTINUE_LOOP_PRINCIPAL;
+					continue;
 				}
 			}
 			else
@@ -180,14 +180,10 @@ void GerenciadorProcessos::GO(){
 					}
 					numProcessosQueNaoRodaram++;
 					processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
-					CONTINUE_LOOP_PRINCIPAL;
-				}
-				else
-				{
-					/*colocar no escalonador*/
-					escalonador.AdicionarProcesso(proc.ObterID(), proc.ObterPrioridade());
+					continue;
 				}
 			}
+			escalonador.AdicionarProcesso(proc.ObterID(), proc.ObterPrioridade());
 			processosEmExecucao.push_back(proc);
 			processosQueNaoForamIniciados.erase(processosQueNaoForamIniciados.begin());
 		}

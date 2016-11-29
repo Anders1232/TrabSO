@@ -38,7 +38,7 @@ int GerenciadorMemoria::Alocar(int processo, int tamanho){
 				//Preenche a memória com dados ficticios
 				for(int i = 0; i < tamanho ;i ++)
 				{
-					memoria[posicao+i] = processo;
+					memoria[auxPosicao+i] = processo;
 				}
 				//Verifica se sobrou espaço no bloco usado.Caso afirmativo,insere o espaço restante na lista
 				if((auxTamanho - tamanho) > 0)

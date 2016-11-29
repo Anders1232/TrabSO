@@ -24,7 +24,7 @@ class GerenciadorProcessos
 		GerenciadorMemoria memoriaTempoReal= TAMANHO_MEMORIA_TEMPO_REAL;
 		GerenciadorRecursos gereciadorRecursos;
 		Escalonador escalonador;
-		void Despachar(Processo *proc);
+		void Despachar(Processo &proc);
 };
 
 #endif

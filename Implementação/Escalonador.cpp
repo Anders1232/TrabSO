@@ -8,7 +8,6 @@ bool RegistroProcessoEscalonador::operator<(RegistroProcessoEscalonador const &a
 	return this->aging < a.aging;
 }
 
-
 void Escalonador::AdicionarProcesso(int idProcesso, int prioridadeInicial)
 {
 	if(PRIORIDADE_TEMPO_REAL == prioridadeInicial)
@@ -26,9 +25,12 @@ void Escalonador::AdicionarProcesso(int idProcesso, int prioridadeInicial)
 }
 int Escalonador::Escalonar(void)//retorna o id do primeiro processo da fila que vai ser rodado
 {
+	int processoEscalonado;
 	if(0!= processosTempoReal.size())
 	{
-		return processosTempoReal.front();
+		processoEscalonado= processosTempoReal.front();
+//		ultimoProcessoEscalonado
+//		return processosTempoReal.front();
 	}
 	else
 	{
@@ -40,8 +42,14 @@ int Escalonador::Escalonar(void)//retorna o id do primeiro processo da fila que 
 		registroProcessos[0].aging= registroProcessos[0].prioridadePos;
 		(registroProcessos[0].prioridadePos)++;
 //		std::stable_sort(registroProcessos.begin(), registroProcessos.end());
+		processoEscalonado= registroProcessos[0].idProcesso;
 	}
-	return registroProcessos[0].idProcesso;
+	if(processoEscalonado != ultimoProcessoEscalonado)
+	{
+		ultimoProcessoEscalonado= processoEscalonado;
+		printf("process %d =>\n", processoEscalonado);
+	}
+	return processoEscalonado;
 }
 
 void Escalonador::ProcessoTerminou(int idProcesso)
@@ -89,3 +97,8 @@ void Escalonador::AdicionarProcesso(int idProcesso, int prioridadeInicial)
 	}
 }
 */
+
+Escalonador::Escalonador(void)
+{
+	ultimoProcessoEscalonado= -1;
+}

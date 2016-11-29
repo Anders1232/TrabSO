@@ -17,9 +17,9 @@ class GerenciadorProcessos
 		GerenciadorProcessos(std::string &nomeArquivo);
 		void GO(void);
 	private:
-		std::vector<Processo> processosQueNaoForamIniciados;
-		std::vector<Processo> processosEmExecucao;
-		std::vector<Processo> processosTerminados;
+		std::vector<Processo*> processosQueNaoForamIniciados;
+		std::vector<Processo*> processosEmExecucao;
+		std::vector<Processo*> processosTerminados;
 		GerenciadorMemoria memoriaComum = TAMANHO_MEMORIA_COMUM;
 		GerenciadorMemoria memoriaTempoReal= TAMANHO_MEMORIA_TEMPO_REAL;
 		GerenciadorRecursos gereciadorRecursos;

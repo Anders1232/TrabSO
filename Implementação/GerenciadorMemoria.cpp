@@ -2,6 +2,7 @@
 
 //#include<iterator>
 #include<stdio.h>
+#include<stdlib.h>
 
 int regListaVazia::operator<(regListaVazia &reg)
 {
@@ -43,7 +44,7 @@ int GerenciadorMemoria::Alocar(int processo, int tamanho){
 				//Verifica se sobrou espaço no bloco usado.Caso afirmativo,insere o espaço restante na lista
 				if((auxTamanho - tamanho) > 0)
 				{
-					listaDeEspacosVazios.insert (it, regListaVazia(auxPosicao,auxTamanho - tamanho));
+					listaDeEspacosVazios.push_back (regListaVazia(auxPosicao+tamanho, auxTamanho - tamanho));
 					listaDeEspacosVazios.sort();
 				}
 				return(auxPosicao);
@@ -69,25 +70,32 @@ bool GerenciadorMemoria::Desalocar(int idProcesso)
 	bool achou=false;
 
 	for (unsigned int i=0; i<memoria.size(); i++)
-    {
-    	if(memoria.at(i)==idProcesso)
-    	{
-    		achou=true;
-    		if(!count)
-    			indice = i; 	//pega o primeiro espaço que ele ocupa
-    		count++;
-    		memoria.at(i)=-1; 	//seta como livre
+	{
+		if(memoria.at(i)==idProcesso)
+		{
+			achou=true;
+			if(0 == count)
+			{
+				indice = i; 	//pega o primeiro espaço que ele ocupa
+			}
+			count++;
+			memoria.at(i)= MEMORIA_NAO_USADA; 	//seta como livre
 
-    	}
-    	else if(achou) //caso esteja em blocos consecutivos
-    	{
-    		break;
-    	}
-    }
-    adicionarNaLista(count, indice);
+		}
+		else if(achou) //caso esteja em blocos consecutivos
+		{
+			break;
+		}
+	}
+	if(!achou)
+	{
+		fprintf(stderr, "\n\nDeu ruim %s:%d\n\n", __FILE__, __LINE__);
+		exit(1);
+	}
+	adicionarNaLista(count, indice);
 
 
-    //3
+	//3
 
 
 	/*
@@ -117,7 +125,7 @@ void GerenciadorMemoria::adicionarNaLista(int tamanho,int offset){
 	for (; i != listaDeEspacosVazios.end(); i++)
 	{
 		o++;
-		if(i->posicao + i-> tamanho +1 == o->posicao)
+		if( (i->posicao) + (i-> tamanho) +1 == o->posicao)
 		{
 			//junta
 			regListaVazia l1(i->posicao, (i->tamanho)+(o->tamanho));
@@ -125,6 +133,10 @@ void GerenciadorMemoria::adicionarNaLista(int tamanho,int offset){
 			listaDeEspacosVazios.erase(o);
 			listaDeEspacosVazios.push_back(l1);
 			listaDeEspacosVazios.sort();
+			//recomeça o loop
+			i= listaDeEspacosVazios.begin();
+			o= i;
+//			break;
 		}
 	}
 }

@@ -49,6 +49,7 @@ class Processo
 		bool scanner;
 		bol modem;
 		bou codigoDisco;
+		int instrucoesExecutadas;
 };
 
 #endif

@@ -234,7 +234,23 @@ void GerenciadorProcessos::GO(){
 		timeslice++;//por ultimo é isso
 	}
 
+}
 
-
-
+/*
+dispatcher =>
+PID: 1
+offset: 0
+blocks: 64
+priority: 0
+time: 3
+printers: 0
+scanners: 0
+modems: 0
+drives: 0
+*/
+void GerenciadorProcessos::Despachar(Processo &proc)
+{
+	printf("dispatcher =>\n");
+	printf("PID: %d\n", proc.ObterID());
+	printf(offset);
 }

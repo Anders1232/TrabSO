@@ -25,6 +25,7 @@ Processo::Processo(
 	offsetMemoria= PROCESSO_NAO_CARREGADO;
 	static int identificador=0;
 	this->id= identificador++;
+	instrucoesExecutadas =0;
 }
 
 
@@ -68,11 +69,16 @@ int Processo::ObterQuantidadeMemoria(void)
 
 ResultadoExecucao Processo::RodarProcesso(void)
 {
-	printf("O processo %d está sendo executado.\n", id);
-	sleep(1);
-	tempoProcessador--;
-	if(0 == tempoProcessador)
+	if(0 == instrucoesExecutadas)
 	{
+		printf("P%d STARTED\n", id);
+	}
+	printf("P%d\t instruction %d\n", id, instrucoesExecutadas);
+	sleep(1);
+	instrucoesExecutadas++;
+	if(instrucoesExecutadas == tempoProcessador)
+	{
+		printf("P%d return SIGINT\n", id);
 		return PROCESSO_TERMINOU;
 	}
 	return PROCASSO_NAO_TERMINOU;

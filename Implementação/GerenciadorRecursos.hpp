@@ -11,10 +11,10 @@
 	MODEM=3
 };*/
 typedef int Recurso;
-#define RECURSO_IMPRESSORA 0
-#define RECURSO_SATA 1
-#define RECURSO_SCANNER 2
-#define RECURSO_MODEM 3
+#define RECURSO_IMPRESSORA 1
+#define RECURSO_SATA 2
+#define RECURSO_SCANNER 3
+#define RECURSO_MODEM 4
 
 class GerenciadorRecursos
 {

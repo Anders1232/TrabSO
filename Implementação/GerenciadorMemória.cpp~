@@ -38,5 +38,13 @@ bool Desalocar(int offsetMemoria,int numBlocosDeMemoria){
 
 int ObterOffset(int idProcesso){
 
+	for(int i = 0;i < memoria.size(); i++){
+
+		if memoria[i] == idprocesso{return i;}	
+
+	}
+
+	return (0);
 
 }
+

@@ -44,7 +44,7 @@ int ObterOffset(int idProcesso){
 
 	}
 
-	return (0);
+	return (-1);
 
 }
 

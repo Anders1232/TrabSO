@@ -1,4 +1,6 @@
 #include "Processo.hpp"
+#include "stdio.h"
+#include "unistd.h"
 
 Processo::Processo(
 
@@ -66,6 +68,8 @@ int Processo::ObterQuantidadeMemoria(void)
 
 ResultadoExecucao Processo::RodarProcesso(void)
 {
+	printf("O processo %d está sendo executado.\n", id);
+	sleep(1);
 	tempoProcessador--;
 	if(0 == tempoProcessador)
 	{

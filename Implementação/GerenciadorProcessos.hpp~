@@ -14,7 +14,7 @@
 class GerenciadorProcessos
 {
 	public:
-		void GerenciadorProcessos(std::string &nomeArquivo);
+		GerenciadorProcessos(std::string &nomeArquivo);
 		void GO(void);
 	private:
 		std::vector<Processo> processosQueNaoForamIniciados;

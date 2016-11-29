@@ -205,10 +205,12 @@ void GerenciadorProcessos::GO(){
 				{
 					if(PRIORIDADE_TEMPO_REAL == (*it)->ObterPrioridade())
 					{
+						memoriaTempoReal.printMemory();
 						memoriaTempoReal.Desalocar(processoSelecionado);
 					}
 					else
 					{
+						memoriaComum.printMemory();
 						memoriaComum.Desalocar(processoSelecionado);
 					}
 					if((*it)->usaImpressora())

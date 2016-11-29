@@ -103,7 +103,7 @@ void GerenciadorProcessos::GO(){
 			if(proc->usaModem())
 			{
 				recursosAlocados[2] = gereciadorRecursos.Alocar(RECURSO_MODEM);
-				if(!recursosAlocados[2])
+				if(false == recursosAlocados[2])
 				{
 					printf("O processo %d não será executado pois o modem já esá alocado!\n",proc->ObterID());
 					for(int cont =0; cont < 3; cont++)
@@ -122,12 +122,12 @@ void GerenciadorProcessos::GO(){
 			if(proc->usaSata())
 			{
 				recursosAlocados[3]= gereciadorRecursos.Alocar(RECURSO_SATA);
-				if(!recursosAlocados[3])
+				if(false == recursosAlocados[3])
 				{
 					//desalocar tudo que ja foi alocado pra nao rodar
 				}
 				recursosAlocados[3] = gereciadorRecursos.Alocar(RECURSO_MODEM);
-				if(!recursosAlocados[3])
+				if(false == recursosAlocados[3])
 				{
 					printf("O processo %d não será executado pois o modem já esá alocado!\n", proc->ObterID());
 					for(int cont =0; cont < 4; cont++)

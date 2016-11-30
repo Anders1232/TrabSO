@@ -196,10 +196,11 @@ void GerenciadorProcessos::GO(){
 			std::vector<Processo*>::iterator it;
 
 			for(it = processosEmExecucao.begin(); it < processosEmExecucao.end(); it++)
-//			for(int cont =0; cont < processosEmExecucao.size(); cont++)
+			//for(int cont =0; cont < processosEmExecucao.size(); cont++)
 			{
 				if( (*it)->ObterID() == processoSelecionado)
 				{
+				
 					ResultadoExecucao res= (*it)->RodarProcesso();
 					if(PROCESSO_TERMINOU == res)
 					{
@@ -236,7 +237,7 @@ void GerenciadorProcessos::GO(){
 			}
 		}
 		timeslice++;//por ultimo é isso
-	}
+	}//while timeslice==processosQueNaoForamIniciados.front()->obterMomentoEntrada(
 
 }
 

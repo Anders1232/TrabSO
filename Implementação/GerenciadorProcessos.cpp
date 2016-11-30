@@ -276,7 +276,7 @@ void GerenciadorProcessos::Despachar(Processo &proc)
 
 GerenciadorProcessos::~GerenciadorProcessos()
 {
-	for(int cont =0; cont < processosTerminados.size(); cont++)
+	for(unsigned int cont =0; cont < processosTerminados.size(); cont++)
 	{
 		delete processosTerminados[cont];
 	}

@@ -1,11 +1,6 @@
 #ifndef PROCESSOS_HPP
 #define PROCESSOS_HPP
 
-//#include <stdbool.h>
-
-typedef bool bol;
-typedef bool bou;
-typedef bool biiiiiirl;
 
 #define PROCESSO_NAO_CARREGADO -1
 
@@ -29,10 +24,10 @@ class Processo
 			int codigoDisco
 		);
 		int obterMomentoEntrada(void);
-		biiiiiirl usaImpressora(void);
-		biiiiiirl usaScanner(void);
-		biiiiiirl usaSata(void);
-		biiiiiirl usaModem(void);
+		bool usaImpressora(void);
+		bool usaScanner(void);
+		bool usaSata(void);
+		bool usaModem(void);
 		int ObterPrioridade(void);
 		int ObterQuantidadeMemoria(void);
 		int ObterID(void);
@@ -46,10 +41,10 @@ class Processo
 		int offsetMemoria;
 		int tempoProcessador;
 		int numBlocosDeMemoria;
-		biiiiiirl impressora;
+		bool impressora;
 		bool scanner;
-		bol modem;
-		bou codigoDisco;
+		bool modem;
+		bool codigoDisco;
 		int instrucoesExecutadas;
 };
 

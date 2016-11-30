@@ -35,19 +35,19 @@ int Processo::obterMomentoEntrada(void){
 }
 
 
-biiiiiirl Processo::usaImpressora(void){
+bool Processo::usaImpressora(void){
 	
 	return impressora;
 }
-biiiiiirl Processo::usaScanner(void){
+bool Processo::usaScanner(void){
 	
 	return scanner;
 }
-biiiiiirl Processo::usaSata(void){
+bool Processo::usaSata(void){
 	
 	return codigoDisco;
 }
-biiiiiirl Processo::usaModem(void){
+bool Processo::usaModem(void){
 	
 	return modem;
 } 

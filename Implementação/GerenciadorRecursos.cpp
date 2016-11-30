@@ -21,7 +21,7 @@ bool GerenciadorRecursos::Alocar(Recurso rec)
 	{
 		case RECURSO_IMPRESSORA:
 		{
-			if(0== impressora)
+			if(0 == impressora)
 			{
 				return false;
 			}
@@ -30,7 +30,7 @@ bool GerenciadorRecursos::Alocar(Recurso rec)
 		}
 		case RECURSO_SATA:
 		{
-			if(0== sata)
+			if(0 == sata)
 			{
 				return false;
 			}
@@ -39,7 +39,7 @@ bool GerenciadorRecursos::Alocar(Recurso rec)
 		}
 		case RECURSO_SCANNER:
 		{
-			if(0== scanner)
+			if(0 == scanner)
 			{
 				return false;
 			}
@@ -48,7 +48,7 @@ bool GerenciadorRecursos::Alocar(Recurso rec)
 		}
 		case RECURSO_MODEM:
 		{
-			if(0== modem)
+			if(0 == modem)
 			{
 				return false;
 			}
@@ -69,7 +69,7 @@ bool GerenciadorRecursos::Desalocar(Recurso rec)
 	{
 		case RECURSO_IMPRESSORA:
 		{
-			if(QUANTIDADE_IMPRESSORAS== impressora)
+			if(QUANTIDADE_IMPRESSORAS == impressora)
 			{
 				return false;
 			}

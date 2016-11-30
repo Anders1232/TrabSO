@@ -24,6 +24,7 @@ class GerenciadorMemoria
 		bool Desalocar(int idProcesso);
 		GerenciadorMemoria(int quantidadeDeBlocos);
 		int ObterOffset(int idProcesso);
+		void printMemory();
 	private:
 		std::vector<int> memoria;
 		std::list<regListaVazia> listaDeEspacosVazios;

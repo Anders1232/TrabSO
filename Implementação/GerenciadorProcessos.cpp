@@ -103,10 +103,10 @@ void GerenciadorProcessos::GO(){
 			if(proc->usaModem())
 			{
 				recursosAlocados[2] = gereciadorRecursos.Alocar(RECURSO_MODEM);
-				if(!recursosAlocados[2])
+				if(false == recursosAlocados[2])
 				{
 					printf("O processo %d não será executado pois o modem já esá alocado!\n",proc->ObterID());
-					for(int cont =0; cont < 3; cont++)
+					for(int cont =1; cont < 5; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -122,15 +122,15 @@ void GerenciadorProcessos::GO(){
 			if(proc->usaSata())
 			{
 				recursosAlocados[3]= gereciadorRecursos.Alocar(RECURSO_SATA);
-				if(!recursosAlocados[3])
+				if(false == recursosAlocados[3])
 				{
 					//desalocar tudo que ja foi alocado pra nao rodar
 				}
 				recursosAlocados[3] = gereciadorRecursos.Alocar(RECURSO_MODEM);
-				if(!recursosAlocados[3])
+				if(false == recursosAlocados[3])
 				{
 					printf("O processo %d não será executado pois o modem já esá alocado!\n", proc->ObterID());
-					for(int cont =0; cont < 4; cont++)
+					for(int cont =1; cont < 5; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -152,7 +152,7 @@ void GerenciadorProcessos::GO(){
 				if(ALOCACAO_FALHOU == memoriaTempoReal.Alocar(proc->ObterID(), proc->ObterQuantidadeMemoria() ))
 				{
 					printf("O processo %d não será executado pois não tem memória de tempo real suficiente para o mesmo ser executado!\n", proc->ObterID());
-					for(int cont =0; cont < 4; cont++)
+					for(int cont =1; cont < 5; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -171,7 +171,7 @@ void GerenciadorProcessos::GO(){
 				if(ALOCACAO_FALHOU == memoriaComum.Alocar(proc->ObterID(), proc->ObterQuantidadeMemoria()))
 				{
 					printf("O processo %d não será executado pois não tem memória suficiente para o mesmo ser executado!\n", proc->ObterID());
-					for(int cont =0; cont < 4; cont++)
+					for(int cont =1; cont < 5; cont++)
 					{
 						if(recursosAlocados[cont])
 						{
@@ -195,41 +195,48 @@ void GerenciadorProcessos::GO(){
 			sleep(1);
 			CONTINUE_LOOP_PRINCIPAL;
 		}
-		int processoSelecionado= escalonador.Escalonar();
-		for(std::vector<Processo*>::iterator it= processosEmExecucao.begin(); it != processosEmExecucao.end(); it++)
-//		for(int cont =0; cont < processosEmExecucao.size(); cont++)
+		else
 		{
-			if( (*(it) )->ObterID() == processoSelecionado)
+			int processoSelecionado= escalonador.Escalonar();
+			std::vector<Processo*>::iterator it;
+
+			for(it = processosEmExecucao.begin(); it < processosEmExecucao.end(); it++)
+//			for(int cont =0; cont < processosEmExecucao.size(); cont++)
 			{
-				ResultadoExecucao res= (*it)->RodarProcesso();
-				if(PROCESSO_TERMINOU == res)
+				if( (*it)->ObterID() == processoSelecionado)
 				{
-					if(PRIORIDADE_TEMPO_REAL == (*it)->ObterPrioridade())
+					ResultadoExecucao res= (*it)->RodarProcesso();
+					if(PROCESSO_TERMINOU == res)
 					{
-						memoriaTempoReal.Desalocar(processoSelecionado);
+						if(PRIORIDADE_TEMPO_REAL == (*it)->ObterPrioridade())
+						{
+							memoriaTempoReal.printMemory();
+							memoriaTempoReal.Desalocar(processoSelecionado);
+						}
+						else
+						{
+							memoriaComum.printMemory();
+							memoriaComum.Desalocar(processoSelecionado);
+						}
+						if((*it)->usaImpressora())
+						{
+							gereciadorRecursos.Desalocar(RECURSO_IMPRESSORA);
+						}
+						if((*it)->usaModem())
+						{
+							gereciadorRecursos.Desalocar(RECURSO_MODEM);
+						}
+						if((*it)->usaSata())
+						{
+							gereciadorRecursos.Desalocar(RECURSO_SATA);
+						}
+						if((*it)->usaScanner())
+						{
+							gereciadorRecursos.Desalocar(RECURSO_SCANNER);
+						}
+						processosTerminados.push_back(*it);
+						processosEmExecucao.erase(it);
 					}
-					else
-					{
-						memoriaComum.Desalocar(processoSelecionado);
-					}
-					if((*it)->usaImpressora())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_IMPRESSORA);
-					}
-					if((*it)->usaModem())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_MODEM);
-					}
-					if((*it)->usaSata())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_SATA);
-					}
-					if((*it)->usaScanner())
-					{
-						gereciadorRecursos.Desalocar(RECURSO_SCANNER);
-					}
-					processosTerminados.push_back(*it);
-					processosEmExecucao.erase(it);
 				}
 			}
 		}

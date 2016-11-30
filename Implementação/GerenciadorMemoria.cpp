@@ -17,12 +17,19 @@ regListaVazia::regListaVazia(int a, int b)
 
 GerenciadorMemoria::GerenciadorMemoria(int quantidadeDeBlocos)
 {
+	printf("Construtor do gerenciador de memória chamado! Tamanho da memória: %u\n", quantidadeDeBlocos);
 	listaDeEspacosVazios.push_back(regListaVazia(0, quantidadeDeBlocos));
+	memoria.resize(quantidadeDeBlocos, MEMORIA_NAO_USADA);
+#ifdef DEVERIA_FUNCIONAR_MAS_NAO_FUNCIONA
 	memoria.reserve(quantidadeDeBlocos);
 	for(int cont =0; cont < quantidadeDeBlocos; cont++)
 	{
 		memoria[cont] = MEMORIA_NAO_USADA;
 	}
+#else
+	memoria.resize(quantidadeDeBlocos, MEMORIA_NAO_USADA);
+#endif
+	printf("Construtor do gerenciador de memória chamado! Memória alocada: %lu\n", memoria.size());
 }
 
 int GerenciadorMemoria::Alocar(int processo, int tamanho){
@@ -79,7 +86,6 @@ bool GerenciadorMemoria::Desalocar(int idProcesso)
 				indice = i; 	//pega o primeiro espaço que ele ocupa
 			}
 			count++;
-			memoria.at(i)= MEMORIA_NAO_USADA; 	//seta como livre
 
 		}
 		else if(achou) //caso esteja em blocos consecutivos
@@ -90,7 +96,7 @@ bool GerenciadorMemoria::Desalocar(int idProcesso)
 	if(!achou)
 	{
 		fprintf(stderr, "\n\nDeu ruim %s:%d\n\n", __FILE__, __LINE__);
-//		exit(1);
+		exit(1);
 	}
 	adicionarNaLista(count, indice);
 
@@ -108,7 +114,7 @@ bool GerenciadorMemoria::Desalocar(int idProcesso)
 				
 	*/
 
-	printf("Implementar %s:%d\n", __FILE__, __LINE__);
+//	printf("Implementar %s:%d\n", __FILE__, __LINE__);
 	return true;
 }
 
@@ -122,21 +128,25 @@ void GerenciadorMemoria::adicionarNaLista(int tamanho,int offset){
 
 	std::list<regListaVazia>::iterator i = listaDeEspacosVazios.begin();
 	std::list<regListaVazia>::iterator o = i;
-	for (; i != listaDeEspacosVazios.end(); i++)
+//	printf("listaDeEspacosVazios.size() = %d\n", listaDeEspacosVazios.size());
+	if(1 < listaDeEspacosVazios.size())
 	{
-		o++;
-		if( (i->posicao) + (i-> tamanho) +1 == o->posicao)
+		for (; i != listaDeEspacosVazios.end(); i++)
 		{
-			//junta
-			regListaVazia l1(i->posicao, (i->tamanho)+(o->tamanho));
-			listaDeEspacosVazios.erase(i);
-			listaDeEspacosVazios.erase(o);
-			listaDeEspacosVazios.push_back(l1);
-			listaDeEspacosVazios.sort();
-			//recomeça o loop
-			i= listaDeEspacosVazios.begin();
-			o= i;
-//			break;
+			o++;
+			if( (i->posicao) + (i-> tamanho) +1 == o->posicao)
+			{
+				//junta
+				regListaVazia l1(i->posicao, (i->tamanho)+(o->tamanho));
+				listaDeEspacosVazios.erase(i);
+				listaDeEspacosVazios.erase(o);
+				listaDeEspacosVazios.push_back(l1);
+				listaDeEspacosVazios.sort();
+				//recomeça o loop
+				i= listaDeEspacosVazios.begin();
+				o= i;
+	//			break;
+			}
 		}
 	}
 }
@@ -152,4 +162,14 @@ int GerenciadorMemoria::ObterOffset(int idProcesso)
 	}
 	return (-1);
 
+}
+
+void GerenciadorMemoria::printMemory(){
+	int a = memoria.size();
+	printf("%d\n",a);
+	for(unsigned int i = 0;i < memoria.size(); i++)
+	{
+		printf("%d",memoria[i]);
+
+	}
 }
